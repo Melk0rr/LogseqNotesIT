@@ -1,0 +1,23 @@
+- #Guides
+	- #[[Site web]]
+		- [PrivacyTools](https://www.privacytools.io/) : Site web listant divers outils pour la confidentialité
+		- [Guides PrivacyTools](https://www.privacytools.io/guides/) : Guides divers pour l'utilisation d'outils et autres
+- #[[Gestionnaire de mots de passe]]
+  id:: 65114c55-a3e4-4a49-bbc2-31a503ad0132
+	- [Bitwarden](https://bitwarden.com/) : #[[OpenSource]] Mots de passe stockés dans le cloud, synchronisation auto
+	- [KeepassXC](https://keepassxc.org/) : #[[OpenSource]] Mots de passe chiffrés et stockés localement
+	- [Lesspass](https://www.lesspass.com/#/) : #[[OpenSource]] Repose sur de la génération fonctionnelle, le mot de passe est calculé en fonction des paramètres donnés (mot de passe maître, site web, etc)
+	- [2FAS](https://2fas.com/) : #[[OpenSource]] Application 2FA avec import depuis Google Authenticator, Aegis, LastPass, etc
+- #Navigateur
+	- [Librewolf](https://librewolf.net/) : #Windows#MAC#Linux Branche de firefox pré configurée pour la confidentialité
+	- [Firefox](https://www.mozilla.org/fr/firefox/) : #Windows#MAC#Linux#Android#iOS Nécessite de la configuration via un fichier [user.js](https://github.com/yokoffing/Betterfox/blob/main/user.js)
+	- [Firefox Focus](https://www.mozilla.org/fr/firefox/browsers/mobile/focus/) : #Android#iOS Version de Firefox dédiée pour la confidentialité et le blocage de traqueurs
+	- [TOR](https://www.torproject.org/) : #Windows#MAC#Linux#Android Version modifiée de Firefox avec protection contre les traqueurs, système de proxy via le réseau TOR
+- #Optimisation
+	- #Android
+		- [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) : #[[OpenSource]] Programme **Rust** pour supprimer des applications non souhaitées sur Android
+	- #Windows
+		- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : #[[OpenSource]] Programme **C#** de suppression de bloatware sur **Windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
+		- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) : #[[OpenSource]] Programme **C# / Powershell** de suppression de bloatware sur **Windows 10**.
+		-
+-

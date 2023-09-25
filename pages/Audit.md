@@ -1,4 +1,5 @@
-- ((URL))
+- #[[Site web]]
+  id:: 65119136-c77f-473f-abea-a2b7a23fa1cf
 	- [CRT.sh](https://crt.sh/) : Scan de domain, d'URL / Ip,  whois
 	- [DeHashed](https://www.dehashed.com) : Base de données de HASH connus
 	- [exploit-db](https://www.exploit-db.com) : Recheche de vulnérabilités
@@ -19,6 +20,7 @@
 	- [Vulners](https://vulners.com) : Recheche de vulnérabilités
 	- [WaybackMachine](https://archive.org/web/) : Archive Web
 	- [ZoomEye](https://www.zoomeye.org) : Moteur de recherche de Vuln sur un site
-- ((Mail))
-	- ((DMARC))
-		- DMARC
+- #Mail
+	- #DMARC
+		- [DMARCly](https://dmarcly.com/tools/) : Divers outils de vérification DMARC, DKIM et SPF
+		-
