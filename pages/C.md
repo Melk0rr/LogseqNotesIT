@@ -1,0 +1,20 @@
+## Description
+	- Langage de #Programmation **impératif**, **compilé** et **bas niveau** inventé au début des années 1970
+-
+- ## Avantages & Inconvénients
+	- ### Avantages
+		- Rapide
+		- Gestion de la mémoire
+		- Optimisation
+	- ### Inconvénients
+		- Gestion des chaines de caractères
+		- Fuites mémoire
+-
+- ## Usages
+	- Systèmes d'exploitation
+	- Systèmes embarqués
+	- Compilateurs
+-
+- ## Influences
+	- Langage B
+	- Fortran

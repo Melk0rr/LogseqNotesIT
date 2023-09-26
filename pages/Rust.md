@@ -1,0 +1,18 @@
+## Description
+	- Langage de #[[Programmation]] **multi-paradigmes** et **compilé** inventé en 2015.
+-
+- ## Avantages & Inconvénients
+	- ### Avantages
+		- Rapide
+		- Gestion de la mémoire sécurisé
+	- ### Inconvénients
+		- Langage jeune
+-
+- ## Usages
+	- #Navigateurs
+	- Logiciels
+	- Systèmes d'exploitation
+-
+- ## Influences
+	- #C++
+	- #[[C#]]
