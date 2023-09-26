@@ -13,11 +13,17 @@
 	- [Firefox](https://www.mozilla.org/fr/firefox/) : #Windows#MAC#Linux#Android#iOS Nécessite de la configuration via un fichier [user.js](https://github.com/yokoffing/Betterfox/blob/main/user.js)
 	- [Firefox Focus](https://www.mozilla.org/fr/firefox/browsers/mobile/focus/) : #Android#iOS Version de Firefox dédiée pour la confidentialité et le blocage de traqueurs
 	- [TOR](https://www.torproject.org/) : #Windows#MAC#Linux#Android Version modifiée de Firefox avec protection contre les traqueurs, système de proxy via le réseau TOR
+- #[[Moteurs de recherche]]
+	- [Search Engine Party](https://searchengine.party/) : Comparateur de moteurs de recherche en termes de sécurité et confidentialité
+	- [StartPage](https://www.startpage.com/) : Recherches Google anonymisées
+	- [DuckDuckGo](https://duckduckgo.com/) : Recherches Bing anonymisées
+	- [SearX](https://searx.space/) : #OpenSource Meta-moteur hébergé à plusieurs endroits du globe
+	-
 - #Optimisation
 	- #Android
 		- [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) : #[[OpenSource]] Programme **Rust** pour supprimer des applications non souhaitées sur Android
 	- #Windows
 		- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : #[[OpenSource]] Programme **C#** de suppression de bloatware sur **Windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
 		- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) : #[[OpenSource]] Programme **C# / Powershell** de suppression de bloatware sur **Windows 10**.
-		-
+	-
 -
