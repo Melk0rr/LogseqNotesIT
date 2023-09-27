@@ -35,11 +35,10 @@
 	-
 - #[[Pentest - Red Team]]
 	- #Logs
-		- [Phant0m](https://github.com/olafhartong/Invoke-Phant0m/tree/master) : #OpenSource Script **Powershell** qui neutralise les processus de génération de logs sur Windows
+		- [Phant0m](https://github.com/olafhartong/Invoke-Phant0m/tree/master) : #OpenSource Script #Powershell qui neutralise les processus de génération de logs sur Windows
 	-
 - #Privacy
 	- #[[Gestionnaire de mots de passe]]
-	  id:: 65114c55-a3e4-4a49-bbc2-31a503ad0132
 		- [Bitwarden](https://bitwarden.com/) : #[[OpenSource]] Mots de passe stockés dans le cloud, synchronisation auto
 		- [KeepassXC](https://keepassxc.org/) : #[[OpenSource]] Mots de passe chiffrés et stockés localement
 		- [Lesspass](https://www.lesspass.com/#/) : #[[OpenSource]] Repose sur de la génération fonctionnelle, le mot de passe est calculé en fonction des paramètres donnés (mot de passe maître, site web, etc)
