@@ -1,0 +1,6 @@
+- #Linux
+	- #Documentation
+		- **man** <commande> (manuel) : Affiche le manuel de la commande spécifiée
+	- #Recherche
+		- **whereis** <commande> : Rechercher  les fichiers exécutables, les sources et les pages de manuel d'une commande
+-
