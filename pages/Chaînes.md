@@ -1,4 +1,4 @@
 - #Privacy
-	- [Eric Murphy](https://www.youtube.com/@EricMurphyxyz) :  chaîne centrée sur la vie privée et divers éléments #[[Arch Linux]]
+	- [Eric Murphy](https://www.youtube.com/@EricMurphyxyz) :  chaîne centrée sur la vie privée et sur divers éléments #[[Arch Linux]]
 - #Linux
--
+	- [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP/videos) : chaîne dédiée à Linux et à l'#Opensource
