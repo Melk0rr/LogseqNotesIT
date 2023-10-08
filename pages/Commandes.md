@@ -1,6 +1,19 @@
 - #Linux
 	- #Documentation
-		- **man** <commande> (manuel) : Affiche le manuel de la commande spécifiée
+		- [Documentation en ligne](https://www.geeksforgeeks.org/linux-commands/)
+		  id:: 65217c2c-e35f-404b-91ad-66bac8c07a1d
+		- [man](https://www.geeksforgeeks.org/man-command-in-linux-with-examples/) <commande> (manuel) : Affiche le manuel de la commande spécifiée
 	- #Recherche
-		- **whereis** <commande> : Rechercher  les fichiers exécutables, les sources et les pages de manuel d'une commande
--
+		- [find](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/) **<base> <paramètre> <fichier>** : Recherche un fichier par nom, type ou autre
+		- [grep](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) **<option> pattern <fichier>** : Recherche un ensemble de charactères dans un fichier donné
+		- [locate](https://www.geeksforgeeks.org/locate-command-in-linux-with-examples/) **<fichier>** : Localise n'importe quel fichier ou répertoire sur le système. Utilise le fichier mlocate.db mis à jour toutes les 24h, qui indexe tous les fichiers du système
+			- Possible de forcer la mise à jour : **sudo ubdatedb**
+		- [whereis](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files#whereis) **<commande>** : Rechercher  les fichiers exécutables, les sources et les pages de manuel d'une commande
+	- #[[Manipulation de fichiers]]
+		- [cut](https://www.geeksforgeeks.org/cut-command-linux-examples/) **<option> <fichier>** : Coupe un fichier ou une chaine de caractères selon un délimiteur, un nombre de caractères ou autre
+		- [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/) **<option> <entrée>** : Tri le contenu d'un fichier selon l'option utilisée
+		- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/) **<option> <entrée<sortie>>** : Filtre les doublons
+		- [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/) **<option> <fichier>** : Compte le nombre de lignes / mots / caractères / octets d'un fichier
+	- #Archive
+		- [tar](https://www.geeksforgeeks.org/tar-command-linux-examples/) **<options> <fichier-archive> <fichiers>** : Création, lecture, modification et extraction d'archives compressées ou non
+		-
