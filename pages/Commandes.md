@@ -6,14 +6,31 @@
 	- #Recherche
 		- [find](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/) **<base> <paramètre> <fichier>** : Recherche un fichier par nom, type ou autre
 		- [grep](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) **<option> pattern <fichier>** : Recherche un ensemble de charactères dans un fichier donné
+		- [history](https://www.geeksforgeeks.org/history-command-in-linux-with-examples/) **<option>** : affiche l'historique des commande précédemment exécutées
 		- [locate](https://www.geeksforgeeks.org/locate-command-in-linux-with-examples/) **<fichier>** : Localise n'importe quel fichier ou répertoire sur le système. Utilise le fichier mlocate.db mis à jour toutes les 24h, qui indexe tous les fichiers du système
 			- Possible de forcer la mise à jour : **sudo ubdatedb**
 		- [whereis](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files#whereis) **<commande>** : Rechercher  les fichiers exécutables, les sources et les pages de manuel d'une commande
-	- #[[Manipulation de fichiers]]
+	- #[[Manipulation de fichiers et répertoires]]
+		- [cat](https://www.geeksforgeeks.org/cat-command-in-linux-with-examples/) -> `concatenate` **<option> <fichier>** : Affiche le contenu d'un fichier
+		- [cd](https://www.geeksforgeeks.org/cd-command-in-linux-with-examples/) -> `change directory` <répertoire> : Permet de se déplacer dans l'arborescence de fichiers
+		- [cp](https://www.geeksforgeeks.org/cp-command-linux-examples/) **<option> <source> <destination>** : Copie des fichiers ou répertoires
 		- [cut](https://www.geeksforgeeks.org/cut-command-linux-examples/) **<option> <fichier>** : Coupe un fichier ou une chaine de caractères selon un délimiteur, un nombre de caractères ou autre
+		- [ls](https://www.geeksforgeeks.org/ls-command-in-linux/) **<option> <fichier / répertoire>** : Liste les fichiers et répertoires
+		- [mkdir](https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/) -> `make directory` **<option> <répertoire>** : Crée un nouveau répertoire
+		- [mv](https://www.geeksforgeeks.org/mv-command-linux-examples/) **<option> <source> <destination>** : Déplace ou renomme des fichiers ou répertoires
+		- [pwd](https://www.geeksforgeeks.org/pwd-command-in-linux-with-examples/) `print working directory` **<option>** : Affiche le chemin absolu vers le répertoire courant
+		- [rm](https://www.geeksforgeeks.org/rm-command-linux-examples/) **<option> <fichier>** : Supprime un ou plusieurs fichiers
 		- [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/) **<option> <entrée>** : Tri le contenu d'un fichier selon l'option utilisée
+		- [touch](https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/) **<fichier>** : Crée un fichier
 		- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/) **<option> <entrée<sortie>>** : Filtre les doublons
-		- [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/) **<option> <fichier>** : Compte le nombre de lignes / mots / caractères / octets d'un fichier
+		- [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/) -> `word count` **<option> <fichier>** : Compte le nombre de lignes / mots / caractères / octets d'un fichier
+	- #[[Gestion des droits]]
+		- [chmod](https://www.geeksforgeeks.org/chmod-command-linux/) -> `change mode` **<option> <mode> <fichier / répertoire>** : Change le mode d'accès au fichier ou répertoire
+		- [chown](https://www.geeksforgeeks.org/chown-command-in-linux-with-examples/) -> `change owner` **<option> <propriétaire / group> <fichier>** : Change le propriétaire du fichier
 	- #Archive
 		- [tar](https://www.geeksforgeeks.org/tar-command-linux-examples/) **<options> <fichier-archive> <fichiers>** : Création, lecture, modification et extraction d'archives compressées ou non
-		-
+-
+- #Windows
+	- #[[Gestion des droits]]
+		- [Get-Acl](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-acl?view=powershell-7.3) **<option> <fichier / répertoire>** : Retourne la description de sécurité pour un fichier ou répertoire
+-
