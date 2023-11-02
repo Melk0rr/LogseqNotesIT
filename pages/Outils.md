@@ -34,6 +34,8 @@
 		- [DFIR ORC](https://github.com/DFIR-ORC/dfir-orc) : Programme #C++#OpenSource de collecte d'artefacts et IOC pour systèmes Windows
 	- #[[Active Directory]]
 		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
+	- #Windows
+		- [PatchaPalooza](https://github.com/xaitax/PatchaPalooza) : script python de remontée des vulnérabilités récentes dans les produits Microsoft
 	-
 - #[[Pentest - Red Team]]
 	- #Logs

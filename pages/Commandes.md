@@ -15,6 +15,7 @@
 		- [cd](https://www.geeksforgeeks.org/cd-command-in-linux-with-examples/) -> `change directory` <répertoire> : Permet de se déplacer dans l'arborescence de fichiers
 		- [cp](https://www.geeksforgeeks.org/cp-command-linux-examples/) **<option> <source> <destination>** : Copie des fichiers ou répertoires
 		- [cut](https://www.geeksforgeeks.org/cut-command-linux-examples/) **<option> <fichier>** : Coupe un fichier ou une chaine de caractères selon un délimiteur, un nombre de caractères ou autre
+		- [diff](https://www.geeksforgeeks.org/diff-command-linux-examples/) **<options> <fichier1> <fichier2>** : Affiche les différences de contenu entre deux fichiers
 		- [ls](https://www.geeksforgeeks.org/ls-command-in-linux/) **<option> <fichier / répertoire>** : Liste les fichiers et répertoires
 		- [mkdir](https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/) -> `make directory` **<option> <répertoire>** : Crée un nouveau répertoire
 		- [mv](https://www.geeksforgeeks.org/mv-command-linux-examples/) **<option> <source> <destination>** : Déplace ou renomme des fichiers ou répertoires
@@ -29,6 +30,14 @@
 		- [chown](https://www.geeksforgeeks.org/chown-command-in-linux-with-examples/) -> `change owner` **<option> <propriétaire / group> <fichier>** : Change le propriétaire du fichier
 	- #Archive
 		- [tar](https://www.geeksforgeeks.org/tar-command-linux-examples/) **<options> <fichier-archive> <fichiers>** : Création, lecture, modification et extraction d'archives compressées ou non
+		- [zip](https://www.geeksforgeeks.org/zip-command-in-linux-with-examples/) **<options> <fichier-archive> <fichiers>** : Compresse les fichiers mentionnés dans une archive zip
+	- #Stockage
+		- [du](https://www.geeksforgeeks.org/du-command-linux/) -> `disk used` **<option> <fichier>** : Affiche l'espace disque pris par un fichier / répertoire donné
+		- [fdisk](https://www.geeksforgeeks.org/fdisk-command-in-linux-with-examples/) -> `format disk` **<options> <appareil>** : Permet de manipuler des partitions
+		- [mkfs](https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/) -> `make file system` **<options> <partition>** : Crée une partition sur l'appareil spécifié, généralement un disque ou une clef usb. L'opération efface toutes information présente sur le disque
+		- [<u>mount](https://www.geeksforgeeks.org/mount-command-in-linux-with-examples/) **<options> <type> <appareil> <répertoire>** : Permet de monter (mount) le une partition sur le système de fichiers du système, ou de la démonter (umount)
+	- #Processus
+		- [ps](https://www.geeksforgeeks.org/ps-command-in-linux-with-examples/) -> `process status` **<options>** : Liste les processus en cours d'exécution
 -
 - #Windows
 	- #[[Gestion des droits]]
