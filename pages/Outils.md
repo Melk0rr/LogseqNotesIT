@@ -28,6 +28,7 @@
 - #[[SOC - Blue team]]
 	- #[[Sites web]]
 		- [VirusTotal](https://github.com/ventoy/Ventoy) : Analyse antivirus / IOC en ligne
+		- [Hybrid Analysis](https://www.hybrid-analysis.com/) : outil de sandbox en ligne
 		- [Interact.sh](https://app.interactsh.com/#/) : Testeur de requêtes en ligne
 	-
 	- #Forensic
@@ -36,7 +37,7 @@
 	- #[[Active Directory]]
 		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
 	- #Windows
-		- [PatchaPalooza](https://github.com/xaitax/PatchaPalooza) : script python de remontée des vulnérabilités récentes dans les produits Microsoft
+		- [PatchaPalooza](https://github.com/xaitax/PatchaPalooza) : script #Python de remontée des vulnérabilités récentes dans les produits Microsoft
 	-
 - #[[Pentest - Red Team]]
 	- #Logs
@@ -45,11 +46,11 @@
 		- [Hydra](https://github.com/vanhauser-thc/thc-hydra) : Programme #C de brute force de mots de passe
 	-
 - #Privacy
-	- #[[Gestionnaire de mots de passe]]
+	- #[[Gestion de mots de passe]]
 		- [Bitwarden](https://bitwarden.com/) : #[[OpenSource]] Mots de passe stockés dans le cloud, synchronisation auto
 		- [KeepassXC](https://keepassxc.org/) : #[[OpenSource]] Mots de passe chiffrés et stockés localement
 		- [Lesspass](https://www.lesspass.com/#/) : #[[OpenSource]] Repose sur de la génération fonctionnelle, le mot de passe est calculé en fonction des paramètres donnés (mot de passe maître, site web, etc)
-		- [2FAS](https://2fas.com/) : #[[OpenSource]] Application 2FA avec import depuis Google Authenticator, Aegis, LastPass, etc
+		- [Aegis](https://getaegis.app/) : #[[OpenSource]] Application 2FA avec import depuis Google Authenticator, 2FAS, LastPass, etc
 	- #Navigateurs
 		- [Librewolf](https://librewolf.net/) : #Windows#MAC#Linux Branche de firefox pré configurée pour la confidentialité
 		- [Firefox](https://www.mozilla.org/fr/firefox/) : #Windows#MAC#Linux#Android#iOS Nécessite de la configuration via un fichier [user.js](https://github.com/yokoffing/Betterfox/blob/main/user.js)
@@ -60,6 +61,9 @@
 		- [StartPage](https://www.startpage.com/) : Moteur et entreprise **hollandais** recherches Google anonymisées
 		- [DuckDuckGo](https://duckduckgo.com/) : Moteur de recherche de l'entreprise **américaine** du même nom, proposant des recherches Bing anonymisées
 		- [SearX](https://searx.space/) : Meta-moteur #OpenSource hébergé à plusieurs endroits du globe
+	- #Mail
+		- [Thunderbird](https://www.thunderbird.net/en-US/) : Client mail #OpenSource, gratuit et multi plateformes
+		- [ProtonMail](https://proton.me/mail/) : Solution mail #Opensource sécurisée (options payantes / gratuites)
 	- #[[Sites web]]
 		- [PrivacyTools](https://www.privacytools.io/) : Site web listant divers outils pour la confidentialité
 		- [Guides PrivacyTools](https://www.privacytools.io/guides/) : Guides divers pour l'utilisation d'outils et autres
@@ -76,6 +80,8 @@
 		- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : Programme #[[C#]] #[[OpenSource]] de suppression de bloatware sur **Windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
 		- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) :  Programme #[[C#]] #Powershell #[[OpenSource]] de suppression de bloatware sur **Windows 10**.
 - #System
+	- [Balena Etcher](https://rufus.ie/en/) : Programme #Typescript #OpenSource pour la création de médias d'installation USB. Prend le parti de la simplicité d'utilisation : seulement 3 clics nécessaires pour flasher une clef.
+	- [Rufus](https://rufus.ie/en/) : Programme #C #OpenSource de manipulation de média USB. L'outil permet de créer des clefs d'installation, de flasher un BIOS, etc. Contrairement à **Etcher**, fournit un panel d'options plus varié
 	- [Ventoy](https://github.com/ventoy/Ventoy) : Programme #C #OpenSource pour la création de supports USB bootables mutli-OS. Ce qui permet d'avoir une seule clef d'installation pour autant d'OS que l'on souhaite. Supporte #Windows#Linux#Unix et plus
 - #Convertion
 	- #[[Sites web]]
