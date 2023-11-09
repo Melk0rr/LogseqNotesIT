@@ -60,6 +60,11 @@
 	- #Mail
 		- [Thunderbird](https://www.thunderbird.net/en-US/) : Client mail #OpenSource, gratuit et multi plateformes
 		- [ProtonMail](https://proton.me/mail/) : Solution mail #Opensource sécurisée (options payantes / gratuites)
+	- #[[Privacy Front Ends]]
+		- [FreeTube](https://freetubeapp.io/) : Application de bureau #OpenSource pour #Windows #Linux #MAC reposant sur l'API Invidious pour donner accès au contenu Youtube
+		  id:: 654cd2d3-08c6-4b3f-a21f-090be5c8ae5e
+		- [Invidious](https://invidious.io/) : Front-end Youtube #OpenSource permettant d'obtenir une expérience YouTube simplifiée et privée, sans compte Google, sans pub, ni traqueur.
+		- [Newpipe](https://newpipe.net/) : Application #Android #OpenSource fournissant un accès au contenu Youtube, Peertube ou encore SoundCloud sans publicité
 	- #[[Sites web]]
 		- [PrivacyTools](https://www.privacytools.io/) : Site web listant divers outils pour la confidentialité
 		- [Guides PrivacyTools](https://www.privacytools.io/guides/) : Guides divers pour l'utilisation d'outils et autres
