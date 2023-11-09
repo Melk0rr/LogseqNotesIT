@@ -49,13 +49,13 @@
 		- [Aegis](https://getaegis.app/) : #[[OpenSource]] Application 2FA avec import depuis Google Authenticator, 2FAS, LastPass, etc
 	- #Navigateurs
 		- [Librewolf](https://librewolf.net/) : #Windows#MAC#Linux Branche de firefox pré configurée pour la confidentialité
-		- [Firefox](https://www.mozilla.org/fr/firefox/) : #Windows#MAC#Linux#Android#iOS Nécessite de la configuration via un fichier [user.js](https://github.com/yokoffing/Betterfox/blob/main/user.js)
+		- [Firefox](https://www.mozilla.org/fr/firefox/) : #Windows#MAC#Linux#Android#iOS Nécessite de la configuration via un fichier [user.js](https://github.com/yokoffing/Betterfox/blob/main/user.js) pour être véritablement privé
 		- [Firefox Focus](https://www.mozilla.org/fr/firefox/browsers/mobile/focus/) : #Android#iOS Version de Firefox dédiée pour la confidentialité et le blocage de traqueurs
-		- [TOR](https://www.torproject.org/) : #Windows#MAC#Linux#Android Version modifiée de Firefox avec protection contre les traqueurs, système de proxy via le réseau TOR
+		- [TOR](https://www.torproject.org/) : #Windows#MAC#Linux#Android Version modifiée de Firefox avec protection contre les traqueurs, système de proxy via le réseau TOR, etc
 	- #[[Moteurs de recherche]]
 		- [Search Engine Party](https://searchengine.party/) : Comparateur de moteurs de recherche en termes de sécurité et confidentialité
-		- [StartPage](https://www.startpage.com/) : Moteur et entreprise **hollandais** recherches Google anonymisées
-		- [DuckDuckGo](https://duckduckgo.com/) : Moteur de recherche de l'entreprise **américaine** du même nom, proposant des recherches Bing anonymisées
+		- [StartPage](https://www.startpage.com/) : Moteur et entreprise **hollandais** qui fournit les résultats de recherches **Google** anonymisées
+		- [DuckDuckGo](https://duckduckgo.com/) : Moteur de recherche de l'entreprise **américaine** du même nom, proposant des recherches **Bing** anonymisées
 		- [SearX](https://searx.space/) : Meta-moteur #OpenSource hébergé à plusieurs endroits du globe
 	- #Mail
 		- [Thunderbird](https://www.thunderbird.net/en-US/) : Client mail #OpenSource, gratuit et multi plateformes
@@ -81,6 +81,7 @@
 - #[[Firmware et contrôle matériel]]
 	- [CoolerControl](https://gitlab.com/coolercontrol/coolercontrol) : Programme #Python / #Rust #OpenSource de contrôle des éléments de refroidissement du système. Spécifique aux systèmes #Linux
 	- [FanControl](https://github.com/Rem0o/FanControl.Releases) : Logiciel léger et #Opensource pour #Windows permettant de contrôler la vitesse des divers éléments de refroidissement du système (ventilateurs de boitier, ventilateur de carte graphique, ventirad,  AIO, etc).
+	- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Programme #Rust #OpenSource de monitoring de ressources sous #Linux.
 	- [OpenRGB](https://openrgb.org/) : Logiciel #C++ #OpenSource et multiplateforme (#Windows #Linux #MAC) fournissant un moyen de contrôler le RGB de différents composants matériel (ventilateurs, carte graphique, RAM, carte mère, bandes LEDs, etc). OpenRGB est compatible avec de nombreux composants et fournit donc une alternative légère et libre aux multiples bloatwares propriétaires (iCue, Armoury Crate, MSI Mystic Light, etc)
 - #Convertion
 	- #[[Sites web]]

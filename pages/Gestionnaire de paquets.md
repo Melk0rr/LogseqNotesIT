@@ -1,0 +1,11 @@
+- #Windows
+	- [chocolatey](https://chocolatey.org/)
+	- [scoop](https://scoop.sh/)
+	- [winbget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+- #Linux
+	- [apt](https://en.wikipedia.org/wiki/APT_(software))
+	- [aptitude](https://wiki.debian.org/Aptitude)
+	- [flatpak](https://flatpak.org/) : Gestionnaire de paquets multi distributions offrant un environnement sandbox. Flatpak permet notamment de disposer de certains paquets dans leurs versions plus `rolling` tout en conservant une base plus stable. C'est notamment le cas en associant flatpak avec Debian ou avec apt en général.
+	- [pacman](https://wiki.archlinux.org/title/pacman)
+	- [paru](https://github.com/Morganamilo/paru)
+	- [yay](https://github.com/Jguer/yay)
