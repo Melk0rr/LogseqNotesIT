@@ -24,13 +24,11 @@
 	- #Mail
 		- #DMARC
 			- [DMARCly](https://dmarcly.com/tools/) : Divers outils de vérification DMARC, DKIM et SPF
-		-
 - #[[SOC - Blue team]]
 	- #[[Sites web]]
 		- [VirusTotal](https://github.com/ventoy/Ventoy) : Analyse antivirus / IOC en ligne
 		- [Hybrid Analysis](https://www.hybrid-analysis.com/) : outil de sandbox en ligne
 		- [Interact.sh](https://app.interactsh.com/#/) : Testeur de requêtes en ligne
-	-
 	- #Forensic
 		- [DFIR ORC](https://github.com/DFIR-ORC/dfir-orc) : Programme #C++#OpenSource de collecte d'artefacts et IOC pour systèmes Windows
 		- [Cyberchef](https://gchq.github.io/CyberChef) : Convertion et décryptage de formats de données variés
@@ -38,13 +36,11 @@
 		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
 	- #Windows
 		- [PatchaPalooza](https://github.com/xaitax/PatchaPalooza) : script #Python de remontée des vulnérabilités récentes dans les produits Microsoft
-	-
 - #[[Pentest - Red Team]]
 	- #Logs
 		- [Phant0m](https://github.com/olafhartong/Invoke-Phant0m/tree/master) : #OpenSource Script #Powershell qui neutralise les processus de génération de logs sur Windows
 	- #Bruteforce
 		- [Hydra](https://github.com/vanhauser-thc/thc-hydra) : Programme #C de brute force de mots de passe
-	-
 - #Privacy
 	- #[[Gestion de mots de passe]]
 		- [Bitwarden](https://bitwarden.com/) : #[[OpenSource]] Mots de passe stockés dans le cloud, synchronisation auto
@@ -72,7 +68,6 @@
 	- [VSCodium](https://vscodium.com/) : Version libre, #OpenSource et sans télémétrie de [VSCode](https://code.visualstudio.com/)
 	- #[[Sites web]]
 		- [Regex101](https://regex101.com/) : Testeur de regex en ligne
-	-
 - #Optimisation
 	- #Android
 		- [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) :  Programme #Rust #[[OpenSource]] pour supprimer des applications non souhaitées sur Android
@@ -83,6 +78,10 @@
 	- [Balena Etcher](https://rufus.ie/en/) : Programme #Typescript #OpenSource pour la création de médias d'installation USB. Prend le parti de la simplicité d'utilisation : seulement 3 clics nécessaires pour flasher une clef.
 	- [Rufus](https://rufus.ie/en/) : Programme #C #OpenSource de manipulation de média USB. L'outil permet de créer des clefs d'installation, de flasher un BIOS, etc. Contrairement à **Etcher**, fournit un panel d'options plus varié
 	- [Ventoy](https://github.com/ventoy/Ventoy) : Programme #C #OpenSource pour la création de supports USB bootables mutli-OS. Ce qui permet d'avoir une seule clef d'installation pour autant d'OS que l'on souhaite. Supporte #Windows#Linux#Unix et plus
+- #[[Firmware et contrôle matériel]]
+	- [CoolerControl](https://gitlab.com/coolercontrol/coolercontrol) : Programme #Python / #Rust #OpenSource de contrôle des éléments de refroidissement du système. Spécifique aux systèmes #Linux
+	- [FanControl](https://github.com/Rem0o/FanControl.Releases) : Logiciel léger et #Opensource pour #Windows permettant de contrôler la vitesse des divers éléments de refroidissement du système (ventilateurs de boitier, ventilateur de carte graphique, ventirad,  AIO, etc).
+	- [OpenRGB](https://openrgb.org/) : Logiciel #C++ #OpenSource et multiplateforme (#Windows #Linux #MAC) fournissant un moyen de contrôler le RGB de différents composants matériel (ventilateurs, carte graphique, RAM, carte mère, bandes LEDs, etc). OpenRGB est compatible avec de nombreux composants et fournit donc une alternative légère et libre aux multiples bloatwares propriétaires (iCue, Armoury Crate, MSI Mystic Light, etc)
 - #Convertion
 	- #[[Sites web]]
 		- [ASCII Generator](https://ascii-generator.site/) : Convertion images / texte -> ASCII
