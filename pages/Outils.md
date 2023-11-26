@@ -91,3 +91,8 @@
 - #Convertion
 	- #[[Sites web]]
 		- [ASCII Generator](https://ascii-generator.site/) : Convertion images / texte -> ASCII
+- #Personnalisation
+	- #Terminal
+		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #git, etc.)
+		- [neofetch](https://github.com/dylanaraps/neofetch) : Outil pour afficher une bannière et certaines informations au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Gestion de paquets]] associé, espace disque, etc.)
+-
