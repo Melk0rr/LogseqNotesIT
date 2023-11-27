@@ -85,6 +85,7 @@
 		- [Have I Been Pwned](https://haveibeenpwned.com/) : Recense les fuites de données connues et permet de vérifier si une adresse email est concernée par l'une de ces fuites
 - #[[Programmation]]
 	- #IDE
+	  collapsed:: true
 		- [VSCodium](https://vscodium.com/) : Version libre, #OpenSource et sans télémétrie de [VSCode](https://code.visualstudio.com/)
 		- [Neovim](https://github.com/neovim/neovim) : Environnement de développement #OpenSource compatible #Windows #Linux #MACOS
 	- #[[Sites web]]
