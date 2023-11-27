@@ -38,6 +38,7 @@
 			- [tar](https://www.geeksforgeeks.org/tar-command-linux-examples/) **<options> <fichier-archive> <fichiers>** : Création, lecture, modification et extraction d'archives compressées ou non
 			- [zip](https://www.geeksforgeeks.org/zip-command-in-linux-with-examples/) **<options> <fichier-archive> <fichiers>** : Compresse les fichiers mentionnés dans une archive zip
 		- #Stockage
+		  collapsed:: true
 			- [du](https://www.geeksforgeeks.org/du-command-linux/) -> `disk used` **<option> <fichier>** : Affiche l'espace disque pris par un fichier / répertoire donné
 			- [fdisk](https://www.geeksforgeeks.org/fdisk-command-in-linux-with-examples/) -> `format disk` **<options> <appareil>** : Permet de manipuler des partitions
 			- [mkfs](https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/) -> `make file system` **<options> <partition>** : Crée une partition sur l'appareil spécifié, généralement un disque ou une clef usb. L'opération efface toutes information présente sur le disque
@@ -53,8 +54,10 @@
 -
 - #Windows
 	- #[[Gestion des droits]]
+	  collapsed:: true
 		- [Get-Acl](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-acl?view=powershell-7.3) **<option> <fichier / répertoire>** : Retourne la description de sécurité pour un fichier ou répertoire
 	- #[[Gestion de mots de passe]]
+	  collapsed:: true
 		- [ConvertFrom-SecureString](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/convertfrom-securestring?view=powershell-7.3) **<chaîne> <options>** : convertit une chaîne sécurisée en chaîne chiffrée standard
 			- `"P@ssword1" | ConvertTo-SecureString -AsPlainText | ConvertFrom-SecureString | Out-File "C:\Temp\password"`
 		- [ConvertTo-SecureString](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/convertto-securestring?view=powershell-7.3) **<chaîne> <options>** : convertit une chaîne de caractères en chaîne sécurisée
