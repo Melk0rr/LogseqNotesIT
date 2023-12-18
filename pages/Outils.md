@@ -74,7 +74,7 @@
 		- [ProtonMail](https://proton.me/mail/) : Solution mail #Opensource sécurisée (options payantes / gratuites)
 	- #[[Privacy Front Ends]]
 	  collapsed:: true
-		- [FreeTube](https://freetubeapp.io/) : Application de bureau #OpenSource pour #Windows #Linux #MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
+		- [FreeTube](https://freetubeapp.io/) : Application de bureau #OpenSource pour #Windows#Linux#MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
 		  id:: 654cd2d3-08c6-4b3f-a21f-090be5c8ae5e
 		- [Invidious](https://invidious.io/) : Front-end Youtube #OpenSource permettant d'obtenir une expérience YouTube simplifiée et privée, sans compte Google, sans pub, ni traqueur.
 		- [Newpipe](https://newpipe.net/) : Application #Android #OpenSource fournissant un accès au contenu Youtube, Peertube ou encore SoundCloud sans publicité
@@ -105,7 +105,7 @@
 		- [CoolerControl](https://gitlab.com/coolercontrol/coolercontrol) : Programme #Python / #Rust #OpenSource de contrôle des éléments de refroidissement du système. Spécifique aux systèmes #Linux
 		- [FanControl](https://github.com/Rem0o/FanControl.Releases) : Logiciel léger et #Opensource pour #Windows permettant de contrôler la vitesse des divers éléments de refroidissement du système (ventilateurs de boitier, ventilateur de carte graphique, ventirad,  AIO, etc).
 		- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Programme #Rust #OpenSource de monitoring de ressources sous #Linux.
-		- [OpenRGB](https://openrgb.org/) : Logiciel #C++ #OpenSource et multiplateforme (#Windows #Linux #MAC) fournissant un moyen de contrôler le RGB de différents composants matériel (ventilateurs, carte graphique, RAM, carte mère, bandes LEDs, etc). OpenRGB est compatible avec de nombreux composants et fournit donc une alternative légère et libre aux multiples bloatwares propriétaires (iCue, Armoury Crate, MSI Mystic Light, etc)
+		- [OpenRGB](https://openrgb.org/) : Logiciel #C++ #OpenSource et multiplateforme #Windows#Linux#MACOS fournissant un moyen de contrôler le RGB de différents composants matériel (ventilateurs, carte graphique, RAM, carte mère, bandes LEDs, etc). OpenRGB est compatible avec de nombreux composants et fournit donc une alternative légère et libre aux multiples bloatwares propriétaires (iCue, Armoury Crate, MSI Mystic Light, etc)
 		-
 	- #[[Création de média]]
 	  collapsed:: true
