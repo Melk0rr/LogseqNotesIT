@@ -34,7 +34,6 @@
 			- [chmod](https://www.geeksforgeeks.org/chmod-command-linux/) -> `change mode` **<option> <mode> <fichier / répertoire>** : Change le mode d'accès au fichier ou répertoire
 			- [chown](https://www.geeksforgeeks.org/chown-command-in-linux-with-examples/) -> `change owner` **<option> <propriétaire / group> <fichier>** : Change le propriétaire du fichier
 		- #Archive
-		  collapsed:: true
 			- [tar](https://www.geeksforgeeks.org/tar-command-linux-examples/) **<options> <fichier-archive> <fichiers>** : Création, lecture, modification et extraction d'archives compressées ou non
 			- [zip](https://www.geeksforgeeks.org/zip-command-in-linux-with-examples/) **<options> <fichier-archive> <fichiers>** : Compresse les fichiers mentionnés dans une archive zip
 		- #Stockage
