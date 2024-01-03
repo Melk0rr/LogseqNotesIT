@@ -1,11 +1,14 @@
 # Notions
 	- ## #Privacy
 		- Désigne l'assurance que les données personnelles d'une personne ne soit accessibles que par les personnes souhaitées
+		- Possibilité de **contrôle** sur nos informations personnelles
 		- Pour une messagerie instantanée, le *chiffrement de bout en bout* assure la confidentialité en ne rendant lisible un message que par l'**émetteur** et le **destinataire**
 	- ## #Sécurité
+		- On peut associer la sécurité à l'**absence de danger** ou au concept de **protection**
 		- Possibilité de faire confiance envers le logiciel / système qu'on utilise - que les parties impliquées sont bien celles qu'elles prétendent et que le logiciel est sûr
 		- Lorsque l'on visite un site web, les **certificats** fournis via *HTTPS* prouvent que nous échangeons bien directement avec le site web souhaité + que les données envoyées  ne soient pas consultées ou modifiées par un attaquant sur notre réseau.
 	- ## #Anonymat
+		- Désigne le fait de rester **non identifié**
 		- Possibilité d'agir sans être associé à un *identifiant persistant*.
 		- ### #Pseudonymat
 			- Concept similaire qui donne la faculté à une personne d'avoir un *identifiant persistant* sans que celui-ci ne soit directement relié à son identité.
@@ -30,7 +33,8 @@
 				- Une personne est **employable**
 				- S'il est rentable de lui accorder un **prêt**
 				- etc.
-			- L'argument de la lutte contre la pédo-criminalité est régulièrement mis en avant pour justifier des mesures anti confidentialité.
+			- Certains pays comme la Chine implémentent déjà ce type de système
+			- L'argument de la lutte contre la **pédo-criminalité** est régulièrement mis en avant pour justifier des mesures **anti confidentialité**.
 				- En 2023, le gouvernement britannique a condamné l'implémentation du chiffrement de bout en bout par Facebook dans Messenger. Sous prétexte que cette mesure va à l'encontre de la lutte contre la pédo-criminalité
 				- Cet argument implique soit:
 					- Une non maîtrise du sujet par les personnes qui avancent ces arguments
@@ -39,11 +43,18 @@
 						  logseq.order-list-type:: number
 						- Cela pose des problèmes techniques et moraux qui ne peuvent être justifiés par la volonté de mettre hors d'état de nuire quelques individus
 						  logseq.order-list-type:: number
-					- Une volonté de manipuler l'opinion et éventuellement de justifier de la surveillance de masse
+						- Souvent cet argument n'est pas la raison réelle justifiant une surveillance
+						  logseq.order-list-type:: number
+					- Une volonté claire de manipuler l'opinion et éventuellement de justifier de la surveillance de masse
 					  logseq.order-list-type:: number
-		- ## Confidentialité vs. Sécurité
-			- **confidentialité** != **sécurité**
-			- Un antivirus apporte de la sécurité à une machine, mais est contreproductif en termes de confidentialité
+						- En 2017, le [FBI a abandonné toutes charges](https://gizmodo.com/fbi-drops-all-charges-in-child-porn-case-to-keep-sketch-1793009653) contre un pédo-criminel uniquement pour ne pas avoir à révéler leur méthodes d'espionnage
+						  logseq.order-list-type:: number
+			- Les arnaques par **sextorsion** coûtent de plus en plus cher
+			- Ce qui vous semble être un comportement normal peut en réalité être perçu différemment par un gouvernement ou une organisation.
+			- Ce qui est valable aujourd'hui peut ne plus l'être demain. Certaines choses pourraient être considérées comme illégales un jour.
+			- ## Confidentialité vs. Sécurité
+				- **confidentialité** != **sécurité**
+				- Un antivirus apporte de la sécurité à une machine, mais est contreproductif en termes de confidentialité
 - ## #[[Bonnes Pratiques]]
 	- **Politiques de confidentialité** : il est important de lire attentivement les politiques des outils et services utilisés. Si quelque chose n'est pas clair, ou si la politique paraît trop compliquée, il faut s'en **méfier**
 	- **Services gratuits** : de manière générale : se méfier des services gratuits. Même s'il existe des exceptions (donations, crowdfunding, bénévolat, etc) si le *business model* derrière un service n'est pas clair, il faut également s'en **méfier**
