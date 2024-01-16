@@ -1,0 +1,33 @@
+- Alternatives #OpenSource pour différents usages
+- # #PC
+	- ## #Multimédia
+		- ### YouTube
+		  collapsed:: true
+			- [FreeTube](https://freetubeapp.io/) : Application de bureau #OpenSource pour #Windows#Linux#MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
+			  id:: 654cd2d3-08c6-4b3f-a21f-090be5c8ae5e
+			- [Invidious](https://invidious.io/) : Front-end Youtube #OpenSource permettant d'obtenir une expérience YouTube simplifiée et privée, sans compte Google, sans pub, ni traqueur.
+	- ## #Windows
+	- ## #Linux
+- # #Android
+	- ## #[[Operating System]]
+		- [GrapheneOS](https://grapheneos.org/) : Système d'exploitation basé sur [AOSP](https://source.android.com/), orienté #Sécurité et #Privacy.
+			- Léger et minimaliste
+			- Plus sécurisé que les versions Android par défaut
+			- Inclus un panel varié de fonctionnalités orientées sécurité
+			- Supporte uniquement les appareils Google (Pixel) : bonne sécurité et bon support matériel
+		- [CalyxOS](https://calyxos.org/) :
+	- ## #Multimédia
+		- ### YouTube
+		  collapsed:: true
+			- [Newpipe](https://newpipe.net/) : Application #Android #OpenSource fournissant un accès au contenu Youtube, Peertube ou encore SoundCloud sans publicité
+- # #Mail
+	- [Thunderbird](https://www.thunderbird.net/en-US/) : Client mail, gratuit et multi plateformes
+	- [ProtonMail](https://proton.me/mail/) : Solution mail sécurisée (options payantes / gratuites)
+- # #Réseau
+	- ## #DNS
+		- [NextDNS](https://nextdns.io/) : DNS sécurisé et bloqueur de pubs / traqueurs (supporte DNS-over-TLS et DNS-over-HTTPS)
+		- [Pi-hole](https://pi-hole.net/) : solution open source et auto-hébergée
+- # #Programmation
+	- ## #IDE
+		- [VSCodium](https://vscodium.com/) : Version libre et sans télémétrie de [VSCode](https://code.visualstudio.com/)
+		- [Neovim](https://github.com/neovim/neovim) : Environnement de développement compatible #Windows#Linux#MACOS

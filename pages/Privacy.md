@@ -1,17 +1,31 @@
 # Notions
 	- ## #Privacy
-		- Désigne l'assurance que les données personnelles d'une personne ne soit accessibles que par les personnes souhaitées
+		- Désigne l'assurance que les données personnelles d'une personne ne soient accessibles que par les personnes souhaitées
 		- Possibilité de **contrôle** sur nos informations personnelles
 		- Pour une messagerie instantanée, le *chiffrement de bout en bout* assure la confidentialité en ne rendant lisible un message que par l'**émetteur** et le **destinataire**
 	- ## #Sécurité
 		- On peut associer la sécurité à l'**absence de danger** ou au concept de **protection**
-		- Possibilité de faire confiance envers le logiciel / système qu'on utilise - que les parties impliquées sont bien celles qu'elles prétendent et que le logiciel est sûr
+		- Possibilité de faire confiance envers les logiciels / systèmes utilisés - que les parties impliquées soient bien celles qu'elles prétendent et que le logiciel soit sécurisé
 		- Lorsque l'on visite un site web, les **certificats** fournis via *HTTPS* prouvent que nous échangeons bien directement avec le site web souhaité + que les données envoyées  ne soient pas consultées ou modifiées par un attaquant sur notre réseau.
 	- ## #Anonymat
 		- Désigne le fait de rester **non identifié**
 		- Possibilité d'agir sans être associé à un *identifiant persistant*.
 		- ### #Pseudonymat
 			- Concept similaire qui donne la faculté à une personne d'avoir un *identifiant persistant* sans que celui-ci ne soit directement relié à son identité.
+	- Ces 3 notions ne sont pas toujours complémentaires
+	- ## Sécurité sans vie privée ni anonymat
+		- Google, depuis sa création en 1998 n’a eu que très peu de fuites de données. Et pourtant l’entreprise justifie à elle-même l’existence de cet article et est le symbole même de la violation de la vie privée. À tel point que [Google soit en mesure de connaître nos pensées](https://www.zdnet.com/article/google-even-knows-what-youre-thinking/)
+		- Un antivirus apporte de la sécurité à une machine, mais est contreproductif en termes de confidentialité
+	- ## Vie privée sans anonymat
+		- Plusieurs services en ligne permettent de **masquer des coordonnées bancaires** -> protection de la vie privée. Mais ces services requièrent également une identification pour se couvrir auprès de la loi. Ils ne sont donc pas ~~anonymes~~.
+	- ## Sécurité et vie privée sans anonymat
+		- L’application Signal est un bon exemple : elle fournit une bonne sécurité et l’assurance que les messages échangés restent protégés. Mais requiert un numéro de téléphone, donc pas d’anonymat.
+	- ## Confidentialité vs. Secret
+		- **confidentialité** != **secret**
+		- Ce qui se passe aux toilettes n'est pas un secret, pourtant on ferme la porte -> besoin de vie privée
+		- ### Je ne suis ni activiste, ni criminel, ni célèbre -> **"Je n'ai rien a cacher"**
+			- `Dire qu'on ne se soucie pas de la confidentialité parce qu'on n'a rien à cacher, c'est comme dire qu'on ne se soucie pas de la liberté d'expression parce qu'on n'a rien à dire`
+			- Raisonnement **dangereux** : sous entend qu'on a des choses
 	- ## Pourquoi la confidentialité est importante ?
 		- La **confidentialité** repose sur l'*information personnelle*, et posséder ce type d'information confère du pouvoir sur les personnes.
 		- Aujourd'hui, la société repose en grande partie sur l'**information**. Il est donc nécessaire de s'intéresser aux règles qui régissent cette information si l'on souhaite conserver un minimum de **liberté** et d'**authenticité**.
@@ -21,11 +35,7 @@
 			- Ordinateur personnel, smartphone, voiture, etc.
 			- Identité, localisation, orientation sexuelle et politique, données de santé, etc.
 		- Aujourd'hui les données personnelles sont à la fois un business, et un moyen de surveillance et de contrôle
-	- ## Confidentialité vs. Secret
-		- **confidentialité** != **secret**
-		- Ce qui se passe aux toilettes n'est pas un secret, pourtant on ferme la porte -> besoin de vie privée
-		- ### Je ne suis ni activiste, ni criminel, ni célèbre -> **"Je n'ai rien a cacher"**
-			- `Dire qu'on ne se soucie pas de la confidentialité parce qu'on n'a rien à cacher, c'est comme dire qu'on ne se soucie pas de la liberté d'expression parce qu'on n'a rien à dire`
+		- ### Quelques exemples
 			- Les gouvernements **espionnent leurs propres citoyens**
 			- Les gouvernements cherchent à **museler l'opposition**
 			- Il existe plusieurs cas de **harcèlement**, de **cambriolage** ou même d'**homicide** sur des personnes ayant publié leur adresse sur des réseaux sociaux
@@ -52,13 +62,12 @@
 			- Les arnaques par **sextorsion** coûtent de plus en plus cher
 			- Ce qui vous semble être un comportement normal peut en réalité être perçu différemment par un gouvernement ou une organisation.
 			- Ce qui est valable aujourd'hui peut ne plus l'être demain. Certaines choses pourraient être considérées comme illégales un jour.
-			- ## Confidentialité vs. Sécurité
-				- **confidentialité** != **sécurité**
-				- Un antivirus apporte de la sécurité à une machine, mais est contreproductif en termes de confidentialité
+	- ## Pourquoi la sécurité est importante ?
 - ## #[[Bonnes Pratiques]]
 	- **Politiques de confidentialité** : il est important de lire attentivement les politiques des outils et services utilisés. Si quelque chose n'est pas clair, ou si la politique paraît trop compliquée, il faut s'en **méfier**
-	- **Services gratuits** : de manière générale : se méfier des services gratuits. Même s'il existe des exceptions (donations, crowdfunding, bénévolat, etc) si le *business model* derrière un service n'est pas clair, il faut également s'en **méfier**
-- ## #OpenSource
+	- **Services gratuits** : se méfier des services gratuits. Même s'il existe des exceptions (donations, crowdfunding, bénévolat, etc) si le *business model* derrière un service n'est pas clair, il faut s'en **méfier**
+- # Modélisation des menaces
+- # #OpenSource
 	- **FOSS vs. Propriétaire** : de manière générale, l'open source doit toujours être privilégié.
 	- **Logiciel gratuit + code propriétaire** : si un logiciel est gratuit, mais que son code est *propriétaire*, il y a de bonnes chances pour que celui-ci ait un comportement allant à l'encontre du respect de la vie privée de l'utilisateur
 -
