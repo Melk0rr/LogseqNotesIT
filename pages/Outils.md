@@ -87,13 +87,6 @@
 		- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : Programme #[[C#]] #[[OpenSource]] de suppression de bloatware sur **Windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
 		- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) :  Programme #[[C#]] #Powershell #[[OpenSource]] de suppression de bloatware sur **Windows 10**.
 - # #System
-	- ## #[[Firmware et contrôle matériel]]
-	  collapsed:: true
-		- [CoolerControl](https://gitlab.com/coolercontrol/coolercontrol) : Programme #Python / #Rust #OpenSource de contrôle des éléments de refroidissement du système. Spécifique aux systèmes #Linux
-		- [FanControl](https://github.com/Rem0o/FanControl.Releases) : Logiciel léger et #Opensource pour #Windows permettant de contrôler la vitesse des divers éléments de refroidissement du système (ventilateurs de boitier, ventilateur de carte graphique, ventirad,  AIO, etc).
-		- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Programme #Rust #OpenSource de monitoring de ressources sous #Linux.
-		- [OpenRGB](https://openrgb.org/) : Logiciel #C++ #OpenSource et multiplateforme #Windows#Linux#MACOS fournissant un moyen de contrôler le RGB de différents composants matériel (ventilateurs, carte graphique, RAM, carte mère, bandes LEDs, etc). OpenRGB est compatible avec de nombreux composants et fournit donc une alternative légère et libre aux multiples bloatwares propriétaires (iCue, Armoury Crate, MSI Mystic Light, etc)
-		-
 	- ## #[[Création de média]]
 	  collapsed:: true
 		- [Balena Etcher](https://rufus.ie/en/) : Programme #Typescript #OpenSource pour la création de médias d'installation USB. Prend le parti de la simplicité d'utilisation : seulement 3 clics nécessaires pour flasher une clef.
