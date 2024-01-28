@@ -42,6 +42,7 @@
 	- ## #Windows
 	  collapsed:: true
 		- [PatchaPalooza](https://github.com/xaitax/PatchaPalooza) : script #Python de remontée des vulnérabilités récentes dans les produits Microsoft
+		- [ScriptSentry](https://github.com/techspence/ScriptSentry) : script #Powershell de découverte de scripts de connexion dangereux ou mal configurés
 - # #[[Pentest - Red Team]]
 	- ## #Logs
 	  collapsed:: true

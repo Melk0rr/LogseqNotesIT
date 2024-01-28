@@ -1,4 +1,7 @@
 - Alternatives #OpenSource ou plus respectueuses de la vie privée pour différents usages
+- # Liens utiles
+	- [AlternativeTo](https://alternativeto.net/) : site web pour trouver des alternatives à presque n'importe quelle application
+	- [android-foss](https://github.com/offa/android-foss) : liste d'alternatives #OpenSource pour différents usages sur #Android
 - # #PC
 	- ## #Multimédia
 		- ### YouTube
@@ -27,8 +30,10 @@
 			- Intègre [microG](https://microg.org/) comme alternative aux services Google
 	- ## #Multimédia
 		- ### YouTube
+		  collapsed:: true
 			- [Newpipe](https://newpipe.net/) : Application #Android fournissant un accès au contenu Youtube, Peertube ou encore SoundCloud sans publicité
 		- ### Lecture de médias
+		  collapsed:: true
 			- ((65a80f38-3004-4b2b-bdb6-ce515f880ee5))
 - # #Mail
 	- [Thunderbird](https://www.thunderbird.net/en-US/) : Client mail, gratuit et multi plateformes
