@@ -18,16 +18,8 @@
 		- [OpenRGB](https://openrgb.org/) : Logiciel #C++ et multiplateforme #Windows#Linux#MACOS fournissant un moyen de contrôler le RGB de différents composants matériel (ventilateurs, carte graphique, RAM, carte mère, bandes LEDs, etc). OpenRGB est compatible avec de nombreux composants et fournit donc une alternative légère et libre aux multiples bloatwares propriétaires (iCue, Armoury Crate, MSI Mystic Light, etc)
 - # #Android
 	- ## #[[Operating System]]
-		- [GrapheneOS](https://grapheneos.org/) : Système d'exploitation basé sur [AOSP](https://source.android.com/), orienté #Sécurité et #Privacy.
-			- Développé par une équipe d'experts en #Sécurité
-			- Léger et minimaliste
-			- Plus sécurisé que les versions Android par défaut
-			- Inclus un panel varié de fonctionnalités orientées sécurité
-			- Supporte uniquement les appareils Google (Pixel) : bonne sécurité et bon support matériel
-			- Intègre les services Google en mode #Sandbox et permet d'exécuté n'importe quelle application de manière isolée
-		- [CalyxOS](https://calyxos.org/) : Système d'exploitation également basé sur [AOSP](https://source.android.com/) et orienté #Privacy.
-			- Développé par le [Calyx Institute](https://calyxinstitute.org/), organisation à but non lucratif qui sensibilise sur les sujets #Privacy
-			- Intègre [microG](https://microg.org/) comme alternative aux services Google
+		- #GrapheneOS
+		- #CalyxOS
 	- ## #Multimédia
 		- ### YouTube
 		  collapsed:: true
