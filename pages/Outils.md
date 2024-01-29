@@ -53,8 +53,10 @@
 	- ## #Bruteforce
 	  collapsed:: true
 		- [Hydra](https://github.com/vanhauser-thc/thc-hydra) : Programme #C de brute force de mots de passe
+	- ## #[[Active Directory]]
+	  collapsed:: true
+		- [gpp-decrypt](https://github.com/t0thkr1s/gpp-decrypt) : décrypte les cpasswords et mots de passe en clair dans les GPO
 - # #Privacy
-  collapsed:: true
 	- ## #[[Sites web]]
 	  collapsed:: true
 		- [PrivacyTools](https://www.privacytools.io/) : Site web listant divers outils pour la confidentialité
@@ -102,17 +104,12 @@
 	  collapsed:: true
 		- [VeraCrypt](https://veracrypt.fr/en/Home.html) : Logiciel de chiffrement de données #OpenSource disponible sur #Windows #Linux et #MACOS. Permet de créer des disques virtuels chiffrés ou tout simplement de chiffrer une partition ou un disque complet
 - # #Convertion
+  collapsed:: true
 	- ## #[[Sites web]]
 	  collapsed:: true
 		- [ASCII Generator](https://ascii-generator.site/) : Convertion images / texte -> ASCII
-		  <<<<<<< HEAD
-- #Personnalisation
-	- #Terminal
-	  collapsed:: true
-	  =======
 - # #Personnalisation
 	- ## #Terminal
 	  collapsed:: true
-	  >>>>>>> f5d86e5a9246596782c8ec8771ed85a9be3c2726
 		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #git, etc.)
 		- [neofetch](https://github.com/dylanaraps/neofetch) : Outil pour afficher une bannière et certaines informations au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Gestion de paquets]] associé, espace disque, etc.)

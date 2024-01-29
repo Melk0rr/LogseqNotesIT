@@ -4,9 +4,9 @@
 	- [android-foss](https://github.com/offa/android-foss) : liste d'alternatives #OpenSource pour différents usages sur #Android
 - # #PC
 	- ## #Multimédia
+	  collapsed:: true
 		- ### YouTube
 			- [FreeTube](https://freetubeapp.io/) : Application de bureau pour #Windows#Linux#MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
-			  id:: 654cd2d3-08c6-4b3f-a21f-090be5c8ae5e
 			- [Invidious](https://invidious.io/) : Front-end Youtube permettant d'obtenir une expérience YouTube simplifiée et privée, sans compte Google, sans pub, ni traqueur.
 		- ### Lecture de médias
 			- [VLC](https://www.videolan.org/) : logiciel multi-plateforme #Windows#Linux#MACOS permettant de lire n'importe quel média vidéo et musical
