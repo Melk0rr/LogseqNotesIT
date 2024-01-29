@@ -51,9 +51,23 @@
 			- [fc-cache](https://www.geeksforgeeks.org/fc-cache-command-in-linux-with-examples/) -> `fontconfig cache` **<options>** : Scan les répertoires dédiés aux polices et génère le cache de police.
 	- #[[Arch Linux]]
 		- #[[Gestion de paquets]]
+		  collapsed:: true
+			- #pacman
+			  collapsed:: true
+				- `sudo pacman -Syu <paquet>` : installe les mises à jour pour un ou plusieurs paquet ou tous les paquets si aucun n'est spécifié. Met également à jour l'index des paquets
+				- `pacman -Rns <paquet>` : **supprime** un paquet et ses **dépendances orphelines** sans conserver de fichier *pacsave* sur le système
+				- `pacman -Qtdq` : **vérifie** la liste des paquets orphelins sur le système
+					- `pacman -Qtdq | pacman -Rns -` : supprime les paquets orphelins
+				- [pacdiff](https://man.archlinux.org/man/pacdiff.8) : affiche les fichiers *pacnew* présents sur le système
+				- [paccache](https://man.archlinux.org/man/paccache.8) : permet de gérer le cache des paquets installés via pacman.
+					- `paccache -r` : **nettoie** les paquets en cache et ne garde que les **3 derniers** pour chaque paquet
+					- `paccache -dk2` : *dry run*, affiche les candidats à la suppression si l'on souhaite garder les **2 dernières** version de chaque paquet en cache
+					- `paccache -rk2` : ne garde que les **2 dernières** version de chaque paquet en cache
+					- `sudo systemctl enable --now paccache.timer` : active le nettoyage hebdomadaire du cache
 			- [downgrade](https://github.com/archlinux-downgrade/downgrade) **<options> <pkg>** : Rétrograde la version du paquet spécifié
+			  collapsed:: true
 				- Nécessite le paquet **downgrade** -> `yay -S downgrade`
-				- [Rétrograder via pacman](https://wiki.archlinux.org/title/downgrading_packages)
+				- [Rétrograder via pacman](https://wiki.archlinux.org/title/downgrading_packages) : pacman stocke le **cache** des paquets installés dans `/var/cache/pacman/pkg` -> possible de lancer un `pacman -U /var/cache/pacman/pkg/mon_pkg.tar.zst` pour **rétrograder** si besoin
 -
 - #Windows
 	- #[[Gestion des droits]]
