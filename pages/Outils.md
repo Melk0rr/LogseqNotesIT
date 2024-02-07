@@ -27,11 +27,12 @@
 		- #DMARC
 			- [DMARCly](https://dmarcly.com/tools/) : Divers outils de vérification DMARC, DKIM et SPF
 - # #[[SOC - Blue team]]
+  collapsed:: true
 	- ## #[[Sites web]]
-	  collapsed:: true
 		- [VirusTotal](https://github.com/ventoy/Ventoy) : Analyse antivirus / IOC en ligne
 		- [Hybrid Analysis](https://www.hybrid-analysis.com/) : outil de sandbox en ligne
 		- [Interact.sh](https://app.interactsh.com/#/) : Testeur de requêtes en ligne
+		-
 	- ## #Réseau
 	  collapsed:: true
 		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/tree/main) : inventaire d'adresses IP malveillantes mis à jour toutes les heures
@@ -48,6 +49,9 @@
 		- [ScriptSentry](https://github.com/techspence/ScriptSentry) : script #Powershell de découverte de scripts de connexion dangereux ou mal configurés
 		- [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) : script #Powershell d'analyse de #Logs Windows Events
 - # #[[Pentest - Red Team]]
+	- ## #[[Sites web]]
+	  collapsed:: true
+		- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
 	- ## #Logs
 	  collapsed:: true
 		- [Phant0m](https://github.com/olafhartong/Invoke-Phant0m/tree/master) : #OpenSource Script #Powershell qui neutralise les processus de génération de logs sur Windows
