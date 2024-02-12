@@ -1,17 +1,18 @@
-- #[[Common Linux]]
-	- #Partitions
-	  collapsed:: true
+# #[[Common Linux]]
+	- ## #Partitions
+	  id:: 65c8ff54-db3b-48de-b9d4-ece65f422173
+		- [efi](https://wiki.archlinux.org/title/EFI_system_partition) : partition dédiée au **chargeur d'amorçage** (*boot loader*).
+			- Minimum **1Go** requis dans la plupart des cas surtout si plusieurs kernels utilisés
 		- [swap](https://wiki.archlinux.org/title/swap) : espace ou fichier utilisé pour **étendre la mémoire physique**. Pour faire simple, si toute la mémoire RAM est utilisée, alors le système utilisera l'espace swap en attendant que la RAM ne se libère. Les opérations utilisant le swap sont bien plus **lentes** que lorsque le système utilise la mémoire vive.
 			- Une partition swap n'est plus vraiment requise dans la mesure où les quantités de RAM sont généralement élevées.
 			- Une partition swap est requise si le système est configuré pour de l'==hibernation==
-				- RAM : **16Go** => *hibernation* : **4Go** => ~~hibernation~~ : **20Go**
-				- RAM : **32Go** => *hibernation* : **6Go** => ~~hibernation~~ : **38Go**
-				- RAM : **64Go** => *hibernation* : **8Go** => ~~hibernation~~ : **72Go**
-- #[[Arch Linux]]
-	- #Base
-	  collapsed:: true
-		- [loadkeys](https://www.thegeekdiary.com/loadkeys-command-examples-in-linux/) fr : change la configuration du clavier. Utile surtout pour les claviers non QWERTY
-		  logseq.order-list-type:: number
+			  id:: 65c8ff54-14ef-48dd-8926-c07e0b1ca4f6
+				- RAM **16Go** : ~~hibernation~~ => **4Go** / *hibernation* => **20Go**
+				- RAM **32Go** : ~~hibernation~~ => **6Go** / *hibernation* => **38Go**
+				- RAM **64Go** : ~~hibernation~~ => **8Go** / *hibernation* => **72Go**
+		- [root (/)](https://wiki.archlinux.org/title/Partitioning#/) : partition racine qui accueille le système de fichiers
+		- **home (/home)** : répertoire contenant les fichiers utilisateurs
+- # [Arch Linux](((65c8ff54-d1f3-41db-9746-5d11eec23b84)))
 	- #Drivers
 		- #Imprimante
 		  collapsed:: true
@@ -50,9 +51,7 @@
 		- #Graphique
 		  collapsed:: true
 			- #AMD
-			  collapsed:: true
 				- #Paquets
-				  collapsed:: true
 					- mesa
 					- lib32-mesa
 					- vulkan-radeon
@@ -65,21 +64,6 @@
 					- lib32-libva-mesa-driver
 					- mesa-vdpau
 					- lib32-mesa-vdpau
-		- #Son
-		  collapsed:: true
-			- #Paquets
-			  collapsed:: true
-				- pipewire
-				- wireplumber
-				- lib32-pipewire
-				- pipewire-alsa
-				- pipewire-jack
-				- pipewire-pulse
-				- alsa-utils
-				- alsa-plugins
-				- alsa-firmware
-				- alsa-ucm-conf
-				- sof-firmware
 	- #[[Desktop Environment]]
 		- #Hyprland
 		  collapsed:: true
