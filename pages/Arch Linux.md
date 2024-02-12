@@ -6,11 +6,9 @@
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
 		- ### Disposition clavier
-		  collapsed:: true
 			- `loadkeys fr` : change la configuration du clavier. Utile surtout pour les claviers non QWERTY
 			  logseq.order-list-type:: number
 		- ### Connexion à internet
-		  collapsed:: true
 			- `ping archlinux.org` : vérifie la connectivité internet. Mieux vaut une connexion ethernet pour se faciliter la vie
 			  logseq.order-list-type:: number
 		- ### Check UEFI
@@ -50,22 +48,21 @@
 		- ### Montage des partitions
 			- `mount <disque><partition racine> /mnt` (*nvme0n1p3*) : **monte** la partition **racine** sur **/mnt**
 			  logseq.order-list-type:: number
-			- `mkdir /mnt/{efi,home}` : crée les répertoires **boot** et **home** qui serviront à monter nos autres partitions
+			- `mkdir /mnt/{boot,home}` : crée les répertoires **boot** et **home** qui serviront à monter nos autres partitions
 			  logseq.order-list-type:: number
-			- `mkdir /mnt/efi` : crée un répertoire **efi** si en mode **UEFI** (possible de monter sur /boot)
-			  logseq.order-list-type:: number
-			- `mount <disque><partition efi> /mnt/boot/efi` (*nvme0n1p1*) : **monte** la partition **efi** sur **/mnt/boot/efi**
+			- `mount <disque><partition efi> /mnt/boot` (*nvme0n1p1*) : **monte** la partition **boot** sur **/mnt/boot**. Si en mode **UEFI** possible de monter sur **/efi**
 			  logseq.order-list-type:: number
 			- `mount <disque><partition home> /mnt/home` (*nvme0n1p4*) : **monte** la partition **home** sur **/mnt/home**
 			  logseq.order-list-type:: number
 	- ## Installation
-		- ### Mirroirs`
+		- ### Mirroirs
+		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
 			- reflector --country France --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist` : sélectionne les meilleurs miroirs
 			  logseq.order-list-type:: number
 			- `vim /etc/pacman.conf` : dé-commenter la section **multilib**
 			  logseq.order-list-type:: number
 		- ### Installation des paquets essentiels
-			- `pacstrap /mnt base base-devel linux linux-firmware pacman-contrib nano networkmanager` : installe le système et quelques paquets essentiels
+			- `pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib nano networkmanager` : installe le système et quelques paquets essentiels
 			  logseq.order-list-type:: number
 				- **base** : installation minimale d'Arch linux
 				  logseq.order-list-type:: number
@@ -111,6 +108,8 @@
 				  logseq.order-list-type:: number
 			- `nano /etc/locale.conf` : pour y définir les **locales**
 			  logseq.order-list-type:: number
+				- `LANG=fr_FR.UTF-8`
+				  logseq.order-list-type:: number
 			- `nano /etc/locale.gen` : **dé-commenter** les langues souhaitées
 			  logseq.order-list-type:: number
 			- `locale-gen` : **génère les locales**
@@ -119,9 +118,11 @@
 			  logseq.order-list-type:: number
 			- `hwclock --systohc` : ajuste l'**horloge**
 			  logseq.order-list-type:: number
+			- `mkinitcpio -P` : pas nécessaire en théorie si le kernel a bien été installé directement avec **pacstrap**
+			  logseq.order-list-type:: number
 		- ### Installation chargeur d'amorçage
 			- #### systemd-boot
-				- `bootctl --path=/efi install` : installe systemd-boot
+				- `bootctl --path=/boot install` : installe systemd-boot
 				  logseq.order-list-type:: number
 					- Si l'installateur affiche une erreur concernant un problème de permissions
 					  logseq.order-list-type:: number
@@ -133,21 +134,53 @@
 						  logseq.order-list-type:: number
 						- `bootctl update`
 						  logseq.order-list-type:: number
-			- `nano /efi/loader/loader.conf` : ajouter `default arch-*` pour définir une option par défaut (possible d'ajuster le **timeout** de démarrage). 
+			- `nano /boot/loader/loader.conf` : ajouter `default arch.conf` pour définir une option par défaut (possible d'ajuster le **timeout** de démarrage).
 			  logseq.order-list-type:: number
-			- `nano /efi/loader/entries/arch.conf` : ajouter les lignes sivantes
+			- `nano /boot/loader/entries/arch.conf` : ajouter les lignes sivantes
 			  logseq.order-list-type:: number
 				- ```
 				  title   Arch Linux
 				  linux   /vmlinuz-linux
 				  initrd  /initramfs-linux.img
-				  options root=/dev/nvme0n1p1 rw
+				  options root=/dev/nvme0n1p3 rw
 				  ```
 			- `systemctl enable NetworkManager` : active le gestionnaire réseau pour le redémarrage
 			  logseq.order-list-type:: number
+			- `pacman -S amd-ucode` : installation des mises à jour **microcode** pour le processeur (AMD)
+			  logseq.order-list-type:: number
+			- ==`passwd root` : définit le **mot de passe root**==. Si oubli :
+			  logseq.order-list-type:: number
+				- Redémarrer la machine et **booter** sur média d'installation
+				  logseq.order-list-type:: number
+				- `mount /dev/nvme0n1p3 /mnt` : monter la partition **racine**
+				  logseq.order-list-type:: number
+				- `arch-chroot /mnt` : basculer sur le système
+				  logseq.order-list-type:: number
+				- `passwd root` : définir le mot de passe
+				  logseq.order-list-type:: number
+				- Suivre à nouveau les étapes **ci-après**
+				  logseq.order-list-type:: number
 			- `exit` : pour revenir sur le **système temporaire**
 			  logseq.order-list-type:: number
 			- `umount -R /mnt` : démonter tout le contenu de **/mnt**
 			  logseq.order-list-type:: number
 			- `reboot`
 			  logseq.order-list-type:: number
+	- ## Post-installation
+		- ### Base
+			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
+			  logseq.order-list-type:: number
+				- logseq.order-list-type:: number
+				  ```
+				  Color
+				  VerbosePkgLists
+				  ParallelDownloads = 5
+				  ```
+			- `useradd -m <utilisateur> -g wheel` : pour créer un **nouvel utilisateur** (il faut éviter au maximum d'utiliser le **root**) et l'ajouter au groupe **wheel (sudoers)**.
+			  logseq.order-list-type:: number
+			- `passwd <utilisateur>` : définir un mot de passe pour le nouvel utilisateur
+			  logseq.order-list-type:: number
+			- `nano /etc/sudoers` : dé-commenter la ligne concernant le groupe **wheel** pour donner au groupe des **droits admins**
+			  logseq.order-list-type:: number
+		- ### AUR helper
+			-

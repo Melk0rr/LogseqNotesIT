@@ -11,7 +11,7 @@
 				- RAM **32Go** : ~~hibernation~~ => **6Go** / *hibernation* => **38Go**
 				- RAM **64Go** : ~~hibernation~~ => **8Go** / *hibernation* => **72Go**
 		- [root (/)](https://wiki.archlinux.org/title/Partitioning#/) : partition racine qui accueille le système de fichiers
-		- **home (/home)** : répertoire contenant les fichiers utilisateurs
+		- [home (/home)](https://wiki.archlinux.org/title/Partitioning#/) : répertoire contenant les fichiers utilisateurs
 - # [Arch Linux](((65c8ff54-d1f3-41db-9746-5d11eec23b84)))
 	- #Drivers
 		- #Imprimante
