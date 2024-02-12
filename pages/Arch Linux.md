@@ -25,7 +25,7 @@
 			  logseq.order-list-type:: number
 				- Dans la plupart des cas on veut une table de #Partitions **GPT**
 				  logseq.order-list-type:: number
-				- Si cfdisk ne demande pas le type souhaité -> s'assurer que le label *gpt* est présent
+				- Si cfdisk ne demande pas le type souhaité -> s'assurer que le label **gpt** est présent
 				  logseq.order-list-type:: number
 				- Sinon ajouter le label manuellement avec [fdisk](https://www.geeksforgeeks.org/fdisk-command-in-linux-with-examples/)
 				  logseq.order-list-type:: number
