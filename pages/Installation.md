@@ -15,8 +15,8 @@
 - # [Arch Linux](((65c8ff54-d1f3-41db-9746-5d11eec23b84)))
 	- #Drivers
 		- #Imprimante
-		  collapsed:: true
 			- #Paquets
+			  collapsed:: true
 				- ghostscript
 				- gsfonts
 				- [cups](https://wiki.archlinux.org/title/CUPS_(Fran%C3%A7ais)) -> `Common UNIX Printing System`

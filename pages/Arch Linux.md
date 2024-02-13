@@ -183,4 +183,22 @@
 			- `nano /etc/sudoers` : dé-commenter la ligne concernant le groupe **wheel** pour donner au groupe des **droits admins**
 			  logseq.order-list-type:: number
 		- ### AUR helper
-			-
+			- #### Yay
+				- logseq.order-list-type:: number
+				  ```
+				  sudo pacman -S --needed git base-devel
+				  git clone https://aur.archlinux.org/yay-bin.git
+				  cd yay-bin
+				  makepkg -si
+				  ```
+				- Support mises à jour git
+				  logseq.order-list-type:: number
+					- `yay -Y --gendb`
+					  logseq.order-list-type:: number
+					- `yay -Y --devel --save`
+					  logseq.order-list-type:: number
+		- ### Support matériel
+			- #### AMD
+				- `sudo pacman -S --needed mesa lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader`
+				  logseq.order-list-type:: number
+		-
