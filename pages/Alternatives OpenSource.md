@@ -11,7 +11,7 @@
 		- ### Lecture de médias
 			- [VLC](https://www.videolan.org/) : logiciel multi-plateforme #Windows#Linux#MACOS permettant de lire n'importe quel média vidéo et musical
 			  id:: 65a80f38-3004-4b2b-bdb6-ce515f880ee5
-	- ## #[[Firmware et contrôle matériel]]
+	- ## #[[Firmware et support matériel]]
 		- [CoolerControl](https://gitlab.com/coolercontrol/coolercontrol) : Programme #Python / #Rust  de contrôle des éléments de refroidissement du système. Spécifique aux systèmes #Linux
 		- [FanControl](https://github.com/Rem0o/FanControl.Releases) : Logiciel léger et pour #Windows permettant de contrôler la vitesse des divers éléments de refroidissement du système (ventilateurs de boitier, ventilateur de carte graphique, ventirad,  AIO, etc).
 		- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Programme #Rust  de monitoring de ressources sous #Linux.

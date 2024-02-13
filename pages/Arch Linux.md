@@ -197,7 +197,7 @@
 					  logseq.order-list-type:: number
 					- `yay -Y --devel --save`
 					  logseq.order-list-type:: number
-		- ### Support matériel
+		- ### #[[Firmware et support matériel]]
 			- #### AMD
 				- `sudo pacman -S --needed mesa lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader`
 				  logseq.order-list-type:: number
