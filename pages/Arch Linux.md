@@ -183,7 +183,7 @@
 			- `nano /etc/sudoers` : dé-commenter la ligne concernant le groupe **wheel** pour donner au groupe des **droits admins**
 			  logseq.order-list-type:: number
 		- ### AUR helper
-			- #### Yay
+			- #### [Yay](((654cd0e6-59fd-492f-9c7a-3300b72b7da2)))
 				- logseq.order-list-type:: number
 				  ```
 				  sudo pacman -S --needed git base-devel
