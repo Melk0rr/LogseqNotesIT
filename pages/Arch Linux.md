@@ -201,4 +201,54 @@
 			- #### AMD
 				- `sudo pacman -S --needed mesa lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader`
 				  logseq.order-list-type:: number
-		-
+	- ## Graphique
+		- ### Général
+			- #### Gestionnaire de fichiers
+				- `yay -S dolphin` : installe le gestionnaire **dolphin**, gestionnaire de fichiers empaqueté avec **KDE**
+				- `yay -S thunar` : installe le gestionnaire **dolphin**, gestionnaire de fichiers empaqueté avec **XFCE**
+			- #### Terminal
+				- `yay -S alacritty`
+				- `yay -S kitty`
+			- #### Display Manger
+				- `yay -S sddm` : installe **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE**
+				- `sudo systemctl enable sddm` : active sddm
+		- ### Desktop Environment / Window Manager
+			- #### Hyprland
+				- `yay -S hyprland cliphist grimblast-git rofi-lbonn-wayland-git slurp swaylock-effects-git swaync swww waybar wlogout` : installation des paquets de base
+				  logseq.order-list-type:: number
+					- **cliphist** : gestionnaire de presse-papier
+					  logseq.order-list-type:: number
+					- **grimblast-git** : pour prendre des screenshots
+					  logseq.order-list-type:: number
+					- **rofi-lbonn-wayland-git** : lanceur d'applications
+					  logseq.order-list-type:: number
+					- **slurp** : pour sélectionner der régions de l'écran
+					  logseq.order-list-type:: number
+					- **swaylock-effects-git** : écran de verrouillage
+					  logseq.order-list-type:: number
+					- **swaync** : gestionnaire de notifications
+					  logseq.order-list-type:: number
+					- **swww** : gestionnaire de fonds d'écran
+					  logseq.order-list-type:: number
+					- **waybar** : barre de tâches
+					  logseq.order-list-type:: number
+					- **wlogout** : gestionnaire de verrouillage / fermeture de session
+					  logseq.order-list-type:: number
+	- ## Maintenance
+		- ### Gestion des paquets
+			- #### Mise à jour
+				- `sudo pacman -Syu <paquet>` : installe les mises à jour pour un ou plusieurs paquet ou tous les paquets si aucun n'est spécifié. Met également à jour l'index des paquets
+				- `pacman -Rns <paquet>` : **supprime** un paquet et ses **dépendances orphelines** sans conserver de fichier *pacsave* sur le système
+				- `pacman -Qtdq` : **vérifie** la liste des paquets orphelins sur le système
+					- `pacman -Qtdq | pacman -Rns -` : supprime les paquets orphelins
+			- [pacdiff](https://man.archlinux.org/man/pacdiff.8) : affiche les fichiers *pacnew* présents sur le système
+			- #### Gestion du cache des paquets
+				- [paccache](https://man.archlinux.org/man/paccache.8) : permet de gérer le cache des paquets installés via pacman.
+					- `paccache -r` : **nettoie** les paquets en cache et ne garde que les **3 derniers** pour chaque paquet
+					- `paccache -dk2` : *dry run*, affiche les candidats à la suppression si l'on souhaite garder les **2 dernières** version de chaque paquet en cache
+					- `paccache -rk2` : ne garde que les **2 dernières** version de chaque paquet en cache
+					- `sudo systemctl enable --now paccache.timer` : active le nettoyage hebdomadaire du cache
+			- #### Rétrograder un paquet
+				- [downgrade](https://github.com/archlinux-downgrade/downgrade) **<options> <pkg>** : Rétrograde la version du paquet spécifié
+					- Nécessite le paquet **downgrade** -> `yay -S downgrade`
+					- [Rétrograder via pacman](https://wiki.archlinux.org/title/downgrading_packages) : pacman stocke le **cache** des paquets installés dans `/var/cache/pacman/pkg` -> possible de lancer un `pacman -U /var/cache/pacman/pkg/mon_pkg.tar.zst` pour **rétrograder** si besoin
