@@ -1,9 +1,9 @@
 # #Audit
 	- ## #[[Sites web]]
 	  id:: 65119136-c77f-473f-abea-a2b7a23fa1cf
-	  collapsed:: true
 		- [CRT.sh](https://crt.sh/) : Scan de domain, d'URL / Ip,  whois
 		- [DeHashed](https://www.dehashed.com) : Base de données de HASH connus
+		- [DNSDumper](https://dnsdumpster.com/) : reconnaissance DNS
 		- [exploit-db](https://www.exploit-db.com) : Recheche de vulnérabilités
 		- [FOFA](https://en.fofa.info) : Propriétés d'un site web
 		- [FullHunt](https://fullhunt.io/) : Scan de domain
@@ -27,6 +27,9 @@
 		- #DMARC
 			- [DMARCly](https://dmarcly.com/tools/) : Divers outils de vérification DMARC, DKIM et SPF
 - # #[[SOC - Blue team]]
+	- ## #DNS
+	  collapsed:: true
+		- [Anubis](https://github.com/jonluca/Anubis) : sondage et reconnaissance DNS
 	- ## #[[Sites web]]
 	  collapsed:: true
 		- [VirusTotal](https://github.com/ventoy/Ventoy) : Analyse antivirus / IOC en ligne
@@ -38,8 +41,9 @@
 		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/tree/main) : inventaire d'adresses IP malveillantes mis à jour toutes les heures
 	- ## #Forensic
 	  collapsed:: true
-		- [DFIR ORC](https://github.com/DFIR-ORC/dfir-orc) : Programme #C++#OpenSource de collecte d'artefacts et IOC pour systèmes Windows
+		- [DFIR ORC](https://github.com/DFIR-ORC/dfir-orc) : Programme #C++#OpenSource de collecte d'artefacts et IOC pour systèmes #Windows
 		- [Cyberchef](https://gchq.github.io/CyberChef) : Convertion et décryptage de formats de données variés
+		- [Chainsaw](https://github.com/WithSecureLabs/chainsaw) : Programme #Rust d'analyse d'artéfacts #Windows
 	- ## #[[Active Directory]]
 	  collapsed:: true
 		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
@@ -49,6 +53,9 @@
 		- [ScriptSentry](https://github.com/techspence/ScriptSentry) : script #Powershell de découverte de scripts de connexion dangereux ou mal configurés
 		- [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) : script #Powershell d'analyse de #Logs Windows Events
 - # #[[Pentest - Red Team]]
+	- ## #Obfuscation
+	  collapsed:: true
+		- [Anubis](https://github.com/0sir1ss/Anubis) : obscurcissement de code
 	- ## #[[Sites web]]
 	  collapsed:: true
 		- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
