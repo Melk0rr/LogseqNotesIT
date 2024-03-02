@@ -204,35 +204,50 @@
 	- ## Graphique
 		- ### Général
 			- #### Gestionnaire de fichiers
-				- `yay -S dolphin` : installe le gestionnaire **dolphin**, gestionnaire de fichiers empaqueté avec **KDE**
-				- `yay -S thunar` : installe le gestionnaire **dolphin**, gestionnaire de fichiers empaqueté avec **XFCE**
+				- `yay -S dolphin ark` : installe l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options telles que thunar. En particulier sur certaines machines **limitées en ressources**
+					- **ark** : utilitaire de gestion d'archives
+				- `yay -S thunar thunar-archive-plugin` : installe l'explorateur **thunar**, gestionnaire de fichiers habituellement empaqueté avec **XFCE**. Facilement **configurable**, **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
 			- #### Terminal
 				- `yay -S alacritty`
 				- `yay -S kitty`
 			- #### Display Manger
-				- `yay -S sddm` : installe **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE**
+				- `yay -S sddm sddm-sugar-candy-git sddm-theme-corners` : installe **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE**
+					- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
+					- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
 				- `sudo systemctl enable sddm` : active sddm
+			- #### Polkit
+				- `yay -S polkit-kde-agent` : polkit KDE pour gérer le lancement d'applications graphiques nécessitant des droits admin
+			- #### Multimédia
+				- `yay -S vlc-git mpv-git` : quelques lecteurs de médias
+					- **vlc** : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**
+					- **mpv** : lecteur **simple** et **léger**
+				- `yay -S imagemagick` : **manipulation** / **conversion** d'images
+			- #### Personnalisation
+				- `yay -S qt5ct qt6ct kvantum` : configuration d'interfaces **QT5** et **QT6**
+				- `yay -S nwg-look` : configuration d'interface **GTK3**
 		- ### Desktop Environment / Window Manager
 			- #### Hyprland
-				- `yay -S hyprland cliphist grimblast-git rofi-lbonn-wayland-git slurp swaylock-effects-git swaync swww waybar wlogout` : installation des paquets de base
+				- `yay -S hyprland-git cliphist dunst grimblast-git rofi-lbonn-wayland-git slurp swaylock-effects-git swww waybar wlogout xdg-desktop-portal-hyprland` : installation des paquets de base
 				  logseq.order-list-type:: number
 					- **cliphist** : gestionnaire de presse-papier
 					  logseq.order-list-type:: number
-					- **grimblast-git** : pour prendre des screenshots
+					- **dunst** : daemon de **notifications** très léger
 					  logseq.order-list-type:: number
-					- **rofi-lbonn-wayland-git** : lanceur d'applications
+					- **grimblast-git** : pour prendre des **screenshots**
 					  logseq.order-list-type:: number
-					- **slurp** : pour sélectionner der régions de l'écran
+					- **rofi-lbonn-wayland-git** : lanceur d'**applications**
 					  logseq.order-list-type:: number
-					- **swaylock-effects-git** : écran de verrouillage
+					- **slurp** : pour sélectionner des régions de l'écran
 					  logseq.order-list-type:: number
-					- **swaync** : gestionnaire de notifications
+					- **swaylock-effects-git** : utilitaire de **verrouillage** de session
 					  logseq.order-list-type:: number
-					- **swww** : gestionnaire de fonds d'écran
+					- **swappy** : éditeur de captures d'écran
 					  logseq.order-list-type:: number
-					- **waybar** : barre de tâches
+					- **swww** : gestionnaire de **fonds d'écran**
 					  logseq.order-list-type:: number
-					- **wlogout** : gestionnaire de verrouillage / fermeture de session
+					- **waybar** : **barre** de tâches
+					  logseq.order-list-type:: number
+					- **wlogout** : gestionnaire de **verrouillage** / fermeture de session  / **mise en veille** / **arrêt** / **redémarrage**
 					  logseq.order-list-type:: number
 	- ## Maintenance
 		- ### Gestion des paquets
