@@ -2,6 +2,7 @@
 - # Liens utiles
 	- [AlternativeTo](https://alternativeto.net/) : site web pour trouver des alternatives à presque n'importe quelle application
 	- [android-foss](https://github.com/offa/android-foss) : liste d'alternatives #OpenSource pour différents usages sur #Android
+	- [Awesome Privacy](https://github.com/pluja/awesome-privacy) : des alternatives respectueuses de la vie privée pour diverses applications
 - # #PC
 	- ## #Multimédia
 	  collapsed:: true
