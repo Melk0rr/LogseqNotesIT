@@ -267,3 +267,22 @@
 				- [downgrade](https://github.com/archlinux-downgrade/downgrade) **<options> <pkg>** : Rétrograde la version du paquet spécifié
 					- Nécessite le paquet **downgrade** -> `yay -S downgrade`
 					- [Rétrograder via pacman](https://wiki.archlinux.org/title/downgrading_packages) : pacman stocke le **cache** des paquets installés dans `/var/cache/pacman/pkg` -> possible de lancer un `pacman -U /var/cache/pacman/pkg/mon_pkg.tar.zst` pour **rétrograder** si besoin
+		- ### Résolution de problèmes
+			- #### Compilation depuis un chroot propre
+				- Utile si une mise à jour est bloquée à cause d'une **cassure de dépendance**
+				- `yay -S devtools` : quelques commandes utiles
+				  logseq.order-list-type:: number
+				- `mkdir ~/Documents/chroot` : création d'un dossier vide qui accueillera l'environnement **propre**. Peut être créé **n'importe où**
+				  logseq.order-list-type:: number
+				- `CHROOT=$HOME/Documents/chroot` : définit une variable correspondant au dossier chroot pour faire plus simple. (pour **fish**: `set CHROOT $HOME/Documents/chroot`)
+				  logseq.order-list-type:: number
+				- `mkarchroot $CHROOT/root base-devel` : construit l'environnement chroot avec les bases nécessaires
+				  logseq.order-list-type:: number
+				- `arch-nspawn $CHROOT/root pacman -Syu` : met à jour le chroot si nécessaire
+				  logseq.order-list-type:: number
+				- `makechrootpkg -c -r $CHROOT` : construit le paquet souhaité avec l'environnement propre. ==Il faut être dans le répertoire du paquet souhaité, là où se situe le fichier **PKGBUILD**==
+				  logseq.order-list-type:: number
+				- `sudo pacman -U <archive_du_paquet>` : une fois le paquet construit, une archive est créée dan le répertoire de celui-ci. Il suffit de l'installer avec pacman.
+				  logseq.order-list-type:: number
+				- `sudo pacman -Syu` : mettre à jour le système
+				  logseq.order-list-type:: number
