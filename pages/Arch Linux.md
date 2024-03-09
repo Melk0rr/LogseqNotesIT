@@ -204,8 +204,9 @@
 	- ## Graphique
 		- ### Général
 			- #### Gestionnaire de fichiers
-				- `yay -S dolphin ark` : installe l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options telles que thunar. En particulier sur certaines machines **limitées en ressources**
+				- `yay -S dolphin ark kde-cli-tools` : installe l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options telles que thunar. En particulier sur certaines machines **limitées en ressources**
 					- **ark** : utilitaire de gestion d'archives
+					- **kde-cli-tools** : outils d'interaction système basé sur le framework **KDE**
 				- `yay -S thunar thunar-archive-plugin` : installe l'explorateur **thunar**, gestionnaire de fichiers habituellement empaqueté avec **XFCE**. Facilement **configurable**, **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
 			- #### Terminal
 				- `yay -S alacritty`
@@ -280,8 +281,10 @@
 				  logseq.order-list-type:: number
 				- `arch-nspawn $CHROOT/root pacman -Syu` : met à jour le chroot si nécessaire
 				  logseq.order-list-type:: number
-				- `makechrootpkg -c -r $CHROOT` : construit le paquet souhaité avec l'environnement propre. ==Il faut être dans le répertoire du paquet souhaité, là où se situe le fichier **PKGBUILD**==
+				- `makechrootpkg -c -r $CHROOT` : construit le paquet souhaité avec l'environnement propre. 
 				  logseq.order-list-type:: number
+					- ==Il faut être dans le répertoire du paquet souhaité, là où se situe le fichier **PKGBUILD**==
+					  logseq.order-list-type:: number
 				- `sudo pacman -U <archive_du_paquet>` : une fois le paquet construit, une archive est créée dan le répertoire de celui-ci. Il suffit de l'installer avec pacman.
 				  logseq.order-list-type:: number
 				- `sudo pacman -Syu` : mettre à jour le système
