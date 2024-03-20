@@ -32,19 +32,33 @@
 				- Quitter une fois les changements écrits
 				  logseq.order-list-type:: number
 		- ### Formatage
-			- Pour l'exemple : <disque><partition x> => *nvme0n1px*
-			- `lsblk` : pour vérifier les changements
+			- Pour l'exemple : <**disque**><*partition* x> => **nvme0n1***px*
+			- Pour vérifier les changements:
 			  logseq.order-list-type:: number
-			- `mkfs.fat -F 32 <disque><partition efi>` (*nvme0n1p1*) : formate la partition **efi** en **FAT32** (pour la compatibilité)
+				- logseq.order-list-type:: number
+				  ```shell
+				  lsblk
+				  ```
+			- Formater la partition **efi** en **FAT32** (pour la compatibilité):
 			  logseq.order-list-type:: number
-			- `mkswap <disque><partition swap>` (*nvme0n1p2*) : formate la partition **swap**, pas de formatage à proprement parlé`
+				- logseq.order-list-type:: number
+				  ```shell
+				  mkfs.fat -F 32 /dev/nvme0n1p1
+				  ```
+			- "Formater" la partition **swap**, (pas de formatage à proprement parlé) et l'activer:
 			  logseq.order-list-type:: number
-			- `swapon <disque><partition swap>` (*nvme0n1p2*) : active la partition **swap**
+				- logseq.order-list-type:: number
+				  ```shell
+				  mkswap /dev/nvme0n1p2
+				  swapon /dev/nvme0n1p2
+				  ```
+			- Formater la partition **racine (/)** en **EXT4** (ou **BTRFS**, **NFS**, etc) et la partition **home**:
 			  logseq.order-list-type:: number
-			- `mkfs.ext4 <disque><partition racine>` (*nvme0n1p3*) : formate la partition **racine (/)** en **EXT4** (ou **BTRFS**, **NFS**, etc)
-			  logseq.order-list-type:: number
-			- `mkfs.ext4 <disque><partition home>` (*nvme0n1p4*) : idem pour la partition home
-			  logseq.order-list-type:: number
+				- logseq.order-list-type:: number
+				  ```shell
+				  mkfs.ext4 /dev/nvme0n1p3
+				  mkfs.ext4 /dev/nvme0n1p4
+				  ````
 		- ### Montage des partitions
 			- `mount <disque><partition racine> /mnt` (*nvme0n1p3*) : **monte** la partition **racine** sur **/mnt**
 			  logseq.order-list-type:: number
@@ -185,7 +199,7 @@
 		- ### AUR helper
 			- #### [Yay](((654cd0e6-59fd-492f-9c7a-3300b72b7da2)))
 				- logseq.order-list-type:: number
-				  ```
+				  ```shell
 				  sudo pacman -S --needed git base-devel
 				  git clone https://aur.archlinux.org/yay-bin.git
 				  cd yay-bin
