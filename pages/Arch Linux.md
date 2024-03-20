@@ -33,32 +33,28 @@
 				  logseq.order-list-type:: number
 		- ### Formatage
 			- Pour l'exemple : <**disque**><*partition* x> => **nvme0n1***px*
-			- Pour vérifier les changements:
+			- Pour vérifier les changements: 
 			  logseq.order-list-type:: number
-				- logseq.order-list-type:: number
-				  ```shell
-				  lsblk
-				  ```
-			- Formater la partition **efi** en **FAT32** (pour la compatibilité):
+			  ```shell
+			  lsblk
+			  ```
+			- Formater la partition **efi** en **FAT32** (pour la compatibilité): 
 			  logseq.order-list-type:: number
-				- logseq.order-list-type:: number
-				  ```shell
-				  mkfs.fat -F 32 /dev/nvme0n1p1
-				  ```
-			- "Formater" la partition **swap**, (pas de formatage à proprement parlé) et l'activer:
+			  ```shell
+			  mkfs.fat -F 32 /dev/nvme0n1p1
+			  ```
+			- "Formater" la partition **swap**, (pas de formatage à proprement parlé) et l'activer: 
 			  logseq.order-list-type:: number
-				- logseq.order-list-type:: number
-				  ```shell
-				  mkswap /dev/nvme0n1p2
-				  swapon /dev/nvme0n1p2
-				  ```
-			- Formater la partition **racine (/)** en **EXT4** (ou **BTRFS**, **NFS**, etc) et la partition **home**:
+			  ```shell
+			  mkswap /dev/nvme0n1p2
+			  swapon /dev/nvme0n1p2
+			  ```
+			- Formater la partition **racine (/)** en **EXT4** (ou **BTRFS**, **NFS**, etc) et la partition **home**: 
 			  logseq.order-list-type:: number
-				- logseq.order-list-type:: number
-				  ```shell
-				  mkfs.ext4 /dev/nvme0n1p3
-				  mkfs.ext4 /dev/nvme0n1p4
-				  ````
+			  ```shell
+			  mkfs.ext4 /dev/nvme0n1p3
+			  mkfs.ext4 /dev/nvme0n1p4
+			  ```
 		- ### Montage des partitions
 			- `mount <disque><partition racine> /mnt` (*nvme0n1p3*) : **monte** la partition **racine** sur **/mnt**
 			  logseq.order-list-type:: number
