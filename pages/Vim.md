@@ -3,7 +3,6 @@
 - # Commandes
 	- ## Mode normal
 		- ### Navigation
-		  collapsed:: true
 			- #### Base
 			  collapsed:: true
 				- Déplacement vers la **gauche** 
@@ -31,7 +30,6 @@
 				  10l
 				  ```
 			- #### Document
-			  collapsed:: true
 				- Déplacement vers le **haut du document** 
 				  ```vim
 				  gg
@@ -96,7 +94,6 @@
 				  ;
 				  ```
 			- #### Paragraphe / block
-			  collapsed:: true
 				- Déplacement au **paragraphe précédent** 
 				  ```vim
 				  {
@@ -229,7 +226,6 @@
 		- ### Ligne
 		- ### Block
 	- ## Mode command-line
-	  collapsed:: true
 		- ### Manipulation de document
 			- **Quitter** le document 
 			  ```vim
@@ -255,8 +251,11 @@
 			  ```vim
 			  :%d
 			  ```
+			- **Remplacer** toutes les **occurrences d'une chaîne** 
+			  ```vim
+			  :%s/foo/bar/g
+			  ```
 		- ### Recherche
-		  collapsed:: true
 			- **Rechercher** une **chaîne** 
 			  ```vim
 			  /chaîne à rechercher
