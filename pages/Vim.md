@@ -2,7 +2,9 @@
 	- Editeur de texte #OpenSource publié en 1991 qui repose sur un système de modes et de raccourcis permettant une manipulation et une navigation rapide et efficace d'un document
 - # Commandes
 	- ## Mode normal
+	  collapsed:: true
 		- ### Navigation
+		  collapsed:: true
 			- #### Base
 			  collapsed:: true
 				- Déplacement vers la **gauche** 
@@ -107,6 +109,7 @@
 				  %
 				  ```
 		- ### Manipulation de document
+		  collapsed:: true
 			- #### Changements
 			  collapsed:: true
 				- **Undo** / **défaire** (équivalent au *Ctrl+Z*) (*undo*)
@@ -217,15 +220,17 @@
 				  ```vim
 				  Ctrl+v
 				  ```
-	-
 	- ## Mode édition / insertion
+	  collapsed:: true
 		- Mode d'édition de texte
 	- ## Mode visual
+	  collapsed:: true
 		- Mode de **sélection** de texte
 		- Comprend 2 sous-modes : **line** et **block**
 		- ### Ligne
 		- ### Block
 	- ## Mode command-line
+	  collapsed:: true
 		- ### Manipulation de document
 			- **Quitter** le document 
 			  ```vim
@@ -272,4 +277,3 @@
 			  ```vim
 			  n
 			  ```
--

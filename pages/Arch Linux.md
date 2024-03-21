@@ -427,6 +427,7 @@
 					  logseq.order-list-type:: number
 - # Maintenance
 	- ## Gestion des paquets
+	  collapsed:: true
 		- ### Mise à jour
 		  collapsed:: true
 			- Installe les mises à jour pour un ou plusieurs paquet ou tous les paquets si aucun n'est spécifié. Met également à jour l'index des paquets 
@@ -482,6 +483,7 @@
 					  pacman -U /var/cache/pacman/pkg/mon_pkg.tar.zst
 					  ```
 	- ## Résolution de problèmes
+	  collapsed:: true
 		- ### Compilation depuis un chroot propre
 		  collapsed:: true
 			- Utile si une mise à jour est bloquée à cause d'une **cassure de dépendance** ou autre
