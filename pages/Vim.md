@@ -110,7 +110,6 @@
 				  %
 				  ```
 		- ### Manipulation de document
-		  collapsed:: true
 			- #### Changements
 			  collapsed:: true
 				- **Undo** / **défaire** (équivalent au *Ctrl+Z*) (*undo*)
@@ -160,8 +159,12 @@
 				  ```
 			- #### Copier / Coller
 			  collapsed:: true
-				- Copier **mot** / **ligne** / etc (*yank*)
+				- Copier **caractère** / **mot** / **ligne** / etc (*yank*)
 				  ```vim
+				  yl
+				  y4l
+				  yh
+				  y6h
 				  yw
 				  yiw
 				  y5w
@@ -226,8 +229,8 @@
 		- ### Ligne
 		- ### Block
 	- ## Mode command-line
+	  collapsed:: true
 		- ### Manipulation de document
-		  collapsed:: true
 			- **Quitter** le document 
 			  ```vim
 			  :q

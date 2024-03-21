@@ -6,21 +6,39 @@
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
 		- ### Disposition clavier
-			- `loadkeys fr` : change la configuration du clavier. Utile surtout pour les claviers non QWERTY
+			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
 			  logseq.order-list-type:: number
+			  ```shell
+			  loadkeys fr
+			  ```
 		- ### Connexion à internet
-			- `ping archlinux.org` : vérifie la connectivité internet. Mieux vaut une connexion ethernet pour se faciliter la vie
+			- Vérifier la connectivité internet. Mieux vaut une connexion ethernet pour se faciliter la vie 
 			  logseq.order-list-type:: number
+			  ```shell
+			  ping archlinux.org
+			  ```
 		- ### Check UEFI
-			- `ls /sys/firmware/efi/efivars` : s'assurer que l'installation est bien en mode **UEFI** (sauf si BIOS souhaité)
+			- S'assurer que l'installation est bien en mode **UEFI** (sauf si BIOS souhaité). Si la commande ne retourne rien: l'installation est en mode BIOS
+			  ```shell
+			  ls /sys/firmware/efi/efivars
+			  ```
 		- ### Horloge
-			- `timedatectl` : pour vérifier que la date est bien valide
+			- Pour vérifier que la date est bien valide 
 			  logseq.order-list-type:: number
+			  ```shell
+			  timedatectl
+			  ```
 		- ### Partitionnement
-			- `lsblk` : affiche les disques et partitions actuelles (*blocs*) -> identifier le disque sur lequel installer le système
+			- Afficher les disques et partitions actuelles (*blocs*) -> identifier le disque sur lequel installer le système 
 			  logseq.order-list-type:: number
-			- `cfdisk <disque>` : exécute l'utilitaire [cfdisk](https://www.geeksforgeeks.org/cfdisk-command-in-linux-with-examples/) pour créer des partitions sur le disque sélectionné (e.g. nvme0n1)
+			  ```shell
+			  lsblk
+			  ```
+			- Exécuter l'utilitaire [cfdisk](https://www.geeksforgeeks.org/cfdisk-command-in-linux-with-examples/) pour créer des partitions sur le disque sélectionné (e.g. nvme0n1) 
 			  logseq.order-list-type:: number
+			  ```shell
+			  cfdisk <disque>
+			  ```
 				- Dans la plupart des cas on veut une table de #Partitions **GPT**
 				  logseq.order-list-type:: number
 				- Si cfdisk ne demande pas le type souhaité -> s'assurer que le label **gpt** est présent
@@ -56,24 +74,46 @@
 			  mkfs.ext4 /dev/nvme0n1p4
 			  ```
 		- ### Montage des partitions
-			- `mount <disque><partition racine> /mnt` (*nvme0n1p3*) : **monte** la partition **racine** sur **/mnt**
+			- **Monter** la partition **racine** sur **/mnt** 
 			  logseq.order-list-type:: number
-			- `mkdir /mnt/{boot,home}` : crée les répertoires **boot** et **home** qui serviront à monter nos autres partitions
+			  ```shell
+			  mount /dev/nvme0n1p3 /mnt
+			  ```
+			- Créer les répertoires **boot** et **home** qui serviront à monter nos autres partitions 
 			  logseq.order-list-type:: number
-			- `mount <disque><partition efi> /mnt/boot` (*nvme0n1p1*) : **monte** la partition **boot** sur **/mnt/boot**. Si en mode **UEFI** possible de monter sur **/efi**
+			  ```shell
+			  mkdir /mnt/{boot,home}
+			  ```
+			- **Monter** la partition **boot** sur **/mnt/boot**. Si en mode **UEFI** possible de monter sur **/efi** 
 			  logseq.order-list-type:: number
-			- `mount <disque><partition home> /mnt/home` (*nvme0n1p4*) : **monte** la partition **home** sur **/mnt/home**
+			  ```shell
+			  mount /dev/nvme0n1p1 /mnt/boot
+			  ```
+			- **Monter** la partition **home** sur **/mnt/home** 
 			  logseq.order-list-type:: number
+			  id:: 65cfcd67-0d1a-4a0f-980a-7163829f7f5c
+			  ```shell
+			  mount /dev/nvme0n1p4 /mnt/home
+			  ```
 	- ## Installation
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
-			- reflector --country France --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist` : sélectionne les meilleurs miroirs
+			- Sélectionner les meilleurs miroirs 
 			  logseq.order-list-type:: number
-			- `vim /etc/pacman.conf` : dé-commenter la section **multilib**
+			  ```shell
+			  reflector --country France --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+			  ```
+			- Dé-commenter la section **multilib** 
 			  logseq.order-list-type:: number
+			  ```shell
+			  vim /etc/pacman.conf
+			  ```
 		- ### Installation des paquets essentiels
-			- `pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib nano networkmanager` : installe le système et quelques paquets essentiels
+			- Installer le système et quelques paquets essentiels 
 			  logseq.order-list-type:: number
+			  ```shell
+			  pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib nano networkmanager
+			  ```
 				- **base** : installation minimale d'Arch linux
 				  logseq.order-list-type:: number
 				- **linux** : noyau linux
@@ -84,18 +124,26 @@
 				  logseq.order-list-type:: number
 				- **networkmanager** : utilitaire de configuration et gestion réseau
 				  logseq.order-list-type:: number
-			- `pacstrap /mnt efibootmgr os-prober` : installe des paquets relatifs au **boot**
+			- Installer des paquets relatifs au **boot** 
 			  logseq.order-list-type:: number
-			- `pacstrap /mnt ntfs-3g exfat-utils mtools dosfstools` : paquets de manipulation de divers **systèmes de fichiers**
+			  ```shell
+			  pacstrap /mnt efibootmgr os-prober
+			  ```
+			- Quelques paquets de manipulation de divers **systèmes de fichiers** 
 			  logseq.order-list-type:: number
-			- `pacstrap /mnt man-db man-pages` : installe les pages de **manuels**
+			  ```shell
+			  pacstrap /mnt ntfs-3g exfat-utils mtools dosfstools
+			  ```
+			- Installer les pages de **manuels** 
 			  logseq.order-list-type:: number
+			  ```shell
+			  pacstrap /mnt man-db man-pages
+			  ```
 			- Installer les paquets pour la gestion du **son**
 			  logseq.order-list-type:: number
-				- logseq.order-list-type:: number
-				  ```
-				  pacstrap /mnt pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
-				  ```
+			  ```shell
+			  pacstrap /mnt pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
+			  ```
 		- ### Configuration système
 			- `genfstab -U /mnt >> /mnt/etc/fstab` : génère le fichier fstab -> indique les **points de montage**
 			  logseq.order-list-type:: number
