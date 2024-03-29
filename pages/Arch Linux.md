@@ -97,9 +97,9 @@
 			  mount /dev/nvme0n1p4 /mnt/home
 			  ```
 	- ## Installation
-	  collapsed:: true
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
+		  collapsed:: true
 			- Sélectionner les meilleurs miroirs 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -111,6 +111,7 @@
 			  vim /etc/pacman.conf
 			  ```
 		- ### Installation des paquets essentiels
+		  collapsed:: true
 			- Installer le système et quelques paquets essentiels 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -147,6 +148,7 @@
 			  pacstrap /mnt pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
 			  ```
 		- ### Configuration système
+		  collapsed:: true
 			- Générer le fichier fstab -> indique les **points de montage** 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -294,7 +296,6 @@
 			  reboot
 			  ```
 	- ## Post-installation
-	  collapsed:: true
 		- ### Base
 			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
 			  logseq.order-list-type:: number
@@ -335,11 +336,19 @@
 				  ```
 		- ### #[[Firmware et support matériel]]
 			- #### AMD
-				- ```shell
-				  sudo pacman -S --needed mesa-git lib32-mesa lib32-amdvlk vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
+				- Installation par défaut (**mesa** ou **mesa-git**)
+				  ```shell
+				  sudo pacman -S --needed mesa-git lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
 				  ```
+				- Installation [mesa-tkg](https://github.com/Frogging-Family/mesa-git) : version maintenue par **TKG** -> contient des patchs et fixes supplémentaires
+				  ```shell
+				  git clone https://github.com/Frogging-Family/mesa-git
+				  cd mesa-tkg
+				  makepkg -si
+				  ```
+				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
+				-
 	- ## Graphique
-	  collapsed:: true
 		- ### Général
 			- #### Gestionnaire de fichiers
 				- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options telles que thunar. En particulier sur certaines machines **limitées en ressources** 
@@ -483,9 +492,7 @@
 					  pacman -U /var/cache/pacman/pkg/mon_pkg.tar.zst
 					  ```
 	- ## Résolution de problèmes
-	  collapsed:: true
 		- ### Compilation depuis un chroot propre
-		  collapsed:: true
 			- Utile si une mise à jour est bloquée à cause d'une **cassure de dépendance** ou autre
 			- Quelques outils nécessaires 
 			  logseq.order-list-type:: number
