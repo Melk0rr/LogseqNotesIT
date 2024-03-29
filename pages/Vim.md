@@ -78,6 +78,14 @@
 				  ```vim
 				  b
 				  ```
+				- Déplacement au **premier caractère** du **mot suivant** en **ignorant les caractères spéciaux** 
+				  ```shell
+				  W
+				  ```
+				- Déplacement au **premier caractère** du **mot précédent** en **ignorant les caractères spéciaux** 
+				  ```shell
+				  B
+				  ```
 				- Déplacement au **dernier caractère** du **mot suivant** (*end*)
 				  ```vim
 				  e
@@ -109,7 +117,6 @@
 				  %
 				  ```
 		- ### Manipulation de document
-		  collapsed:: true
 			- #### Changements
 			  collapsed:: true
 				- **Undo** / **défaire** (équivalent au *Ctrl+Z*) (*undo*)
