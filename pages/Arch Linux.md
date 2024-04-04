@@ -2,6 +2,7 @@
 	- Distribution #Linux en #Rolling release et maintenue par la **communauté**
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
+  collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
@@ -351,10 +352,13 @@
 				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
 				-
 - # Graphique
+  collapsed:: true
 	- ## Général
 	  collapsed:: true
-		- #### Gestionnaire de fichiers
-			- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options telles que thunar. En particulier sur certaines machines **limitées en ressources** 
+		- ### Gestionnaire de fichiers
+		  collapsed:: true
+			- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources** 
+			  id:: 65cfcd67-02fa-424c-9c87-a8f347546160
 			  ```shell
 			  yay -S dolphin ark kde-cli-tools
 			  ```
@@ -364,7 +368,8 @@
 			  ```shell
 			  yay -S thunar thunar-archive-plugin
 			  ```
-		- #### Terminal
+		- ### Terminal
+		  collapsed:: true
 			- Installation d'Alacritty, émulateur de terminal développé en #Rust 
 			  ```shell
 			  yay -S alacritty
@@ -373,7 +378,8 @@
 			  ```shell
 			  yay -S kitty
 			  ```
-		- #### Display Manger
+		- ### Display Manger
+		  collapsed:: true
 			- Installation de **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE** 
 			  ```shell
 			  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
@@ -384,23 +390,31 @@
 			  ```shell
 			  sudo systemctl enable --now sddm
 			  ```
-		- #### Polkit
+		- ### Polkit
+		  collapsed:: true
 			- Installation du polkit KDE pour gérer le lancement d'applications graphiques nécessitant des droits admin 
 			  ```shell
 			  yay -S polkit-kde-agent
 			  ```
-		- #### Multimédia
-			- Quelques lecteurs de médias 
+		- ### Multimédia
+		  collapsed:: true
+			- #### Lecteurs de médias
 			  ```shell
-			  yay -S vlc-git mpv-git
+			  yay -S vlc-git mpv-git imv-git audacious-git
 			  ```
-				- **vlc** : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**
-				- **mpv** : lecteur **simple** et **léger**
-			- **Manipulation** / **conversion** d'images 
+				- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
+					- VLC peut être **requis** par [dolphin](((65cfcd67-02fa-424c-9c87-a8f347546160))) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
+					- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
+				- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
+				  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
+				- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
+				- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
+			- #### Manipulation / conversion d'images 
 			  ```shell
-			  yay -S imagemagick
+			  yay -S imagemagick ffmpeg
 			  ```
-		- #### Personnalisation
+		- ### Personnalisation
+		  collapsed:: true
 			- Pour la configuration d'interfaces **QT5** et **QT6** 
 			  ```shell
 			  yay -S qt5ct qt6ct kvantum
@@ -409,8 +423,10 @@
 			  ```shell
 			  yay -S nwg-look
 			  ```
-	- ## Desktop Environment / Window Manager
+	- ## Desktop Environment (DE) / Window Manager (WM)
+	  collapsed:: true
 		- ### Hyprland
+		  collapsed:: true
 			- [Wiki Hyprland](https://wiki.hyprland.org/)
 			- #### Installation des paquets de base 
 			  ```shell
@@ -471,6 +487,7 @@
 			  ```
 				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
 - # Maintenance
+  collapsed:: true
 	- ## Gestion des paquets
 	  collapsed:: true
 		- ### Mise à jour
@@ -528,7 +545,9 @@
 					  pacman -U /var/cache/pacman/pkg/mon_pkg.tar.zst
 					  ```
 	- ## Résolution de problèmes
+	  collapsed:: true
 		- ### Compilation depuis un chroot propre
+		  collapsed:: true
 			- Utile si une mise à jour est bloquée à cause d'une **cassure de dépendance** ou autre
 			- Quelques outils nécessaires 
 			  logseq.order-list-type:: number
