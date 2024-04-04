@@ -350,101 +350,126 @@
 				  ```
 				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
 				-
-	- ## Graphique
-		- ### Général
-		  collapsed:: true
-			- #### Gestionnaire de fichiers
-				- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options telles que thunar. En particulier sur certaines machines **limitées en ressources** 
+- # Graphique
+	- ## Général
+	  collapsed:: true
+		- #### Gestionnaire de fichiers
+			- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options telles que thunar. En particulier sur certaines machines **limitées en ressources** 
+			  ```shell
+			  yay -S dolphin ark kde-cli-tools
+			  ```
+				- **ark** : utilitaire de gestion d'archives
+				- **kde-cli-tools** : outils d'interaction système basé sur le framework **KDE**
+			- Installation de l'explorateur **thunar**, gestionnaire de fichiers habituellement empaqueté avec **XFCE**. Facilement **configurable**, **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes 
+			  ```shell
+			  yay -S thunar thunar-archive-plugin
+			  ```
+		- #### Terminal
+			- Installation d'Alacritty, émulateur de terminal développé en #Rust 
+			  ```shell
+			  yay -S alacritty
+			  ```
+			- Installation de Kitty, émulateur de terminal développé en #Python et #C 
+			  ```shell
+			  yay -S kitty
+			  ```
+		- #### Display Manger
+			- Installation de **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE** 
+			  ```shell
+			  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
+			  ```
+				- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
+				- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
+			- Activation de sddm 
+			  ```shell
+			  sudo systemctl enable --now sddm
+			  ```
+		- #### Polkit
+			- Installation du polkit KDE pour gérer le lancement d'applications graphiques nécessitant des droits admin 
+			  ```shell
+			  yay -S polkit-kde-agent
+			  ```
+		- #### Multimédia
+			- Quelques lecteurs de médias 
+			  ```shell
+			  yay -S vlc-git mpv-git
+			  ```
+				- **vlc** : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**
+				- **mpv** : lecteur **simple** et **léger**
+			- **Manipulation** / **conversion** d'images 
+			  ```shell
+			  yay -S imagemagick
+			  ```
+		- #### Personnalisation
+			- Pour la configuration d'interfaces **QT5** et **QT6** 
+			  ```shell
+			  yay -S qt5ct qt6ct kvantum
+			  ```
+			- Pour la configuration d'interface **GTK3** 
+			  ```shell
+			  yay -S nwg-look
+			  ```
+	- ## Desktop Environment / Window Manager
+		- ### Hyprland
+			- [Wiki Hyprland](https://wiki.hyprland.org/)
+			- #### Installation des paquets de base 
+			  ```shell
+			  yay -S hyprland-git xdg-desktop-portal-hyprland
+			  ```
+				- Recommandé d'utiliser la version **hyprland-git**
+					- Les développeurs d'hyprland sont très **réactifs**
+					- Les bugs sont **fix très rapidement**
+					- Permet d'avoir les tous **derniers correctifs**
+			- #### Gestionnnaire de presse-papier 
+			  ```shell
+			  yay -S cliphist
+			  ```
+				- [cliphist](https://github.com/sentriz/cliphist) : gestionnaire léger développé en #Go et interfaçable avec rofi
+			- #### Daemon de notifications 
+			  ```shell
+			  yay -S dunst
+			  ```
+				- [dunst](https://github.com/dunst-project/dunst) : daemon très léger développé en #C
+			- #### Capture d'écran 
+			  ```shell
+			  yay -S grimblast-git slurp swappy wf-recorder
+			  ```
+				- [grimblast-git](https://github.com/hyprwm/contrib) : script #Shell pour prendre des **screenshots**
+				- [slurp](https://github.com/emersion/slurp) : utilitaire pour **sélectionner des régions** de l'écran développé en #C
+				  id:: 660e7aa6-a5eb-47b9-a13f-ae6502f98cfb
+				- [swappy](https://github.com/jtheoof/swappy) : **éditeur de captures** d'écran développé en #C
+				- [wf-recorder](https://github.com/ammen99/wf-recorder) : utilitaire développé en #C++ pour **enregistrer l'écran** ou des **régions de l'écran** en combinaison avec [slurp](((660e7aa6-a5eb-47b9-a13f-ae6502f98cfb)))
 				  ```shell
-				  yay -S dolphin ark kde-cli-tools
+				  wf-recorder -g "$(slurp)"
 				  ```
-					- **ark** : utilitaire de gestion d'archives
-					- **kde-cli-tools** : outils d'interaction système basé sur le framework **KDE**
-				- Installation de l'explorateur **thunar**, gestionnaire de fichiers habituellement empaqueté avec **XFCE**. Facilement **configurable**, **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes 
-				  ```shell
-				  yay -S thunar thunar-archive-plugin
-				  ```
-			- #### Terminal
-				- Installation d'Alacritty, émulateur de terminal développé en #Rust 
-				  ```shell
-				  yay -S alacritty
-				  ```
-				- Installation de Kitty, émulateur de terminal développé en #Python et #C 
-				  ```shell
-				  yay -S kitty
-				  ```
-			- #### Display Manger
-				- Installation de **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE** 
-				  ```shell
-				  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
-				  ```
-					- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
-					- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
-				- Activation de sddm 
-				  ```shell
-				  sudo systemctl enable --now sddm
-				  ```
-			- #### Polkit
-				- Installation du polkit KDE pour gérer le lancement d'applications graphiques nécessitant des droits admin 
-				  ```shell
-				  yay -S polkit-kde-agent
-				  ```
-			- #### Multimédia
-				- Quelques lecteurs de médias 
-				  ```shell
-				  yay -S vlc-git mpv-git
-				  ```
-					- **vlc** : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**
-					- **mpv** : lecteur **simple** et **léger**
-				- **Manipulation** / **conversion** d'images 
-				  ```shell
-				  yay -S imagemagick
-				  ```
-			- #### Personnalisation
-				- Pour la configuration d'interfaces **QT5** et **QT6** 
-				  ```shell
-				  yay -S qt5ct qt6ct kvantum
-				  ```
-				- Pour la configuration d'interface **GTK3** 
-				  ```shell
-				  yay -S nwg-look
-				  ```
-		- ### Desktop Environment / Window Manager
-			- #### Hyprland
-				- Installation des paquets de base 
-				  logseq.order-list-type:: number
-				  ```shell
-				  yay -S hyprland-git cliphist dunst grimblast-git rofi-lbonn-wayland-git slurp swaylock-effects-git swww waybar wlogout xdg-desktop-portal-hyprland wf-recorder
-				  ```
-					- **cliphist** : gestionnaire de presse-papier
-					  logseq.order-list-type:: number
-					- **dunst** : daemon de **notifications** très léger
-					  logseq.order-list-type:: number
-					- **grimblast-git** : pour prendre des **screenshots**
-					  logseq.order-list-type:: number
-					- **hypridle** : daemon d'**inactivité** pour **hyprland**
-					  logseq.order-list-type:: number
-					- **rofi-lbonn-wayland-git** : lanceur d'**applications**
-					  logseq.order-list-type:: number
-					- **slurp** : pour sélectionner des régions de l'écran
-					  logseq.order-list-type:: number
-					- **swaylock-effects-git** : utilitaire de **verrouillage** de session
-					  logseq.order-list-type:: number
-						- Ou **hyprlock** : alternative de l'environnement **Hypr**
-						  logseq.order-list-type:: number
-					- **swappy** : éditeur de captures d'écran
-					  logseq.order-list-type:: number
-					- **swww** : gestionnaire de **fonds d'écran**
-					  logseq.order-list-type:: number
-					- **waybar** : **barre** de tâches
-					  logseq.order-list-type:: number
-					- **wf-recorder** : pour **enregistrer l'écran** ou des **régions d'écrans** en combinaison avec **slurp** 
-					  logseq.order-list-type:: number
-					  ```shell
-					  wf-recorder -g "$(slurp)"
-					  ```
-					- **wlogout** : gestionnaire de **verrouillage** / fermeture de session  / **mise en veille** / **arrêt** / **redémarrage**
-					  logseq.order-list-type:: number
+			- #### Lanceur d'applications 
+			  ```shell
+			  yay -S rofi-lbonn-wayland-git
+			  ```
+				- [rofi](https://github.com/lbonn/rofi) : **lanceur d'applications** développé en #C très **personnalisable** et **léger**
+			- #### Verrouillage de session 
+			  ```shell
+			  yay -S hypridle swaylock-effects-git wlogout
+			  ```
+				- [hypridle](https://github.com/hyprwm/hypridle) : daemon d'**inactivité** pour **hyprland** développé en #C++
+				- [swaylock-effects-git](https://github.com/mortie/swaylock-effects) : écran de **verrouillage** de session  **simple** et **personnalisable** développé en #C
+				- [hyprlock](https://github.com/hyprwm/hyprlock) : ==alternative== à [swaylock](((65cfcd67-7ed8-4880-ad65-3224c06937a6))) de l'environnement **Hypr** développé en #C++
+				- [wlogout](https://github.com/ArtsyMacaw/wlogout) : menu de **verrouillage de session** développé en #C
+					- Verrouillage de session
+					- Fermeture de session
+					- Mise en veille
+					- Redémarrage
+					- Arrêt du système
+			- #### Fond d'écran 
+			  ```shell
+			  yay -S swww-git
+			  ```
+				- [swww](https://github.com/LGFae/swww) : daemon pour les **fonds d'écran** développé en #Rust
+			- #### Barre de tâches 
+			  ```shell
+			  yay -S waybar-git
+			  ```
+				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
 - # Maintenance
 	- ## Gestion des paquets
 	  collapsed:: true

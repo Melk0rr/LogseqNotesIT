@@ -1,6 +1,7 @@
 # #Linux
 	- ## Commun Linux
 		- ### #Documentation
+		  collapsed:: true
 			- [Documentation en ligne](https://www.geeksforgeeks.org/linux-commands/)
 			  id:: 65217c2c-e35f-404b-91ad-66bac8c07a1d
 			- [man](https://www.geeksforgeeks.org/man-command-in-linux-with-examples/) <commande> (manuel) : Affiche le manuel de la commande spécifiée
