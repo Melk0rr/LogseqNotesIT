@@ -97,6 +97,7 @@
 			  mount /dev/nvme0n1p4 /mnt/home
 			  ```
 	- ## Installation
+	  collapsed:: true
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
 		  collapsed:: true
@@ -296,6 +297,7 @@
 			  reboot
 			  ```
 	- ## Post-installation
+	  collapsed:: true
 		- ### Base
 			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
 			  logseq.order-list-type:: number
@@ -350,6 +352,7 @@
 				-
 	- ## Graphique
 		- ### Général
+		  collapsed:: true
 			- #### Gestionnaire de fichiers
 				- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options telles que thunar. En particulier sur certaines machines **limitées en ressources** 
 				  ```shell
@@ -407,12 +410,11 @@
 				  yay -S nwg-look
 				  ```
 		- ### Desktop Environment / Window Manager
-		  collapsed:: true
 			- #### Hyprland
 				- Installation des paquets de base 
 				  logseq.order-list-type:: number
 				  ```shell
-				  yay -S hyprland-git cliphist dunst grimblast-git rofi-lbonn-wayland-git slurp swaylock-effects-git swww waybar wlogout xdg-desktop-portal-hyprland
+				  yay -S hyprland-git cliphist dunst grimblast-git rofi-lbonn-wayland-git slurp swaylock-effects-git swww waybar wlogout xdg-desktop-portal-hyprland wf-recorder
 				  ```
 					- **cliphist** : gestionnaire de presse-papier
 					  logseq.order-list-type:: number
@@ -420,18 +422,27 @@
 					  logseq.order-list-type:: number
 					- **grimblast-git** : pour prendre des **screenshots**
 					  logseq.order-list-type:: number
+					- **hypridle** : daemon d'**inactivité** pour **hyprland**
+					  logseq.order-list-type:: number
 					- **rofi-lbonn-wayland-git** : lanceur d'**applications**
 					  logseq.order-list-type:: number
 					- **slurp** : pour sélectionner des régions de l'écran
 					  logseq.order-list-type:: number
 					- **swaylock-effects-git** : utilitaire de **verrouillage** de session
 					  logseq.order-list-type:: number
+						- Ou **hyprlock** : alternative de l'environnement **Hypr**
+						  logseq.order-list-type:: number
 					- **swappy** : éditeur de captures d'écran
 					  logseq.order-list-type:: number
 					- **swww** : gestionnaire de **fonds d'écran**
 					  logseq.order-list-type:: number
 					- **waybar** : **barre** de tâches
 					  logseq.order-list-type:: number
+					- **wf-recorder** : pour **enregistrer l'écran** ou des **régions d'écrans** en combinaison avec **slurp** 
+					  logseq.order-list-type:: number
+					  ```shell
+					  wf-recorder -g "$(slurp)"
+					  ```
 					- **wlogout** : gestionnaire de **verrouillage** / fermeture de session  / **mise en veille** / **arrêt** / **redémarrage**
 					  logseq.order-list-type:: number
 - # Maintenance
