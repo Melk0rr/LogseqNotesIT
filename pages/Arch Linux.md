@@ -352,7 +352,6 @@
 				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
 				-
 - # Graphique
-  collapsed:: true
 	- ## Général
 	  collapsed:: true
 		- ### Gestionnaire de fichiers
@@ -424,9 +423,7 @@
 			  yay -S nwg-look
 			  ```
 	- ## Desktop Environment (DE) / Window Manager (WM)
-	  collapsed:: true
 		- ### Hyprland
-		  collapsed:: true
 			- [Wiki Hyprland](https://wiki.hyprland.org/)
 			- #### Installation des paquets de base 
 			  ```shell
