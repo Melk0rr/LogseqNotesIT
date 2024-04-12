@@ -14,11 +14,13 @@ collapsed:: true
 		- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) :  Programme #[[C#]] #Powershell #[[OpenSource]] de suppression de bloatware sur **Windows 10**.
 - # #[[Pentest - Red Team]]
   collapsed:: true
+	- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
 	- ## #Obfuscation
 	  collapsed:: true
 		- [Anubis](https://github.com/0sir1ss/Anubis) : obscurcissement de code
 	- ## #[[Sites web]]
-		- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
+	  collapsed:: true
+		- [XSStrike](https://github.com/s0md3v/XSStrike) : Détection de faille XSS
 	- ## #Logs
 	  collapsed:: true
 		- [Phant0m](https://github.com/olafhartong/Invoke-Phant0m/tree/master) : #OpenSource Script #Powershell qui neutralise les processus de génération de logs sur Windows
