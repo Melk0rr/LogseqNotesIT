@@ -247,7 +247,7 @@
 					  logseq.order-list-type:: number
 					- **waybar** : **barre** de tâches
 					  logseq.order-list-type:: number
-					- **wlogout** : gestionnaire de **verrouillage** / fermeture de session  / **mise en veille** / **arrêt** / **redémarrage**
+					- **wlogout** : gestionnaire de **verrouillage** / **fermeture** de session  / **mise en veille** / **arrêt** / **redémarrage**
 					  logseq.order-list-type:: number
 	- ## Maintenance
 		- ### Gestion des paquets
