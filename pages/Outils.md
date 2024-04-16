@@ -1,65 +1,26 @@
-# #Audit
-	- ## #[[Sites web]]
-	  id:: 65119136-c77f-473f-abea-a2b7a23fa1cf
-	  collapsed:: true
-		- [CRT.sh](https://crt.sh/) : Scan de domain, d'URL / Ip,  whois
-		- [DeHashed](https://www.dehashed.com) : Base de données de HASH connus
-		- [DNSDumper](https://dnsdumpster.com/) : reconnaissance DNS
-		- [exploit-db](https://www.exploit-db.com) : Recheche de vulnérabilités
-		- [FOFA](https://en.fofa.info) : Propriétés d'un site web
-		- [FullHunt](https://fullhunt.io/) : Scan de domain
-		- [grep.app](https://grep.app/) : Recherche de repository GIT
-		- [GrayhatWarfare](https://buckets.grayhatwarfare.com) : Propriétés d'un site web
-		- [Hunter](https://hunter.io/) : Recherche d'adresses mail liées à un site web
-		- [LeakIX](https://leakix.net) : Moteur de recherche Ips, Domains, filenames, hashes, ASN…
-		- [Mitre](https://cve.mitre.org) : Recheche de vulnérabilités
-		- [MXToolBox](https://mxtoolbox.com) : Divers outils d'analyse
-		- [NetLas](https://app.netlas.io/) : Scan d'URL / Ip,  whois
-		- [ONYPHE](https://www.onyphe.io/) : Scan de domain
-		- [PulseDive](https://pulsedive.com) : Propriétés d'un site web
-		- [SecurityTrails](https://securitytrails.com) : Moteur de recherche IP, mots clés, Hostname
-		- [Shodan](https://www.shodan.io/) : Analyse et scan
-		- [URLScan](https://urlscan.io/) : Analyse et scan
-		- [Vulners](https://vulners.com) : Recheche de vulnérabilités
-		- [WaybackMachine](https://archive.org/web/) : Archive Web
-		- [ZoomEye](https://www.zoomeye.org) : Moteur de recherche de Vuln sur un site
-	- ## #Mail
-	  collapsed:: true
-		- #DMARC
-			- [DMARCly](https://dmarcly.com/tools/) : Divers outils de vérification DMARC, DKIM et SPF
-- # #[[SOC - Blue team]]
-	- ## #DNS
-	  collapsed:: true
-		- [Anubis](https://github.com/jonluca/Anubis) : sondage et reconnaissance DNS
+# #Convertion
+collapsed:: true
 	- ## #[[Sites web]]
 	  collapsed:: true
-		- [VirusTotal](https://github.com/ventoy/Ventoy) : Analyse antivirus / IOC en ligne
-		- [Hybrid Analysis](https://www.hybrid-analysis.com/) : Outil de sandbox en ligne
-		- [Interact.sh](https://app.interactsh.com/#/) : Testeur de requêtes en ligne
-		- [BlueTeam-Tools](https://github.com/A-poc/BlueTeam-Tools) : Repo github qui ressence divers outils de défense utiles
-	- ## #Réseau
+		- [ASCII Generator](https://ascii-generator.site/) : Convertion images / texte -> ASCII
+- # #Optimisation
+  collapsed:: true
+	- ## #Android
 	  collapsed:: true
-		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/tree/main) : inventaire d'adresses IP malveillantes mis à jour toutes les heures
-	- ## #Forensic
-	  collapsed:: true
-		- [DFIR ORC](https://github.com/DFIR-ORC/dfir-orc) : Programme #C++#OpenSource de collecte d'artefacts et IOC pour systèmes #Windows
-		- [Cyberchef](https://gchq.github.io/CyberChef) : Convertion et décryptage de formats de données variés
-		- [Chainsaw](https://github.com/WithSecureLabs/chainsaw) : Programme #Rust d'analyse d'artéfacts #Windows
-	- ## #[[Active Directory]]
-	  collapsed:: true
-		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
+		- [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) :  Programme #Rust #[[OpenSource]] pour supprimer des applications non souhaitées sur Android
 	- ## #Windows
 	  collapsed:: true
-		- [PatchaPalooza](https://github.com/xaitax/PatchaPalooza) : script #Python de remontée des vulnérabilités récentes dans les produits Microsoft
-		- [ScriptSentry](https://github.com/techspence/ScriptSentry) : script #Powershell de découverte de scripts de connexion dangereux ou mal configurés
-		- [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) : script #Powershell d'analyse de #Logs Windows Events
+		- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : Programme #[[C#]] #[[OpenSource]] de suppression de bloatware sur **Windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
+		- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) :  Programme #[[C#]] #Powershell #[[OpenSource]] de suppression de bloatware sur **Windows 10**.
 - # #[[Pentest - Red Team]]
+  collapsed:: true
+	- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
 	- ## #Obfuscation
 	  collapsed:: true
 		- [Anubis](https://github.com/0sir1ss/Anubis) : obscurcissement de code
 	- ## #[[Sites web]]
 	  collapsed:: true
-		- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
+		- [XSStrike](https://github.com/s0md3v/XSStrike) : Détection de faille XSS
 	- ## #Logs
 	  collapsed:: true
 		- [Phant0m](https://github.com/olafhartong/Invoke-Phant0m/tree/master) : #OpenSource Script #Powershell qui neutralise les processus de génération de logs sur Windows
@@ -69,7 +30,14 @@
 	- ## #[[Active Directory]]
 	  collapsed:: true
 		- [gpp-decrypt](https://github.com/t0thkr1s/gpp-decrypt) : décrypte les cpasswords et mots de passe en clair dans les GPO
+- # #Personnalisation
+  collapsed:: true
+	- ## #Terminal
+	  collapsed:: true
+		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #git, etc.)
+		- [neofetch](https://github.com/dylanaraps/neofetch) : Outil pour afficher une bannière et certaines informations au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Gestion de paquets]] associé, espace disque, etc.)
 - # #Privacy
+  collapsed:: true
 	- ## #[[Sites web]]
 	  collapsed:: true
 		- [PrivacyTools](https://www.privacytools.io/) : Site web listant divers outils pour la confidentialité
@@ -99,15 +67,62 @@
 	- ## #[[Sites web]]
 	  collapsed:: true
 		- [Regex101](https://regex101.com/) : Testeur de regex en ligne
-- # #Optimisation
-	- ## #Android
+- # #[[SOC - Blue team]]
+  collapsed:: true
+	- [BlueTeam-Tools](https://github.com/A-poc/BlueTeam-Tools) : Repo github qui ressence divers outils de défense utiles
+	- [grep.app](https://grep.app/) : Recherche de repository GIT
+	- [WaybackMachine](https://archive.org/web/) : Archive Web
+	- [Interact.sh](https://app.interactsh.com/#/) : Testeur de requêtes en ligne
+	- ## #[[Active Directory]]
 	  collapsed:: true
-		- [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) :  Programme #Rust #[[OpenSource]] pour supprimer des applications non souhaitées sur Android
+		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
+	- ## #Analyse
+	  collapsed:: true
+		- [DeHashed](https://www.dehashed.com) : Base de données de HASH connus
+		- [Hybrid Analysis](https://www.hybrid-analysis.com/) : Outil de sandbox en ligne
+		- [MXToolBox](https://mxtoolbox.com) : Divers outils d'analyse
+		- [VirusTotal](https://github.com/ventoy/Ventoy) : Analyse antivirus / IOC en ligne
+	- ## #DNS
+	  collapsed:: true
+		- [Anubis](https://github.com/jonluca/Anubis) : sondage et reconnaissance DNS
+		- [CRT.sh](https://crt.sh/) : Scan de domain, d'URL / Ip,  whois
+		- [DNSDumper](https://dnsdumpster.com/) : reconnaissance DNS
+		- [FullHunt](https://fullhunt.io/) : Scan de domain
+		- [ONYPHE](https://www.onyphe.io/) : Scan de domain
+	- ## #Forensic
+	  collapsed:: true
+		- [DFIR ORC](https://github.com/DFIR-ORC/dfir-orc) : Programme #C++#OpenSource de collecte d'artefacts et IOC pour systèmes #Windows
+		- [Cyberchef](https://gchq.github.io/CyberChef) : Convertion et décryptage de formats de données variés
+		- [Chainsaw](https://github.com/WithSecureLabs/chainsaw) : Programme #Rust d'analyse d'artéfacts #Windows
+	- ## #Mail
+	  collapsed:: true
+		- #DMARC
+		  collapsed:: true
+			- [DMARCly](https://dmarcly.com/tools/) : Divers outils de vérification DMARC, DKIM et SPF
+		- [Hunter](https://hunter.io/) : Recherche d'adresses mail liées à un site web
+	- ## #Réseau
+	  collapsed:: true
+		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/tree/main) : inventaire d'adresses IP malveillantes mis à jour toutes les heures
+	- ## #[[Sites web]]
+		- [exploit-db](https://www.exploit-db.com) : Recheche de vulnérabilités
+		- [FOFA](https://en.fofa.info) : Propriétés d'un site web
+		- [GrayhatWarfare](https://buckets.grayhatwarfare.com) : Propriétés d'un site web
+		- [LeakIX](https://leakix.net) : Moteur de recherche Ips, Domains, filenames, hashes, ASN…
+		- [Mitre](https://cve.mitre.org) : Recheche de vulnérabilités
+		- LATER [NetLas](https://app.netlas.io/) : Scan d'URL / Ip,  whois
+		- [PulseDive](https://pulsedive.com) : Propriétés d'un site web
+		- [SecurityTrails](https://securitytrails.com) : Moteur de recherche IP, mots clés, Hostname
+		- [Shodan](https://www.shodan.io/) : Analyse et scan
+		- [URLScan](https://urlscan.io/) : Analyse et scan
+		- [Vulners](https://vulners.com) : Recheche de vulnérabilités
+		- [ZoomEye](https://www.zoomeye.org) : Moteur de recherche de Vuln sur un site
 	- ## #Windows
 	  collapsed:: true
-		- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : Programme #[[C#]] #[[OpenSource]] de suppression de bloatware sur **Windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
-		- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) :  Programme #[[C#]] #Powershell #[[OpenSource]] de suppression de bloatware sur **Windows 10**.
+		- [PatchaPalooza](https://github.com/xaitax/PatchaPalooza) : script #Python de remontée des vulnérabilités récentes dans les produits Microsoft
+		- [ScriptSentry](https://github.com/techspence/ScriptSentry) : script #Powershell de découverte de scripts de connexion dangereux ou mal configurés
+		- [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) : script #Powershell d'analyse de #Logs Windows Events
 - # #System
+  collapsed:: true
 	- ## #[[Création de média]]
 	  collapsed:: true
 		- [Balena Etcher](https://rufus.ie/en/) : Programme #Typescript #OpenSource pour la création de médias d'installation USB. Prend le parti de la simplicité d'utilisation : seulement 3 clics nécessaires pour flasher une clef.
@@ -116,13 +131,3 @@
 	- ## #Chiffrement
 	  collapsed:: true
 		- [VeraCrypt](https://veracrypt.fr/en/Home.html) : Logiciel de chiffrement de données #OpenSource disponible sur #Windows #Linux et #MACOS. Permet de créer des disques virtuels chiffrés ou tout simplement de chiffrer une partition ou un disque complet
-- # #Convertion
-  collapsed:: true
-	- ## #[[Sites web]]
-	  collapsed:: true
-		- [ASCII Generator](https://ascii-generator.site/) : Convertion images / texte -> ASCII
-- # #Personnalisation
-	- ## #Terminal
-	  collapsed:: true
-		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #git, etc.)
-		- [neofetch](https://github.com/dylanaraps/neofetch) : Outil pour afficher une bannière et certaines informations au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Gestion de paquets]] associé, espace disque, etc.)

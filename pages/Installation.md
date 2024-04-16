@@ -99,6 +99,7 @@
 				- swappy
 				- swayidle
 				- swaylock-effects-git
+				  id:: 65cfcd67-7ed8-4880-ad65-3224c06937a6
 				- swww
 				- waybar
 				- wget
