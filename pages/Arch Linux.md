@@ -352,8 +352,8 @@
 				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
 				-
 - # Graphique
+  collapsed:: true
 	- ## Général
-	  collapsed:: true
 		- ### Gestionnaire de fichiers
 		  collapsed:: true
 			- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources** 
@@ -484,9 +484,7 @@
 			  ```
 				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
 - # Maintenance
-  collapsed:: true
 	- ## Gestion des paquets
-	  collapsed:: true
 		- ### Mise à jour
 		  collapsed:: true
 			- Installe les mises à jour pour un ou plusieurs paquet ou tous les paquets si aucun n'est spécifié. Met également à jour l'index des paquets 
@@ -541,6 +539,24 @@
 					  ```shell
 					  pacman -U /var/cache/pacman/pkg/mon_pkg.tar.zst
 					  ```
+		- ### Gestion des paquets python
+		  collapsed:: true
+			- #### Installation
+				- Sur Arch il est préférable d'installer et de gérer les paquets python **via pacman** 
+				  ```shell
+				  sudo pacman -S python-"package"
+				  sudo pacman -S python2-"package"
+				  ```
+			- #### Recompilation
+				- Lorsqu'une nouvelle version de python est publiée sur les repos Arch, il faut **recompiler** tous les **paquets python issus du AUR** (les paquets des repos officiels sont gérés automatiquement)
+				- Pour lister les paquets python à recompiler
+				  ```shell
+				  pacman -Qoq /usr/lib/python<ancienne_version>
+				  ```
+				- Pour les recompiler 
+				  ```shell
+				  yay -S $(pacman -Qoq /usr/lib/python3.11) --answerclean All
+				  ```
 	- ## Résolution de problèmes
 	  collapsed:: true
 		- ### Compilation depuis un chroot propre
