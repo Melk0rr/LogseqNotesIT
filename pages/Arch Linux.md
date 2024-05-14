@@ -2,35 +2,38 @@
 	- Distribution #Linux en #Rolling release et maintenue par la **communauté**
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
-  collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
-	  collapsed:: true
 		- ### Disposition clavier
+		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
 			  logseq.order-list-type:: number
 			  ```shell
 			  loadkeys fr
 			  ```
 		- ### Connexion à internet
+		  collapsed:: true
 			- Vérifier la connectivité internet. Mieux vaut une connexion ethernet pour se faciliter la vie 
 			  logseq.order-list-type:: number
 			  ```shell
 			  ping archlinux.org
 			  ```
 		- ### Check UEFI
+		  collapsed:: true
 			- S'assurer que l'installation est bien en mode **UEFI** (sauf si BIOS souhaité). Si la commande ne retourne rien: l'installation est en mode BIOS
 			  ```shell
 			  ls /sys/firmware/efi/efivars
 			  ```
 		- ### Horloge
+		  collapsed:: true
 			- Pour vérifier que la date est bien valide 
 			  logseq.order-list-type:: number
 			  ```shell
 			  timedatectl
 			  ```
 		- ### Partitionnement
+		  collapsed:: true
 			- Afficher les disques et partitions actuelles (*blocs*) -> identifier le disque sur lequel installer le système 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -52,6 +55,7 @@
 				- Quitter une fois les changements écrits
 				  logseq.order-list-type:: number
 		- ### Formatage
+		  collapsed:: true
 			- Pour l'exemple : <**disque**><*partition* x> => **nvme0n1***px*
 			- Pour vérifier les changements: 
 			  logseq.order-list-type:: number
@@ -75,7 +79,14 @@
 			  mkfs.ext4 /dev/nvme0n1p3
 			  mkfs.ext4 /dev/nvme0n1p4
 			  ```
+			- Attribuer un label à chaque partition 
+			  logseq.order-list-type:: number
+			  ```shell
+			  e2label /dev/XXX "new label" # ext2/3/4
+			  btrfs filesystem label /dev/XXX "new label" # btrfs
+			  ```
 		- ### Montage des partitions
+		  collapsed:: true
 			- **Monter** la partition **racine** sur **/mnt** 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -219,6 +230,7 @@
 			  mkinitcpio -P
 			  ```
 		- ### Installation chargeur d'amorçage
+		  collapsed:: true
 			- #### systemd-boot
 				- Installer systemd-boot 
 				  logseq.order-list-type:: number
@@ -235,6 +247,7 @@
 						  bootctl update
 						  ```
 		- ### Derniers ajustements avant reboot
+		  collapsed:: true
 			- Ajouter *default arch.conf* pour définir une option par défaut (possible d'ajuster le **timeout** de démarrage) 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -354,6 +367,7 @@
 - # Graphique
   collapsed:: true
 	- ## Général
+	  collapsed:: true
 		- ### Gestionnaire de fichiers
 		  collapsed:: true
 			- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources** 
@@ -423,6 +437,7 @@
 			  yay -S nwg-look
 			  ```
 	- ## Desktop Environment (DE) / Window Manager (WM)
+	  collapsed:: true
 		- ### Hyprland
 			- [Wiki Hyprland](https://wiki.hyprland.org/)
 			- #### Installation des paquets de base 
@@ -485,6 +500,7 @@
 				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
 - # Maintenance
 	- ## Gestion des paquets
+	  collapsed:: true
 		- ### Mise à jour
 		  collapsed:: true
 			- Installe les mises à jour pour un ou plusieurs paquet ou tous les paquets si aucun n'est spécifié. Met également à jour l'index des paquets 
