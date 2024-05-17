@@ -2,7 +2,6 @@
 	- Editeur de texte #OpenSource publié en 1991 qui repose sur un système de modes et de raccourcis permettant une manipulation et une navigation rapide et efficace d'un document
 - # Commandes
 	- ## Mode normal
-	  collapsed:: true
 		- ### Navigation
 		  collapsed:: true
 			- #### Base
@@ -118,7 +117,6 @@
 				  ```
 		- ### Manipulation de document
 			- #### Changements
-			  collapsed:: true
 				- **Undo** / **défaire** (équivalent au *Ctrl+Z*) (*undo*)
 				  ```vim
 				  u

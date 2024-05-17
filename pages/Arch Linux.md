@@ -1,10 +1,13 @@
 # Description
+collapsed:: true
 	- Distribution #Linux en #Rolling release et maintenue par la **communauté**
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
+  collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
+	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -365,7 +368,6 @@
 				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
 				-
 - # Graphique
-  collapsed:: true
 	- ## Général
 	  collapsed:: true
 		- ### Gestionnaire de fichiers
@@ -437,8 +439,23 @@
 			  yay -S nwg-look
 			  ```
 	- ## Desktop Environment (DE) / Window Manager (WM)
-	  collapsed:: true
+		- ### Général (WM)
+			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
+			  ```shell
+			  sudo pacman -Syu archlinux-xdg-menu
+			  xdg-menu
+			  ```
+			- Ajouter variable d'environnement 
+			  ```
+			  XDG_MENU_PREFIX=arch-
+			  ```
+			- Finaliser 
+			  ```shell
+			  reboot
+			  kbuildsycoca6
+			  ```
 		- ### Hyprland
+		  collapsed:: true
 			- [Wiki Hyprland](https://wiki.hyprland.org/)
 			- #### Installation des paquets de base 
 			  ```shell
