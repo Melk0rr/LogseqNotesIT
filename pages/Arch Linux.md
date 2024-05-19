@@ -313,7 +313,7 @@ collapsed:: true
 			  umount -R /mnt
 			  reboot
 			  ```
-	- ## Post-installation
+	- ## Post-reboot
 	  collapsed:: true
 		- ### Base
 			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
@@ -367,79 +367,12 @@ collapsed:: true
 				  ```
 				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
 				-
-- # Graphique
-	- ## Général
-	  collapsed:: true
-		- ### Gestionnaire de fichiers
-		  collapsed:: true
-			- Installation de l'explorateur **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources** 
-			  id:: 65cfcd67-02fa-424c-9c87-a8f347546160
-			  ```shell
-			  yay -S dolphin ark kde-cli-tools
-			  ```
-				- **ark** : utilitaire de gestion d'archives
-				- **kde-cli-tools** : outils d'interaction système basé sur le framework **KDE**
-			- Installation de l'explorateur **thunar**, gestionnaire de fichiers habituellement empaqueté avec **XFCE**. Facilement **configurable**, **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes 
-			  ```shell
-			  yay -S thunar thunar-archive-plugin
-			  ```
-		- ### Terminal
-		  collapsed:: true
-			- Installation d'Alacritty, émulateur de terminal développé en #Rust 
-			  ```shell
-			  yay -S alacritty
-			  ```
-			- Installation de Kitty, émulateur de terminal développé en #Python et #C 
-			  ```shell
-			  yay -S kitty
-			  ```
-		- ### Display Manger
-		  collapsed:: true
-			- Installation de **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE** 
-			  ```shell
-			  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
-			  ```
-				- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
-				- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
-			- Activation de sddm 
-			  ```shell
-			  sudo systemctl enable --now sddm
-			  ```
-		- ### Polkit
-		  collapsed:: true
-			- Installation du polkit KDE pour gérer le lancement d'applications graphiques nécessitant des droits admin 
-			  ```shell
-			  yay -S polkit-kde-agent
-			  ```
-		- ### Multimédia
-		  collapsed:: true
-			- #### Lecteurs de médias
-			  ```shell
-			  yay -S vlc-git mpv-git imv-git audacious-git
-			  ```
-				- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
-					- VLC peut être **requis** par [dolphin](((65cfcd67-02fa-424c-9c87-a8f347546160))) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
-					- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
-				- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
-				  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
-				- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
-				- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
-			- #### Manipulation / conversion d'images 
-			  ```shell
-			  yay -S imagemagick ffmpeg
-			  ```
-		- ### Personnalisation
-		  collapsed:: true
-			- Pour la configuration d'interfaces **QT5** et **QT6** 
-			  ```shell
-			  yay -S qt5ct qt6ct kvantum
-			  ```
-			- Pour la configuration d'interface **GTK3** 
-			  ```shell
-			  yay -S nwg-look
-			  ```
+- # Post-installation
+  collapsed:: true
 	- ## Desktop Environment (DE) / Window Manager (WM)
+	  collapsed:: true
 		- ### Général (WM)
+		  collapsed:: true
 			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
 			  ```shell
 			  sudo pacman -Syu archlinux-xdg-menu
@@ -515,7 +448,84 @@ collapsed:: true
 			  yay -S waybar-git
 			  ```
 				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
+	- ## Gestionnaire de fichiers
+	  collapsed:: true
+		- **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources** 
+		  id:: 65cfcd67-02fa-424c-9c87-a8f347546160
+		  ```shell
+		  yay -S dolphin ark kde-cli-tools
+		  ```
+			- **ark** : utilitaire de gestion d'archives
+			- **kde-cli-tools** : outils d'interaction système basé sur le framework **KDE**
+		- **thunar**, gestionnaire de fichiers habituellement empaqueté avec **XFCE**. Facilement **configurable**, **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes 
+		  ```shell
+		  yay -S thunar thunar-archive-plugin
+		  ```
+	- ## Terminal
+	  collapsed:: true
+		- **Alacritty**, émulateur de terminal développé en #Rust 
+		  ```shell
+		  yay -S alacritty
+		  ```
+		- **Kitty**, émulateur de terminal développé en #Python et #C 
+		  ```shell
+		  yay -S kitty
+		  ```
+	- ## Display Manger
+	  collapsed:: true
+		- Installation de **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE** 
+		  ```shell
+		  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
+		  ```
+			- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
+			- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
+		- Activation de sddm 
+		  ```shell
+		  sudo systemctl enable --now sddm
+		  ```
+	- ## Polkit
+	  collapsed:: true
+		- Installation du polkit KDE pour gérer le lancement d'applications graphiques nécessitant des droits admin 
+		  ```shell
+		  yay -S polkit-kde-agent
+		  ```
+	- ## Multimédia
+	  collapsed:: true
+		- ### Lecteurs de médias
+		  collapsed:: true
+			- ```shell
+			  yay -S mpv-git imv-git audacious-git
+			  ```
+			- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
+			  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
+			- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
+			- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
+			- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
+			  collapsed:: true
+				- VLC peut être **requis** par [dolphin](((65cfcd67-02fa-424c-9c87-a8f347546160))) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
+				- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
+		- ### Manipulation / conversion d'images
+		  collapsed:: true
+			- ```shell
+			  yay -S imagemagick ffmpeg
+			  ```
+	- ## Jeux
+	  collapsed:: true
+		- ```shell
+		  yay -S steam steam-native-runtime steamtinkerlaunch protonup-qt protontricks-git winetricks heroic-games-launcher lutris
+		  ```
+	- ## Personnalisation
+	  collapsed:: true
+		- Pour la configuration d'interfaces **QT5** et **QT6** 
+		  ```shell
+		  yay -S qt5ct qt6ct kvantum
+		  ```
+		- Pour la configuration d'interface **GTK3** 
+		  ```shell
+		  yay -S nwg-look
+		  ```
 - # Maintenance
+  collapsed:: true
 	- ## Gestion des paquets
 	  collapsed:: true
 		- ### Mise à jour
