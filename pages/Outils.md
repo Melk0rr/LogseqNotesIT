@@ -36,8 +36,8 @@ collapsed:: true
 			- [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) :  Programme #Rust #[[OpenSource]] pour supprimer des applications non souhaitées sur Android
 		- ### #Windows
 		  collapsed:: true
-			- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : Programme #[[C#]] #[[OpenSource]] de suppression de bloatware sur **windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
 			- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) :  Programme #[[C#]] #Powershell #[[OpenSource]] de suppression de bloatware sur **windows 10**.
+			- [WinPilot](https://github.com/builtbybel/Winpilot) : Programme #[[C#]] #[[OpenSource]] de suppression de bloatware sur **windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
 			- [WinUtil](https://github.com/ChrisTitusTech/winutil) : Script #Powershell de [christitus](https://www.youtube.com/channel/UCg6gPGh8HU2U01vaFCAsvmQ) pour débloater une installation windows 10 ou 11.
 	- ## #[[Gestion de mots de passe]]
 	  collapsed:: true
@@ -59,10 +59,11 @@ collapsed:: true
 		- [TOR](https://www.torproject.org/) : #Windows#MACOS#Linux#Android Version modifiée de Firefox avec protection contre les traqueurs, système de proxy via le réseau TOR, etc
 	- ## #[[Sites web]]
 	  collapsed:: true
-		- [Guides PrivacyTools](https://www.privacytools.io/guides/) : Guides divers pour l'utilisation d'outils et autres
 		- [Have I Been Pwned](https://haveibeenpwned.com/) : Recense les fuites de données connues et permet de vérifier si une adresse email est concernée par l'une de ces fuites
 		- [Privacy Guides](https://www.privacyguides.org/fr/tools/) : Guides et outils relatifs à la confidentialité
+		- [PrivacyToolsList](https://privacytoolslist.com/) : Une liste d'alternatives logicielles diverses par catégories
 		- [PrivacyTools](https://www.privacytools.io/) : Site web listant divers outils pour la confidentialité
+		- [Wikilibriste](https://wikilibriste.fr/debutant/logiciel-alternative-libre) : Site web français proposant des guides pour améliorer son hygiène numérique et des alternatives logicielles #OpenSource et respectueuses de la vie privée
 - # #[[Programmation]]
   collapsed:: true
 	- ## #[[Sites web]]
@@ -105,6 +106,7 @@ collapsed:: true
 	  collapsed:: true
 		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/tree/main) : inventaire d'adresses IP malveillantes mis à jour toutes les heures
 	- ## #[[Sites web]]
+	  collapsed:: true
 		- [exploit-db](https://www.exploit-db.com) : Recheche de vulnérabilités
 		- [FOFA](https://en.fofa.info) : Propriétés d'un site web
 		- [GrayhatWarfare](https://buckets.grayhatwarfare.com) : Propriétés d'un site web
