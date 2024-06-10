@@ -3,15 +3,6 @@ collapsed:: true
 	- ## #[[Sites web]]
 	  collapsed:: true
 		- [ASCII Generator](https://ascii-generator.site/) : Convertion images / texte -> ASCII
-- # #Optimisation
-  collapsed:: true
-	- ## #Android
-	  collapsed:: true
-		- [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) :  Programme #Rust #[[OpenSource]] pour supprimer des applications non souhaitées sur Android
-	- ## #Windows
-	  collapsed:: true
-		- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : Programme #[[C#]] #[[OpenSource]] de suppression de bloatware sur **Windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
-		- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) :  Programme #[[C#]] #Powershell #[[OpenSource]] de suppression de bloatware sur **Windows 10**.
 - # #[[Pentest - Red Team]]
   collapsed:: true
 	- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
@@ -19,7 +10,6 @@ collapsed:: true
 	  collapsed:: true
 		- [Anubis](https://github.com/0sir1ss/Anubis) : obscurcissement de code
 	- ## #[[Sites web]]
-	  collapsed:: true
 		- [XSStrike](https://github.com/s0md3v/XSStrike) : Détection de faille XSS
 	- ## #Logs
 	  collapsed:: true
@@ -35,33 +25,44 @@ collapsed:: true
 	- ## #Terminal
 	  collapsed:: true
 		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #git, etc.)
-		- [neofetch](https://github.com/dylanaraps/neofetch) : Outil pour afficher une bannière et certaines informations au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Gestion de paquets]] associé, espace disque, etc.)
+		- [fastfetch](https://github.com/fastfetch-cli/fastfetch) : Outil #OpenSource développé en #C qui récupère des informations système au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Gestion de paquets]] associé, espace disque, etc.) et permet de les afficher de manière personnalisée
 - # #Privacy
   collapsed:: true
-	- ## #[[Sites web]]
+	- ## #Administration
 	  collapsed:: true
-		- [PrivacyTools](https://www.privacytools.io/) : Site web listant divers outils pour la confidentialité
-		- [Guides PrivacyTools](https://www.privacytools.io/guides/) : Guides divers pour l'utilisation d'outils et autres
-		- [Privacy Guides](https://www.privacyguides.org/fr/tools/) : Guides et outils relatifs à la confidentialité
-		- [Have I Been Pwned](https://haveibeenpwned.com/) : Recense les fuites de données connues et permet de vérifier si une adresse email est concernée par l'une de ces fuites
+		- [PrivacyIsSexy](https://privacy.sexy/) : Outil #OpenSource développé en #Typescript pour appliquer des mesures et bonnes pratique en terme de sécurité et respect de la vie privée à la fois sur #Windows #MACOS et #Linux
+		- ### #Android
+		  collapsed:: true
+			- [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) :  Programme #Rust #[[OpenSource]] pour supprimer des applications non souhaitées sur Android
+		- ### #Windows
+		  collapsed:: true
+			- [BloatyNosy](https://github.com/builtbybel/BloatyNosy) : Programme #[[C#]] #[[OpenSource]] de suppression de bloatware sur **windows 11**. Applications par défaut, désactiver la télémétrie, activer certaines fonctionnalités et plus.
+			- [BloatBox](https://github.com/builtbybel/bloatbox#community-package) :  Programme #[[C#]] #Powershell #[[OpenSource]] de suppression de bloatware sur **windows 10**.
+			- [WinUtil](https://github.com/ChrisTitusTech/winutil) : Script #Powershell de [christitus](https://www.youtube.com/channel/UCg6gPGh8HU2U01vaFCAsvmQ) pour débloater une installation windows 10 ou 11.
 	- ## #[[Gestion de mots de passe]]
 	  collapsed:: true
 		- [Bitwarden](https://bitwarden.com/) : #[[OpenSource]] Mots de passe stockés dans le cloud, synchronisation auto
 		- [KeepassXC](https://keepassxc.org/) : #[[OpenSource]] Mots de passe chiffrés et stockés localement
 		- [Lesspass](https://www.lesspass.com/#/) : #[[OpenSource]] Repose sur de la génération fonctionnelle, le mot de passe est calculé en fonction des paramètres donnés (mot de passe maître, site web, etc)
 		- [Aegis](https://getaegis.app/) : #[[OpenSource]] Application 2FA avec import depuis Google Authenticator, 2FAS, LastPass, etc
-	- ## #Navigateurs
-	  collapsed:: true
-		- [Librewolf](https://librewolf.net/) : #Windows#MACOS#Linux Branche de firefox pré configurée pour la confidentialité
-		- [Firefox](https://www.mozilla.org/fr/firefox/) : #Windows#MACOS#Linux#Android#iOS Nécessite de la configuration via un fichier [user.js](https://github.com/yokoffing/Betterfox/blob/main/user.js) pour être véritablement privé
-		- [Firefox Focus](https://www.mozilla.org/fr/firefox/browsers/mobile/focus/) : #Android#iOS Version de Firefox dédiée pour la confidentialité et le blocage de traqueurs
-		- [TOR](https://www.torproject.org/) : #Windows#MACOS#Linux#Android Version modifiée de Firefox avec protection contre les traqueurs, système de proxy via le réseau TOR, etc
 	- ## #[[Moteurs de recherche]]
 	  collapsed:: true
 		- [Search Engine Party](https://searchengine.party/) : Comparateur de moteurs de recherche en termes de sécurité et confidentialité
 		- [StartPage](https://www.startpage.com/) : Moteur et entreprise **hollandais** qui fournit les résultats de recherches **Google** anonymisées
 		- [DuckDuckGo](https://duckduckgo.com/) : Moteur de recherche de l'entreprise **américaine** du même nom, proposant des recherches **Bing** anonymisées
 		- [SearX](https://searx.space/) : Meta-moteur #OpenSource hébergé à plusieurs endroits du globe
+	- ## #Navigateurs
+	  collapsed:: true
+		- [Librewolf](https://librewolf.net/) : #Windows#MACOS#Linux Branche de firefox pré configurée pour la confidentialité
+		- [Firefox](https://www.mozilla.org/fr/firefox/) : #Windows#MACOS#Linux#Android#iOS Nécessite de la configuration via un fichier [user.js](https://github.com/yokoffing/Betterfox/blob/main/user.js) pour être véritablement privé
+		- [Firefox Focus](https://www.mozilla.org/fr/firefox/browsers/mobile/focus/) : #Android#iOS Version de Firefox dédiée pour la confidentialité et le blocage de traqueurs
+		- [TOR](https://www.torproject.org/) : #Windows#MACOS#Linux#Android Version modifiée de Firefox avec protection contre les traqueurs, système de proxy via le réseau TOR, etc
+	- ## #[[Sites web]]
+	  collapsed:: true
+		- [Guides PrivacyTools](https://www.privacytools.io/guides/) : Guides divers pour l'utilisation d'outils et autres
+		- [Have I Been Pwned](https://haveibeenpwned.com/) : Recense les fuites de données connues et permet de vérifier si une adresse email est concernée par l'une de ces fuites
+		- [Privacy Guides](https://www.privacyguides.org/fr/tools/) : Guides et outils relatifs à la confidentialité
+		- [PrivacyTools](https://www.privacytools.io/) : Site web listant divers outils pour la confidentialité
 - # #[[Programmation]]
   collapsed:: true
 	- ## #[[Sites web]]
