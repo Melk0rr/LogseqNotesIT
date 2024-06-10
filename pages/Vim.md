@@ -3,7 +3,6 @@
 - # Commandes
   collapsed:: true
 	- ## Mode normal
-	  collapsed:: true
 		- ### Navigation
 		  collapsed:: true
 			- #### Base
@@ -120,7 +119,6 @@
 		- ### Manipulation de document
 		  collapsed:: true
 			- #### Changements
-			  collapsed:: true
 				- **Undo** / **défaire** (équivalent au *Ctrl+Z*) (*undo*)
 				  ```vim
 				  u
