@@ -3,7 +3,6 @@
 - # Commandes
 	- ## Mode normal
 		- ### Navigation
-		  collapsed:: true
 			- #### Base
 			  collapsed:: true
 				- Déplacement vers la **gauche** 
@@ -136,7 +135,6 @@
 				  cgg
 				  ```
 			- #### Suppression
-			  collapsed:: true
 				- Supprimer **mot** / **ligne** / etc suivant (*delete*)
 				  ```vim
 				  dw
@@ -229,7 +227,6 @@
 	  collapsed:: true
 		- Mode d'édition de texte
 	- ## Mode visual
-	  collapsed:: true
 		- Mode de **sélection** de texte
 		- Comprend 2 sous-modes : **line** et **block**
 		- ### Ligne
