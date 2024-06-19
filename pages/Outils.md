@@ -78,6 +78,7 @@ collapsed:: true
 	- ## #[[Active Directory]]
 	  collapsed:: true
 		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
+		- [GPOZaurr](https://github.com/EvotecIT/GPOZaurr) : module #Powershell qui permet de regrouper des données sur les GPO, générer des rapports et corriger des non conformités
 	- ## #Analyse
 	  collapsed:: true
 		- [DeHashed](https://www.dehashed.com) : Base de données de HASH connus
