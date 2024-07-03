@@ -127,11 +127,10 @@ collapsed:: true
 			  vim /etc/pacman.conf
 			  ```
 		- ### Installation des paquets essentiels
-		  collapsed:: true
 			- Installer le système et quelques paquets essentiels 
 			  logseq.order-list-type:: number
 			  ```shell
-			  pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib nano networkmanager
+			  pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib nano networkmanager firewalld
 			  ```
 				- **base** : installation minimale d'Arch linux
 				  logseq.order-list-type:: number
@@ -142,6 +141,8 @@ collapsed:: true
 				- **pacman-conrib** : utilitaire pour le maintien de Arch
 				  logseq.order-list-type:: number
 				- **networkmanager** : utilitaire de configuration et gestion réseau
+				  logseq.order-list-type:: number
+				- **firewalld** : utilitaire firewall
 				  logseq.order-list-type:: number
 			- Installer des paquets relatifs au **boot** 
 			  logseq.order-list-type:: number
