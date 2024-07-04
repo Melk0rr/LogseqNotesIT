@@ -3,8 +3,7 @@
 	- [scoop](https://scoop.sh/)
 	- [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 - #Linux
-	- [apt](https://en.wikipedia.org/wiki/APT_(software))
-	- [aptitude](https://wiki.debian.org/Aptitude)
+	- #apt : Gestionnaire de #Paquets développé en #C++ et commun aux distributions basées sur #Debian
 	- [flatpak](https://flatpak.org/) : Gestionnaire de #Paquets multi distributions offrant un environnement sandbox. Flatpak permet notamment de disposer de certains paquets dans leurs versions plus `rolling` tout en conservant une base plus stable. C'est notamment le cas en associant flatpak avec Debian ou avec apt en général.
 	- #pacman : Gestionnaire de #Paquets développé en #C spécifique à #[[Arch Linux]]
 	- [paru](https://github.com/Morganamilo/paru) : Gestionnaire de #Paquets pour AUR sur #[[Arch Linux]] ( écrit en #Rust )
