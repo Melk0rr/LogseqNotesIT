@@ -1,6 +1,19 @@
 # Description
-collapsed:: true
-	- Distribution #Linux en #Rolling release et maintenue par la **communauté**
+	- Distribution #Linux créée en 2002 par Judd Vinet. Elle suit le principe **KISS**: Keep It Simple, Stupid
+-
+	- ## Caractéristiques
+	- |**Modèle**|Communautaire|
+	  |**Mise à jour**|Rolling release|
+	  |**Public**|Expérimenté|
+	  |**Usage**|Personnel|
+	  |**Famille**|Arch Linux|
+	  |**Basé sur**|Indépendant|
+	  |**Base de**|BlackArch, EndeavourOS, Manjaro, CachyOS|
+	  |**Gestionnaire de paquets**|pacman|
+	  |**Format de paquet**|#PKG [:br]TAR.ZST|
+	  |**Installateur graphique**|NON|
+	  |**Approche infra**|Traditionnelle|
+	  |**Site web**|[archlinux.org](http://archlinux.org)|
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
   collapsed:: true
