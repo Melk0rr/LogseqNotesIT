@@ -1,6 +1,19 @@
 # Description
-collapsed:: true
-	- Distribution #Linux en #Rolling release et maintenue par la **communauté**
+	- Distribution #Linux créée en 2002 par Judd Vinet. Elle suit le principe **KISS**: Keep It Simple, Stupid
+-
+	- ## Caractéristiques
+	- |**Modèle**|Communautaire|
+	  |**Mise à jour**|Rolling release|
+	  |**Public**|Expérimenté|
+	  |**Usage**|Personnel|
+	  |**Famille**|Arch Linux|
+	  |**Basé sur**|Indépendant|
+	  |**Base de**|BlackArch, EndeavourOS, Manjaro, CachyOS|
+	  |**Gestionnaire de paquets**|pacman|
+	  |**Format de paquet**|#PKG [:br]TAR.ZST|
+	  |**Installateur graphique**|NON|
+	  |**Approche infra**|Traditionnelle|
+	  |**Site web**|[archlinux.org](http://archlinux.org)|
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
   collapsed:: true
@@ -125,11 +138,10 @@ collapsed:: true
 			  vim /etc/pacman.conf
 			  ```
 		- ### Installation des paquets essentiels
-		  collapsed:: true
 			- Installer le système et quelques paquets essentiels 
 			  logseq.order-list-type:: number
 			  ```shell
-			  pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib nano networkmanager
+			  pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib nano networkmanager firewalld
 			  ```
 				- **base** : installation minimale d'Arch linux
 				  logseq.order-list-type:: number
@@ -140,6 +152,8 @@ collapsed:: true
 				- **pacman-conrib** : utilitaire pour le maintien de Arch
 				  logseq.order-list-type:: number
 				- **networkmanager** : utilitaire de configuration et gestion réseau
+				  logseq.order-list-type:: number
+				- **firewalld** : utilitaire firewall
 				  logseq.order-list-type:: number
 			- Installer des paquets relatifs au **boot** 
 			  logseq.order-list-type:: number
