@@ -1,7 +1,9 @@
 # Description
+collapsed:: true
 	- Langage de #Programmation **impératif**, **compilé** et **bas niveau** inventé au début des années 1970
 	-
 - # Avantages & Inconvénients
+  collapsed:: true
 	- ## Avantages
 		- Rapide
 		- Gestion de la mémoire
@@ -9,10 +11,11 @@
 	- ## Inconvénients
 		- Gestion des chaines de caractères
 		- Fuites mémoire
--
 - # Notions
+  collapsed:: true
 	- ## #Types
 	  id:: 66741c79-5e65-4f51-b3c6-00e62a28c6d0
+	  collapsed:: true
 		- | **Type** | **Mémoire (octets / arch)** | **Valeur(min)** | **Valeur(max)** |
 		  | :---: | :---: | :---: | :---: |
 		  | *char* | - | - | - |
