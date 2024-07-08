@@ -1,6 +1,5 @@
 # Description
 	- Distribution #Linux créée en 1993
--
 	- ## Caractéristiques
 		- |**Modèle**|Communautaire|
 		  |**Mise à jour**|Fixe|
@@ -14,3 +13,12 @@
 		  |**Installateur graphique**|OUI|
 		  |**Approche infra**|Traditionnelle|
 		  |**Site web**|[debian.org](https://www.debian.org/)|
+- # Installation
+	- ## Post-reboot
+		- ### Sources
+			- Changer la liste des sources 
+			  ```shell
+			  sudo vim /etc/apt/sources.list
+			  ```
+- # Post-installation
+- # Maintenance
