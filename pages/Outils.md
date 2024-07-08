@@ -1,13 +1,10 @@
 # #Convertion
 collapsed:: true
 	- ## #[[Sites web]]
-	  collapsed:: true
 		- [ASCII Generator](https://ascii-generator.site/) : Convertion images / texte -> ASCII
 - # #[[Pentest - Red Team]]
-  collapsed:: true
 	- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
 	- ## #Obfuscation
-	  collapsed:: true
 		- [Anubis](https://github.com/0sir1ss/Anubis) : obscurcissement de code
 	- ## #[[Sites web]]
 		- [XSStrike](https://github.com/s0md3v/XSStrike) : Détection de faille XSS
@@ -23,7 +20,6 @@ collapsed:: true
 - # #Personnalisation
   collapsed:: true
 	- ## #Terminal
-	  collapsed:: true
 		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #git, etc.)
 		- [fastfetch](https://github.com/fastfetch-cli/fastfetch) : Outil #OpenSource développé en #C qui récupère des informations système au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Gestion de paquets]] associé, espace disque, etc.) et permet de les afficher de manière personnalisée
 - # #Privacy
@@ -80,6 +76,7 @@ collapsed:: true
 		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
 		- [GPOZaurr](https://github.com/EvotecIT/GPOZaurr) : module #Powershell qui permet de regrouper des données sur les GPO, générer des rapports et corriger des non conformités
 	- ## #Analyse
+	  collapsed:: true
 		- [DeHashed](https://www.dehashed.com) : Base de données de HASH connus
 		- [Hybrid Analysis](https://www.hybrid-analysis.com/) : Outil de sandbox en ligne
 		- [MXToolBox](https://mxtoolbox.com) : Divers outils d'analyse
@@ -131,5 +128,4 @@ collapsed:: true
 		- [Rufus](https://rufus.ie/en/) : Programme #C #OpenSource de manipulation de média USB. L'outil permet de créer des clefs d'installation, de flasher un BIOS, etc. Contrairement à **Etcher**, fournit un panel d'options plus varié
 		- [Ventoy](https://github.com/ventoy/Ventoy) : Programme #C #OpenSource pour la création de supports USB bootables mutli-OS. Ce qui permet d'avoir une seule clef d'installation pour autant d'OS que l'on souhaite. Supporte #Windows#Linux#Unix et plus
 	- ## #Chiffrement
-	  collapsed:: true
 		- [VeraCrypt](https://veracrypt.fr/en/Home.html) : Logiciel de chiffrement de données #OpenSource disponible sur #Windows #Linux et #MACOS. Permet de créer des disques virtuels chiffrés ou tout simplement de chiffrer une partition ou un disque complet
