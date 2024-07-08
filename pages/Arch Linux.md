@@ -1,25 +1,27 @@
 # Description
+collapsed:: true
 	- Distribution #Linux créée en 2002 par Judd Vinet. Elle suit le principe **KISS**: Keep It Simple, Stupid
--
 	- ## Caractéristiques
-	- |**Modèle**|Communautaire|
-	  |**Mise à jour**|Rolling release|
-	  |**Public**|Expérimenté|
-	  |**Usage**|Personnel|
-	  |**Famille**|Arch Linux|
-	  |**Basé sur**|Indépendant|
-	  |**Base de**|BlackArch, EndeavourOS, Manjaro, CachyOS|
-	  |**Gestionnaire de paquets**|pacman|
-	  |**Format de paquet**|#PKG [:br]TAR.ZST|
-	  |**Installateur graphique**|NON|
-	  |**Approche infra**|Traditionnelle|
-	  |**Site web**|[archlinux.org](http://archlinux.org)|
+	  collapsed:: true
+		- |**Modèle**|Communautaire|
+		  |**Mise à jour**|Rolling release|
+		  |**Public**|Expérimenté|
+		  |**Usage**|Personnel|
+		  |**Famille**|Arch Linux|
+		  |**Basé sur**|Indépendant|
+		  |**Base de**|BlackArch, EndeavourOS, Manjaro, CachyOS|
+		  |**Gestionnaire de paquets**|pacman|
+		  |**Format de paquet**|#PKG [:br]TAR.ZST|
+		  |**Installateur graphique**|NON|
+		  |**Approche infra**|Traditionnelle|
+		  |**Site web**|[archlinux.org](http://archlinux.org)|
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
   collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
+	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -138,6 +140,7 @@
 			  vim /etc/pacman.conf
 			  ```
 		- ### Installation des paquets essentiels
+		  collapsed:: true
 			- Installer le système et quelques paquets essentiels 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -327,7 +330,8 @@
 			  ```
 	- ## Post-reboot
 	  collapsed:: true
-		- ### Base
+		- ### #Mirroirs
+		  collapsed:: true
 			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
 			  logseq.order-list-type:: number
 			  ```
@@ -335,6 +339,8 @@
 			  VerbosePkgLists
 			  ParallelDownloads = 5
 			  ```
+		- ### Utilisateurs
+		  collapsed:: true
 			- Créer un **nouvel utilisateur** (il faut éviter au maximum d'utiliser le **root**) et l'ajouter au groupe **wheel (sudoers)** 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -350,7 +356,8 @@
 			  ```shell
 			  vim /etc/sudoers
 			  ```
-		- ### AUR helper
+		- ### #[[AUR helper]]
+		  collapsed:: true
 			- #### [Yay](((654cd0e6-59fd-492f-9c7a-3300b72b7da2)))
 				- logseq.order-list-type:: number
 				  ```shell
@@ -365,7 +372,9 @@
 				  yay -Y --gendb
 				  yay -Y --devel --save
 				  ```
+			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
 		- ### #[[Firmware et support matériel]]
+		  collapsed:: true
 			- #### AMD
 				- Installation par défaut (**mesa** ou **mesa-git**)
 				  ```shell
