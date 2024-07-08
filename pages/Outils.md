@@ -80,7 +80,6 @@ collapsed:: true
 		- [ADRecon](https://github.com/sense-of-security/ADRecon) : script #Powershell d'extraction de données AD
 		- [GPOZaurr](https://github.com/EvotecIT/GPOZaurr) : module #Powershell qui permet de regrouper des données sur les GPO, générer des rapports et corriger des non conformités
 	- ## #Analyse
-	  collapsed:: true
 		- [DeHashed](https://www.dehashed.com) : Base de données de HASH connus
 		- [Hybrid Analysis](https://www.hybrid-analysis.com/) : Outil de sandbox en ligne
 		- [MXToolBox](https://mxtoolbox.com) : Divers outils d'analyse
@@ -107,13 +106,12 @@ collapsed:: true
 	  collapsed:: true
 		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/tree/main) : inventaire d'adresses IP malveillantes mis à jour toutes les heures
 	- ## #[[Sites web]]
-	  collapsed:: true
 		- [exploit-db](https://www.exploit-db.com) : Recheche de vulnérabilités
 		- [FOFA](https://en.fofa.info) : Propriétés d'un site web
 		- [GrayhatWarfare](https://buckets.grayhatwarfare.com) : Propriétés d'un site web
 		- [LeakIX](https://leakix.net) : Moteur de recherche Ips, Domains, filenames, hashes, ASN…
 		- [Mitre](https://cve.mitre.org) : Recheche de vulnérabilités
-		- LATER [NetLas](https://app.netlas.io/) : Scan d'URL / Ip,  whois
+		- [NetLas](https://app.netlas.io/) : Scan d'URL / Ip,  whois
 		- [PulseDive](https://pulsedive.com) : Propriétés d'un site web
 		- [SecurityTrails](https://securitytrails.com) : Moteur de recherche IP, mots clés, Hostname
 		- [Shodan](https://www.shodan.io/) : Analyse et scan

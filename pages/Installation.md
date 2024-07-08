@@ -8,6 +8,7 @@
 			- Une partition swap n'est plus vraiment requise dans la mesure où les quantités de RAM sont généralement élevées.
 			- Une partition swap est requise si le système est configuré pour de l'==hibernation==
 			  id:: 65c8ff54-14ef-48dd-8926-c07e0b1ca4f6
+				- RAM **8Go**:  ~~hibernation~~ => **3Go** / *hibernation* => **11Go**
 				- RAM **16Go** : ~~hibernation~~ => **4Go** / *hibernation* => **20Go**
 				- RAM **32Go** : ~~hibernation~~ => **6Go** / *hibernation* => **38Go**
 				- RAM **64Go** : ~~hibernation~~ => **8Go** / *hibernation* => **72Go**

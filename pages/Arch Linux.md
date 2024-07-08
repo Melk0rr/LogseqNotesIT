@@ -7,7 +7,6 @@ collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
-	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -36,7 +35,6 @@ collapsed:: true
 			  timedatectl
 			  ```
 		- ### Partitionnement
-		  collapsed:: true
 			- Afficher les disques et partitions actuelles (*blocs*) -> identifier le disque sur lequel installer le système 
 			  logseq.order-list-type:: number
 			  ```shell
