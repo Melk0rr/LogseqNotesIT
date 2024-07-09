@@ -15,7 +15,9 @@
 		  |**Approche infra**|Traditionnelle|
 		  |**Site web**|[debian.org](https://www.debian.org/)|
 - # Installation
+  collapsed:: true
 	- ## Post-reboot
+	  collapsed:: true
 		- ### Sources
 		  collapsed:: true
 			- #### Changer la liste des sources
