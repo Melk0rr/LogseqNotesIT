@@ -8,6 +8,7 @@ collapsed:: true
 	- ## #openSUSE
 	- ## #[[Arch Linux]]
 - # Installation
+  collapsed:: true
 	- ## #Partitions
 	  id:: 65c8ff54-db3b-48de-b9d4-ece65f422173
 	  collapsed:: true
