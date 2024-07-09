@@ -50,6 +50,7 @@ collapsed:: true
 			  timedatectl
 			  ```
 		- ### Partitionnement
+		  collapsed:: true
 			- Afficher les disques et partitions actuelles (*blocs*) -> identifier le disque sur lequel installer le système 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -57,6 +58,7 @@ collapsed:: true
 			  ```
 			- Exécuter l'utilitaire [cfdisk](https://www.geeksforgeeks.org/cfdisk-command-in-linux-with-examples/) pour créer des partitions sur le disque sélectionné (e.g. nvme0n1) 
 			  logseq.order-list-type:: number
+			  collapsed:: true
 			  ```shell
 			  cfdisk <disque>
 			  ```
@@ -139,7 +141,7 @@ collapsed:: true
 			  ```shell
 			  vim /etc/pacman.conf
 			  ```
-		- ### Installation des paquets essentiels
+		- ### Installation des #Paquets essentiels
 		  collapsed:: true
 			- Installer le système et quelques paquets essentiels 
 			  logseq.order-list-type:: number
@@ -339,23 +341,7 @@ collapsed:: true
 			  VerbosePkgLists
 			  ParallelDownloads = 5
 			  ```
-		- ### Utilisateurs
-		  collapsed:: true
-			- Créer un **nouvel utilisateur** (il faut éviter au maximum d'utiliser le **root**) et l'ajouter au groupe **wheel (sudoers)** 
-			  logseq.order-list-type:: number
-			  ```shell
-			  useradd -m <utilisateur> -g wheel
-			  ```
-			- Définir un mot de passe pour le nouvel utilisateur 
-			  logseq.order-list-type:: number
-			  ```shell
-			  passwd <utilisateur>
-			  ```
-			- Dé-commenter la ligne concernant le groupe **wheel** pour donner au groupe des **droits admins** 
-			  logseq.order-list-type:: number
-			  ```shell
-			  vim /etc/sudoers
-			  ```
+		- ### [Utilisateurs](((668d2260-0977-49ba-a543-1d5610274a5c)))
 		- ### #[[AUR helper]]
 		  collapsed:: true
 			- #### [Yay](((654cd0e6-59fd-492f-9c7a-3300b72b7da2)))
@@ -373,9 +359,13 @@ collapsed:: true
 				  yay -Y --devel --save
 				  ```
 			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
-		- ### #[[Firmware et support matériel]]
+- # Post-installation
+  collapsed:: true
+	- ## #[[Firmware et support matériel]]
+	  collapsed:: true
+		- ### #AMD
 		  collapsed:: true
-			- #### AMD
+			- #### #Paquets
 				- Installation par défaut (**mesa** ou **mesa-git**)
 				  ```shell
 				  sudo pacman -S --needed mesa-git lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
@@ -387,12 +377,54 @@ collapsed:: true
 				  makepkg -si
 				  ```
 				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
-				-
-- # Post-installation
-  collapsed:: true
-	- ## Desktop Environment (DE) / Window Manager (WM)
+			-
+		- ### #Impression
+		  collapsed:: true
+			- #### Général
+			  collapsed:: true
+				- ##### #Paquets
+					- ```shell
+					  yay -S ghostscript gsfonts cups cups-filters cups-pdf system-config-printer avahi foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds gutenprint foomatic-db-gutenprint-ppds
+					  ```
+				- ##### #Daemon
+				  collapsed:: true
+					- ```shell
+					  sudo systemctl enable --now avahi-daemon
+					  sudo systemctl enable --now cups
+					  ```
+			- #### Epson
+			  collapsed:: true
+				- ##### #Paquets
+				  collapsed:: true
+					- ```shell
+					  yay -S epson-inkjet-printer-escpr epson-inkjet-printer-escpr2
+					  ```
+			- #### HP
+			  collapsed:: true
+				- ##### #Paquets
+					- ```shell
+					  yay -S hplip
+					  ```
+		- ### #Bluetooth
+		  collapsed:: true
+			- #### #Paquets
+			  collapsed:: true
+				- ```shell
+				  yay -S bluez bluez-plugins bluez-utils
+				  ```
+			- #### #Daemon
+			  collapsed:: true
+				- ```shell
+				  sudo systemctl enable --now bluetooth
+				  ```
+	- ## #[[Desktop Environment]]
 	  collapsed:: true
-		- ### Général (WM)
+		- ### #KDE
+		- ### #GNOME
+		- ### #XFCE
+	- ## #[[Window Manager]]
+	  collapsed:: true
+		- ### Général
 		  collapsed:: true
 			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
 			  ```shell
@@ -408,31 +440,36 @@ collapsed:: true
 			  reboot
 			  kbuildsycoca6
 			  ```
-		- ### Hyprland
+		- ### #Hyprland
 		  collapsed:: true
 			- [Wiki Hyprland](https://wiki.hyprland.org/)
-			- #### Installation des paquets de base 
-			  ```shell
-			  yay -S hyprland-git xdg-desktop-portal-hyprland
-			  ```
+			- #### #Paquets de base
+			  collapsed:: true
+				- ```shell
+				  yay -S hyprland-git xdg-desktop-portal-hyprland-git
+				  ```
 				- Recommandé d'utiliser la version **hyprland-git**
+				  collapsed:: true
 					- Les développeurs d'hyprland sont très **réactifs**
 					- Les bugs sont **fix très rapidement**
 					- Permet d'avoir les tous **derniers correctifs**
-			- #### Gestionnnaire de presse-papier 
-			  ```shell
-			  yay -S cliphist
-			  ```
+			- #### #Paquets de gestion de presse-papier
+			  collapsed:: true
+				- ```shell
+				  yay -S cliphist
+				  ```
 				- [cliphist](https://github.com/sentriz/cliphist) : gestionnaire léger développé en #Go et interfaçable avec rofi
-			- #### Daemon de notifications 
-			  ```shell
-			  yay -S dunst
-			  ```
+			- #### #Paquets d'affichage de notifications
+			  collapsed:: true
+				- ```shell
+				  yay -S dunst
+				  ```
 				- [dunst](https://github.com/dunst-project/dunst) : daemon très léger développé en #C
-			- #### Capture d'écran 
-			  ```shell
-			  yay -S grimblast-git slurp swappy wf-recorder
-			  ```
+			- #### #Paquets de capture d'écran
+			  collapsed:: true
+				- ```shell
+				  yay -S grimblast-git slurp swappy wf-recorder
+				  ```
 				- [grimblast-git](https://github.com/hyprwm/contrib) : script #Shell pour prendre des **screenshots**
 				- [slurp](https://github.com/emersion/slurp) : utilitaire pour **sélectionner des régions** de l'écran développé en #C
 				  id:: 660e7aa6-a5eb-47b9-a13f-ae6502f98cfb
@@ -441,110 +478,149 @@ collapsed:: true
 				  ```shell
 				  wf-recorder -g "$(slurp)"
 				  ```
-			- #### Lanceur d'applications 
-			  ```shell
-			  yay -S rofi-lbonn-wayland-git
-			  ```
+			- #### #Paquets de lancement d'applications
+			  collapsed:: true
+				- ```shell
+				  yay -S rofi-lbonn-wayland-git
+				  ```
 				- [rofi](https://github.com/lbonn/rofi) : **lanceur d'applications** développé en #C très **personnalisable** et **léger**
-			- #### Verrouillage de session 
-			  ```shell
-			  yay -S hypridle swaylock-effects-git wlogout
-			  ```
+			- #### #Paquets pour verrouillage de session
+			  collapsed:: true
+				- ```shell
+				  yay -S hypridle swaylock-effects-git wlogout
+				  ```
 				- [hypridle](https://github.com/hyprwm/hypridle) : daemon d'**inactivité** pour **hyprland** développé en #C++
 				- [swaylock-effects-git](https://github.com/mortie/swaylock-effects) : écran de **verrouillage** de session  **simple** et **personnalisable** développé en #C
-				- [hyprlock](https://github.com/hyprwm/hyprlock) : ==alternative== à [swaylock](((65cfcd67-7ed8-4880-ad65-3224c06937a6))) de l'environnement **Hypr** développé en #C++
+				- [hyprlock](https://github.com/hyprwm/hyprlock) : ==alternative== à [swaylock](swaylock-effects-git) de l'environnement **Hypr** développé en #C++
 				- [wlogout](https://github.com/ArtsyMacaw/wlogout) : menu de **verrouillage de session** développé en #C
-					- Verrouillage de session
-					- Fermeture de session
-					- Mise en veille
-					- Redémarrage
-					- Arrêt du système
-			- #### Fond d'écran 
-			  ```shell
-			  yay -S swww-git
-			  ```
-				- [swww](https://github.com/LGFae/swww) : daemon pour les **fonds d'écran** développé en #Rust
-			- #### Barre de tâches 
-			  ```shell
-			  yay -S waybar-git
-			  ```
-				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
-	- ## Gestionnaire de fichiers
-	  collapsed:: true
-		- **dolphin**, gestionnaire de fichiers habituellement empaqueté avec **KDE**. Interface configurable et bon panel de fonctionnalités. Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources** 
-		  id:: 65cfcd67-02fa-424c-9c87-a8f347546160
-		  ```shell
-		  yay -S dolphin ark kde-cli-tools
-		  ```
-			- **ark** : utilitaire de gestion d'archives
-			- **kde-cli-tools** : outils d'interaction système basé sur le framework **KDE**
-		- **thunar**, gestionnaire de fichiers habituellement empaqueté avec **XFCE**. Facilement **configurable**, **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes 
-		  ```shell
-		  yay -S thunar thunar-archive-plugin
-		  ```
-	- ## Terminal
-	  collapsed:: true
-		- **Alacritty**, émulateur de terminal développé en #Rust 
-		  ```shell
-		  yay -S alacritty
-		  ```
-		- **Kitty**, émulateur de terminal développé en #Python et #C 
-		  ```shell
-		  yay -S kitty
-		  ```
-	- ## Display Manger
-	  collapsed:: true
-		- Installation de **sddm**, écran de connexion personnalisable et habituellement empaqueté avec **KDE** 
-		  ```shell
-		  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
-		  ```
-			- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
-			- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
-		- Activation de sddm 
-		  ```shell
-		  sudo systemctl enable --now sddm
-		  ```
-	- ## Polkit
-	  collapsed:: true
-		- Installation du polkit KDE pour gérer le lancement d'applications graphiques nécessitant des droits admin 
-		  ```shell
-		  yay -S polkit-kde-agent
-		  ```
-	- ## Multimédia
-	  collapsed:: true
-		- ### Lecteurs de médias
-		  collapsed:: true
-			- ```shell
-			  yay -S mpv-git imv-git audacious-git
-			  ```
-			- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
-			  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
-			- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
-			- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
-			- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
+			- #### #Paquets de gestion de fond d'écran
 			  collapsed:: true
-				- VLC peut être **requis** par [dolphin](((65cfcd67-02fa-424c-9c87-a8f347546160))) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
-				- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
+				- ```shell
+				  yay -S swww-git
+				  ```
+				- [swww](https://github.com/LGFae/swww) : daemon pour les **fonds d'écran** développé en #Rust
+			- #### #Paquets de gestion barre de tâches
+			  collapsed:: true
+				- ```shell
+				  yay -S waybar-git
+				  ```
+				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
+	- ## #[[Gestionnaire de fichiers]]
+	  collapsed:: true
+		- ### Dolphin
+		  collapsed:: true
+			- Gestionnaire de fichiers habituellement empaqueté avec #KDE.
+			- Interface configurable et bon panel de fonctionnalités.
+			- Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources**
+			- #### #Paquets
+			  collapsed:: true
+				- id:: 65cfcd67-02fa-424c-9c87-a8f347546160
+				  collapsed:: true
+				  ```shell
+				  yay -S dolphin ark kde-cli-tools
+				  ```
+					- **ark** : utilitaire de gestion d'archives
+					- **kde-cli-tools** : outils d'interaction système basé sur le framework **KDE**
+		- ### Thunar
+		  collapsed:: true
+			- Gestionnaire de fichiers habituellement empaqueté avec #XFCE et #GNOME.
+			- Facilement **configurable** et **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
+			- #### #Paquets
+				- ```shell
+				  yay -S thunar thunar-archive-plugin
+				  ```
+	- ## #Terminal
+	  collapsed:: true
+		- ### Alacritty
+			- Emulateur de terminal développé en #Rust 
+			  ```shell
+			  yay -S alacritty
+			  ```
+		- ### Kitty
+		  collapsed:: true
+			- Emulateur de terminal développé en #Python et #C 
+			  ```shell
+			  yay -S kitty
+			  ```
+	- ## #[[Display Manger]]
+	  collapsed:: true
+		- ### SDDM
+		  collapsed:: true
+			- Ecran de connexion personnalisable. Habituellement empaqueté avec #KDE
+			- #### #Paquets
+				- collapsed:: true
+				  ```shell
+				  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
+				  ```
+					- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
+					- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
+			- #### Activation
+				- ```shell
+				  sudo systemctl enable --now sddm
+				  ```
+	- ## #Polkit
+	  collapsed:: true
+		- ### #KDE
+		  collapsed:: true
+			- #### #Paquets
+			  collapsed:: true
+				- ```shell
+				  yay -S polkit-kde-agent
+				  ```
+		- ### #GNOME
+		  collapsed:: true
+			- #### #Paquets
+			  collapsed:: true
+				- ```shell
+				  yay -S polkit-gnome
+				  ```
+	- ## #Multimédia
+	  collapsed:: true
+		- ### Lecture de médias
+		  collapsed:: true
+			- #### #Paquets
+			  collapsed:: true
+				- ```shell
+				  yay -S mpv-git imv-git audacious-git
+				  ```
+				- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
+				  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
+				- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
+				- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
+				- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
+				  collapsed:: true
+					- VLC peut être **requis** par [dolphin](((65cfcd67-02fa-424c-9c87-a8f347546160))) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
+					- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
 		- ### Manipulation / conversion d'images
 		  collapsed:: true
-			- ```shell
-			  yay -S imagemagick ffmpeg
-			  ```
-	- ## Jeux
+			- #### #Paquets
+			  collapsed:: true
+				- ```shell
+				  yay -S imagemagick ffmpeg
+				  ```
+	- ## #Jeux
 	  collapsed:: true
-		- ```shell
-		  yay -S steam steam-native-runtime steamtinkerlaunch protonup-qt protontricks-git winetricks heroic-games-launcher lutris
-		  ```
+		- ### #Paquets
+		  collapsed:: true
+			- ```shell
+			  yay -S steam steam-native-runtime steamtinkerlaunch protonup-qt protontricks-git winetricks heroic-games-launcher lutris
+			  ```
 	- ## Personnalisation
 	  collapsed:: true
-		- Pour la configuration d'interfaces **QT5** et **QT6** 
-		  ```shell
-		  yay -S qt5ct qt6ct kvantum
-		  ```
-		- Pour la configuration d'interface **GTK3** 
-		  ```shell
-		  yay -S nwg-look
-		  ```
+		- ### Interfaces #QT
+		  collapsed:: true
+			- #### #Paquets
+			  collapsed:: true
+				- ```shell
+				  yay -S qt5ct qt6ct kvantum
+				  ```
+		- ### Interfaces #GTK
+		  collapsed:: true
+			- #### #Paquets
+			  collapsed:: true
+				- ```shell
+				  yay -S nwg-look
+				  ```
 - # Maintenance
   collapsed:: true
 	- ## Gestion des paquets
