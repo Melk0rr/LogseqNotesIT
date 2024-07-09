@@ -13,6 +13,7 @@
 				- **Lisibilité** accrue
 				- **Téléchargements parallèles de 3 paquets** maximum (pour limiter l'impact sur les dépôts)
 				- **Gestion des mirroirs**
+				- **Historique des commandes**
 	- ## Base #[[Arch Linux]]
 		- #pacman : Gestionnaire de #Paquets développé en #C spécifique à #[[Arch Linux]]
 		- ### #[[AUR helper]]
