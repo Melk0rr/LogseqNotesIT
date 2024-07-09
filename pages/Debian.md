@@ -59,7 +59,7 @@
 		- ### #Bruteforce
 			- #### #Paquets
 				- ```shell
-				  sudo apt install hydra
+				  sudo apt install hydra wfuzz
 				  ```
 		- ### #Forensic
 			- #### #Paquets
@@ -76,4 +76,9 @@
 				- ```shell
 				  sudo apt install macchanger
 				  ```
+		- ### ONE-LINER
+			- ```shell
+			  sudo apt install hydra wfuzz autopsy nessus nmap wireshark macchanger # Paquets
+			  sudo git clone https://github.com/scipag/vulscan /usr/share/nmap/scripts/vulscan # Vulnerability scan script for nmap
+			  ```
 - # Maintenance
