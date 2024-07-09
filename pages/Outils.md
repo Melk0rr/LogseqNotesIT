@@ -5,8 +5,10 @@ collapsed:: true
 - # #[[Pentest - Red Team]]
 	- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
 	- ## #Obfuscation
+	  collapsed:: true
 		- [Anubis](https://github.com/0sir1ss/Anubis) : obscurcissement de code
 	- ## #[[Sites web]]
+	  collapsed:: true
 		- [XSStrike](https://github.com/s0md3v/XSStrike) : Détection de faille XSS
 	- ## #Logs
 	  collapsed:: true
@@ -66,7 +68,6 @@ collapsed:: true
 	  collapsed:: true
 		- [Regex101](https://regex101.com/) : Testeur de regex en ligne
 - # #[[SOC - Blue team]]
-  collapsed:: true
 	- [BlueTeam-Tools](https://github.com/A-poc/BlueTeam-Tools) : Repo github qui ressence divers outils de défense utiles
 	- [grep.app](https://grep.app/) : Recherche de repository GIT
 	- [WaybackMachine](https://archive.org/web/) : Archive Web
@@ -103,6 +104,7 @@ collapsed:: true
 	  collapsed:: true
 		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/tree/main) : inventaire d'adresses IP malveillantes mis à jour toutes les heures
 	- ## #[[Sites web]]
+	  collapsed:: true
 		- [exploit-db](https://www.exploit-db.com) : Recheche de vulnérabilités
 		- [FOFA](https://en.fofa.info) : Propriétés d'un site web
 		- [GrayhatWarfare](https://buckets.grayhatwarfare.com) : Propriétés d'un site web
