@@ -1,15 +1,14 @@
 # #Convertion
 collapsed:: true
 	- ## #[[Sites web]]
-	  collapsed:: true
 		- [ASCII Generator](https://ascii-generator.site/) : Convertion images / texte -> ASCII
 - # #[[Pentest - Red Team]]
-  collapsed:: true
 	- [HackTricks](https://book.hacktricks.xyz/welcome/readme) : encyclopédie en ligne sur des exploits et divers outils de #Pentest
 	- ## #Obfuscation
 	  collapsed:: true
 		- [Anubis](https://github.com/0sir1ss/Anubis) : obscurcissement de code
 	- ## #[[Sites web]]
+	  collapsed:: true
 		- [XSStrike](https://github.com/s0md3v/XSStrike) : Détection de faille XSS
 	- ## #Logs
 	  collapsed:: true
@@ -23,7 +22,6 @@ collapsed:: true
 - # #Personnalisation
   collapsed:: true
 	- ## #Terminal
-	  collapsed:: true
 		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #git, etc.)
 		- [fastfetch](https://github.com/fastfetch-cli/fastfetch) : Outil #OpenSource développé en #C qui récupère des informations système au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Gestion de paquets]] associé, espace disque, etc.) et permet de les afficher de manière personnalisée
 - # #Privacy
@@ -70,7 +68,6 @@ collapsed:: true
 	  collapsed:: true
 		- [Regex101](https://regex101.com/) : Testeur de regex en ligne
 - # #[[SOC - Blue team]]
-  collapsed:: true
 	- [BlueTeam-Tools](https://github.com/A-poc/BlueTeam-Tools) : Repo github qui ressence divers outils de défense utiles
 	- [grep.app](https://grep.app/) : Recherche de repository GIT
 	- [WaybackMachine](https://archive.org/web/) : Archive Web
@@ -113,7 +110,7 @@ collapsed:: true
 		- [GrayhatWarfare](https://buckets.grayhatwarfare.com) : Propriétés d'un site web
 		- [LeakIX](https://leakix.net) : Moteur de recherche Ips, Domains, filenames, hashes, ASN…
 		- [Mitre](https://cve.mitre.org) : Recheche de vulnérabilités
-		- LATER [NetLas](https://app.netlas.io/) : Scan d'URL / Ip,  whois
+		- [NetLas](https://app.netlas.io/) : Scan d'URL / Ip,  whois
 		- [PulseDive](https://pulsedive.com) : Propriétés d'un site web
 		- [SecurityTrails](https://securitytrails.com) : Moteur de recherche IP, mots clés, Hostname
 		- [Shodan](https://www.shodan.io/) : Analyse et scan
@@ -133,5 +130,4 @@ collapsed:: true
 		- [Rufus](https://rufus.ie/en/) : Programme #C #OpenSource de manipulation de média USB. L'outil permet de créer des clefs d'installation, de flasher un BIOS, etc. Contrairement à **Etcher**, fournit un panel d'options plus varié
 		- [Ventoy](https://github.com/ventoy/Ventoy) : Programme #C #OpenSource pour la création de supports USB bootables mutli-OS. Ce qui permet d'avoir une seule clef d'installation pour autant d'OS que l'on souhaite. Supporte #Windows#Linux#Unix et plus
 	- ## #Chiffrement
-	  collapsed:: true
 		- [VeraCrypt](https://veracrypt.fr/en/Home.html) : Logiciel de chiffrement de données #OpenSource disponible sur #Windows #Linux et #MACOS. Permet de créer des disques virtuels chiffrés ou tout simplement de chiffrer une partition ou un disque complet
