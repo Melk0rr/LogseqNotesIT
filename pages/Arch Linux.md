@@ -746,10 +746,10 @@ collapsed:: true
 			  ```shell
 			  sudo pacman -Syu
 			  ```
-		- ### Erreurs GPG
+		- ### Erreurs #GPG
 		  collapsed:: true
 			- Dan le cas d'une [Erreur ioctl](https://wiki.archlinux.org/title/GnuPG#Invalid_IPC_response_and_Inappropriate_ioctl_for_device)
-				- Définir la variable d'environnement suivante pour que si besoin, gpg puisse utiliser le tty comme entrée
+				- Définir la variable d'environnement suivante pour que si besoin, #GPG puisse utiliser le tty comme entrée
 				  logseq.order-list-type:: number
 				  ```shell
 				  export GPG_TTY=$(tty)
