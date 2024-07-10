@@ -415,6 +415,4 @@
  :journal/page-title-format "yyyy-MM-dd"
  :graph/settings {:journal? true
  :builtin-pages? true}
- :graph/forcesettings {:link-dist 50
- :charge-strength -500
- :charge-range 1900}}
+ :graph/forcesettings {:link-dist 100}}

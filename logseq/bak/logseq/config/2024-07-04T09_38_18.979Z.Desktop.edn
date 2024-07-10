@@ -417,4 +417,4 @@
  :builtin-pages? true}
  :graph/forcesettings {:link-dist 50
  :charge-strength -500
- :charge-range 1900}}
+ :charge-range 900}}
