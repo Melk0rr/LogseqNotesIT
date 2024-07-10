@@ -622,7 +622,6 @@ collapsed:: true
 				  yay -S nwg-look
 				  ```
 - # Maintenance
-  collapsed:: true
 	- ## Gestion des paquets
 	  collapsed:: true
 		- ### Mise à jour
@@ -698,7 +697,6 @@ collapsed:: true
 				  yay -S $(pacman -Qoq /usr/lib/python3.11) --answerclean All
 				  ```
 	- ## Résolution de problèmes
-	  collapsed:: true
 		- ### Compilation depuis un chroot propre
 		  collapsed:: true
 			- Utile si une mise à jour est bloquée à cause d'une **cassure de dépendance** ou autre
@@ -748,3 +746,18 @@ collapsed:: true
 			  ```shell
 			  sudo pacman -Syu
 			  ```
+		- ### Erreurs GPG
+		  collapsed:: true
+			- Dan le cas d'une [Erreur ioctl](https://wiki.archlinux.org/title/GnuPG#Invalid_IPC_response_and_Inappropriate_ioctl_for_device)
+				- Définir la variable d'environnement suivante pour que si besoin, gpg puisse utiliser le tty comme entrée
+				  logseq.order-list-type:: number
+				  ```shell
+				  export GPG_TTY=$(tty)
+				  ```
+				- Editer le fichier ~/.gnupg/gpg-agent.conf pour définir la #GUI à utiliser comme entrée ([pinentry](https://wiki.archlinux.org/title/GnuPG#pinentry))
+				  logseq.order-list-type:: number
+				  ```shell
+				  echo "pinentry-program /usr/bin/pinentry-gtk" > ~/.gnupg/gpg-agent.conf
+				  gpg-connect-agent reloadagent /bye
+				  ```
+-
