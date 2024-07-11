@@ -17,11 +17,9 @@ collapsed:: true
 		  |**Site web**|[archlinux.org](http://archlinux.org)|
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
-  collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
-	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -127,7 +125,6 @@ collapsed:: true
 			  mount /dev/nvme0n1p4 /mnt/home
 			  ```
 	- ## Installation
-	  collapsed:: true
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
 		  collapsed:: true
@@ -622,6 +619,7 @@ collapsed:: true
 				  yay -S nwg-look
 				  ```
 - # Maintenance
+  collapsed:: true
 	- ## Gestion des paquets
 	  collapsed:: true
 		- ### Mise à jour
@@ -697,6 +695,7 @@ collapsed:: true
 				  yay -S $(pacman -Qoq /usr/lib/python3.11) --answerclean All
 				  ```
 	- ## Résolution de problèmes
+	  collapsed:: true
 		- ### Compilation depuis un chroot propre
 		  collapsed:: true
 			- Utile si une mise à jour est bloquée à cause d'une **cassure de dépendance** ou autre

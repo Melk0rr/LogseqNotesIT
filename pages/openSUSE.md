@@ -1,4 +1,5 @@
 # Description
+collapsed:: true
 	- Distribution #Linux créée en 1994 comprenant 2 branches
 		- [openSUSE Tumbleweed](https://get.opensuse.org/tumbleweed/) : #Rolling release
 		- [openSUSE Leap](https://get.opensuse.org/leap/) : #Stable release
@@ -15,3 +16,24 @@
 	  |**Installateur graphique**|OUI|
 	  |**Approche infra**|Hybride (snapshots)|
 	  |**Site web**|[opensuse.org](https://www.opensuse.org/)|
+- # Installation
+  collapsed:: true
+	- ## Post-reboot
+	  collapsed:: true
+		- ### Configuration Zypper
+		  collapsed:: true
+			- ```shell
+			  sudo vim /etc/zypp/zypp.conf
+			  ```
+			- ```vim
+			  [main]
+			  solver.dupAllowVendorChange=false
+			  multiversion=provides:multiversion(kernel)
+			  multiversion.kernels=latest,latest-1,running
+			  repo.refresh.delay=1080
+			  download.max_concurrent_connections=10
+			  download.min_download_speed=20000
+			  commit.downloadMode=DownloadInAdvance
+			  ```
+- # Post-installation
+- # Maintenance
