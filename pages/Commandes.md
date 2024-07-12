@@ -12,22 +12,46 @@
 		- [locate](https://www.geeksforgeeks.org/locate-command-in-linux-with-examples/) **<fichier>** : Localise n'importe quel fichier ou répertoire sur le système. Utilise le fichier mlocate.db mis à jour toutes les 24h, qui indexe tous les fichiers du système
 			- Possible de forcer la mise à jour : **sudo ubdatedb**
 		- [whereis](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files#whereis) **<commande>** : Rechercher  les fichiers exécutables, les sources et les pages de manuel d'une commande
-	- ## #[[Manipulation de fichiers et répertoires]]
+	- ## #I/O
 	  collapsed:: true
-		- [cat](https://www.geeksforgeeks.org/cat-command-in-linux-with-examples/) -> `concatenate` **<option> <fichier>** : Affiche le contenu d'un fichier
-		- [cd](https://www.geeksforgeeks.org/cd-command-in-linux-with-examples/) -> `change directory` <répertoire> : Permet de se déplacer dans l'arborescence de fichiers
-		- [cp](https://www.geeksforgeeks.org/cp-command-linux-examples/) **<option> <source> <destination>** : Copie des fichiers ou répertoires
-		- [cut](https://www.geeksforgeeks.org/cut-command-linux-examples/) **<option> <fichier>** : Coupe un fichier ou une chaine de caractères selon un délimiteur, un nombre de caractères ou autre
-		- [diff](https://www.geeksforgeeks.org/diff-command-linux-examples/) **<options> <fichier1> <fichier2>** : Affiche les différences de contenu entre deux fichiers
-		- [ls](https://www.geeksforgeeks.org/ls-command-in-linux/) **<option> <fichier / répertoire>** : Liste les fichiers et répertoires
-		- [mkdir](https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/) -> `make directory` **<option> <répertoire>** : Crée un nouveau répertoire
-		- [mv](https://www.geeksforgeeks.org/mv-command-linux-examples/) **<option> <source> <destination>** : Déplace ou renomme des fichiers ou répertoires
-		- [pwd](https://www.geeksforgeeks.org/pwd-command-in-linux-with-examples/) `print working directory` **<option>** : Affiche le chemin absolu vers le répertoire courant
-		- [rm](https://www.geeksforgeeks.org/rm-command-linux-examples/) **<option> <fichier>** : Supprime un ou plusieurs fichiers
-		- [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/) **<option> <entrée>** : Tri le contenu d'un fichier selon l'option utilisée
-		- [touch](https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/) **<fichier>** : Crée un fichier
-		- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/) **<option> <entrée<sortie>>** : Filtre les doublons
-		- [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/) -> `word count` **<option> <fichier>** : Compte le nombre de lignes / mots / caractères / octets d'un fichier
+		- ### Périphériques audio
+		  collapsed:: true
+			- #### Pipewire / Wireplumber
+			  collapsed:: true
+				- ##### Afficher les périphériques
+					- ```shell
+					  wpctl status
+					  ```
+					- **Sinks**: périphériques de sortie (enceintes, casques)
+					- **Sources**: périphériques d'entrée (microphones)
+				- ##### Définir un périphérique de sortie par défaut
+				  collapsed:: true
+					- ```shell
+					  wpctl set-default <ID> # ID: numéro du périphérique
+					  wpctl set-default $(wpctl status | grep "Nom périphérique" | grep "\d+" -Po | head -n 1) # Récupère l'ID via le nom du périphérique
+					  ```
+	- ## #[[Fichiers et répertoires]]
+	  collapsed:: true
+		- ### Navigation
+		  collapsed:: true
+			- [cd](https://www.geeksforgeeks.org/cd-command-in-linux-with-examples/) -> `change directory` <répertoire> : Permet de se déplacer dans l'arborescence de fichiers
+			- [pwd](https://www.geeksforgeeks.org/pwd-command-in-linux-with-examples/) `print working directory` **<option>** : Affiche le chemin absolu vers le répertoire courant
+			- [ls](https://www.geeksforgeeks.org/ls-command-in-linux/) **<option> <fichier / répertoire>** : Liste les fichiers et répertoires
+		- ### Modification
+		  collapsed:: true
+			- [mkdir](https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/) -> `make directory` **<option> <répertoire>** : Crée un nouveau répertoire
+			- [touch](https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/) **<fichier>** : Crée un fichier
+			- [cp](https://www.geeksforgeeks.org/cp-command-linux-examples/) **<option> <source> <destination>** : Copie des fichiers ou répertoires
+			- [cut](https://www.geeksforgeeks.org/cut-command-linux-examples/) **<option> <fichier>** : Coupe un fichier ou une chaine de caractères selon un délimiteur, un nombre de caractères ou autre
+			- [mv](https://www.geeksforgeeks.org/mv-command-linux-examples/) **<option> <source> <destination>** : Déplace ou renomme des fichiers ou répertoires
+			- [rm](https://www.geeksforgeeks.org/rm-command-linux-examples/) **<option> <fichier>** : Supprime un ou plusieurs fichiers
+		- ### Redirection
+		  collapsed:: true
+			- [cat](https://www.geeksforgeeks.org/cat-command-in-linux-with-examples/) -> `concatenate` **<option> <fichier>** : Affiche le contenu d'un fichier
+			- [diff](https://www.geeksforgeeks.org/diff-command-linux-examples/) **<options> <fichier1> <fichier2>** : Affiche les différences de contenu entre deux fichiers
+			- [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/) **<option> <entrée>** : Tri le contenu d'un fichier selon l'option utilisée
+			- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/) **<option> <entrée<sortie>>** : Filtre les doublons
+			- [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/) -> `word count` **<option> <fichier>** : Compte le nombre de lignes / mots / caractères / octets d'un fichier
 	- ## #[[Gestion des droits]]
 	  collapsed:: true
 		- [chmod](https://www.geeksforgeeks.org/chmod-command-linux/) -> `change mode` **<option> <mode> <fichier / répertoire>** : Change le mode d'accès au fichier ou répertoire
