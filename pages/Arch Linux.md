@@ -357,7 +357,6 @@ collapsed:: true
 				  ```
 			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
 - # Post-installation
-  collapsed:: true
 	- ## #[[Firmware et support matériel]]
 	  collapsed:: true
 		- ### #AMD
@@ -420,7 +419,6 @@ collapsed:: true
 		- ### #GNOME
 		- ### #XFCE
 	- ## #[[Window Manager]]
-	  collapsed:: true
 		- ### Général
 		  collapsed:: true
 			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
@@ -540,11 +538,10 @@ collapsed:: true
 			  yay -S kitty
 			  ```
 	- ## #[[Display Manger]]
-	  collapsed:: true
 		- ### SDDM
-		  collapsed:: true
 			- Ecran de connexion personnalisable. Habituellement empaqueté avec #KDE
 			- #### #Paquets
+			  collapsed:: true
 				- collapsed:: true
 				  ```shell
 				  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
@@ -552,8 +549,15 @@ collapsed:: true
 					- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
 					- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
 			- #### Activation
+			  collapsed:: true
 				- ```shell
 				  sudo systemctl enable --now sddm
+				  ```
+			- #### Accès au répertoire utilisateur
+			  collapsed:: true
+				- ```shell
+				  setfacl -m u:sddm:x /home/username
+				  setfacl -m u:sddm:r /home/username/.face.icon
 				  ```
 	- ## #Polkit
 	  collapsed:: true
