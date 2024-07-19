@@ -20,6 +20,7 @@ collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
+	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -178,11 +179,17 @@ collapsed:: true
 			  pacstrap /mnt pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
 			  ```
 		- ### Configuration système
-		  collapsed:: true
 			- Générer le fichier fstab -> indique les **points de montage** 
 			  logseq.order-list-type:: number
 			  ```shell
 			  genfstab -U /mnt >> /mnt/etc/fstab
+			  ```
+			  
+			  ```vim
+			  # <device>                                <dir> <type> <options> <dump> <fsck>
+			  UUID=0a3407de-014b-458b-b5c1-848e92a327a3 /     ext4   defaults  0      1
+			  UUID=f9fe0b69-a280-415d-a03a-a32752370dee none  swap   defaults  0      0
+			  UUID=b411dc99-f0a0-4c87-9e05-184977be8539 /home ext4   defaults  0      2
 			  ```
 			- Basculer sur le point de montage **racine** 
 			  logseq.order-list-type:: number
@@ -419,6 +426,7 @@ collapsed:: true
 		- ### #GNOME
 		- ### #XFCE
 	- ## #[[Window Manager]]
+	  collapsed:: true
 		- ### Général
 		  collapsed:: true
 			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
@@ -538,6 +546,7 @@ collapsed:: true
 			  yay -S kitty
 			  ```
 	- ## #[[Display Manger]]
+	  collapsed:: true
 		- ### SDDM
 			- Ecran de connexion personnalisable. Habituellement empaqueté avec #KDE
 			- #### #Paquets
