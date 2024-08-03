@@ -46,7 +46,7 @@
 - # #Développement
 	- ## #[[Méthodologie & Gestion de projet]]
 		- [AppFlowy](https://github.com/AppFlowy-IO/appflowy) : Alternative à Notion. #Windows#Linux#MACOS#Android
-			- Prend en charge le markdown /link
+			- Prend en charge le markdown
 			- Thème personnalisable
 			- Tableau
 			- Code block /link
