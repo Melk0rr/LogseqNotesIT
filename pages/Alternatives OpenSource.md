@@ -5,6 +5,7 @@
 	- [Awesome Privacy](https://github.com/pluja/awesome-privacy) : des alternatives respectueuses de la vie privée pour diverses applications
 - # #PC
 	- ## #Multimédia
+	  collapsed:: true
 		- ### YouTube
 		  collapsed:: true
 			- [FreeTube](https://freetubeapp.io/) : Application de bureau pour #Windows#Linux#MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
@@ -52,7 +53,6 @@
 		- [NextDNS](https://nextdns.io/) : DNS sécurisé et bloqueur de pubs / traqueurs (supporte DNS-over-TLS et DNS-over-HTTPS)
 		- [Pi-hole](https://pi-hole.net/) : solution open source et auto-hébergée
 - # #Développement
-  collapsed:: true
 	- ## #[[Méthodologie & Gestion de projet]]
 	  collapsed:: true
 		- [AppFlowy](https://github.com/AppFlowy-IO/appflowy) : Alternative à Notion. #Windows#Linux#MACOS#Android
@@ -61,6 +61,9 @@
 			- Tableau
 			- Code block /link
 		- [focalboard](https://github.com/mattermost/focalboard) : Alternative à Trello ou encore Notion pour la gestion de projets de développement en méthode agile #Windows#Linux
+	- ## #Conception
+	  collapsed:: true
+		- [draw.io](https://github.com/jgraph/drawio) : logiciel de conception et conception de graphs divers (UML, Merise, Flux, Réseau, etc.) #Linux#Windows
 	- ## #Programmation
 	  collapsed:: true
 		- ### #IDE
