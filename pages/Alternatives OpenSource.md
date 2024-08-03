@@ -9,8 +9,7 @@
 			- [FreeTube](https://freetubeapp.io/) : Application de bureau pour #Windows#Linux#MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
 			- [Invidious](https://invidious.io/) : Front-end Youtube permettant d'obtenir une expérience YouTube simplifiée et privée, sans compte Google, sans pub, ni traqueur.
 		- ### Lecture de médias
-		  collapsed:: true
-			- [imv](https://git.sr.ht/~exec64/imv) : lecteur d'images extrêmement léger écrit en #C disponible uniquement sur #Linux
+			- [imv](https://git.sr.ht/~exec64/imv) : Lecteur d'images extrêmement léger écrit en #C disponible uniquement sur #Linux
 			- [mpv](https://github.com/mpv-player/mpv) : Lecteur vidéo minimaliste et léger écrit en #C disponible sur #Linux et #Windows
 			- [VLC](https://www.videolan.org/) : Logiciel multi-plateforme #Windows#Linux#MACOS permettant de lire n'importe quel média vidéo et musical
 			  id:: 65a80f38-3004-4b2b-bdb6-ce515f880ee5
@@ -21,7 +20,6 @@
 		- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Programme #Rust  de monitoring de ressources sous #Linux.
 		- [OpenRGB](https://openrgb.org/) : Logiciel #C++ et multiplateforme #Windows#Linux#MACOS fournissant un moyen de contrôler le RGB de différents composants matériel (ventilateurs, carte graphique, RAM, carte mère, bandes LEDs, etc). OpenRGB est compatible avec de nombreux composants et fournit donc une alternative légère et libre aux multiples bloatwares propriétaires (iCue, Armoury Crate, MSI Mystic Light, etc)
 - # #Android
-  collapsed:: true
 	- ## #[[Operating System]]
 	  collapsed:: true
 		- #GrapheneOS
@@ -29,8 +27,9 @@
 	- ## #Multimédia
 	  collapsed:: true
 		- ### YouTube
-		  collapsed:: true
-			- [Newpipe](https://newpipe.net/) : Application #Android fournissant un accès au contenu Youtube, Peertube ou encore SoundCloud sans publicité
+			- [Newpipe](https://newpipe.net/) : Application #Android fournissant un accès au contenu Youtube, Peertube ou encore SoundCloud sans publicité et sans nécessité de mot de passe
+			  id:: 65cfcd67-e8f5-4258-a08c-036965df1d58
+			- [PipePipe](https://github.com/InfinityLoop1308/PipePipe) : Fork de [Newpipe](((65cfcd67-e8f5-4258-a08c-036965df1d58))) avec quelques changement de #GUI et des options pour bloquer le contenu sponsorisé
 		- ### Lecture de médias
 		  collapsed:: true
 			- ((65a80f38-3004-4b2b-bdb6-ce515f880ee5))
@@ -44,9 +43,16 @@
 	  collapsed:: true
 		- [NextDNS](https://nextdns.io/) : DNS sécurisé et bloqueur de pubs / traqueurs (supporte DNS-over-TLS et DNS-over-HTTPS)
 		- [Pi-hole](https://pi-hole.net/) : solution open source et auto-hébergée
-- # #Programmation
-  collapsed:: true
-	- ## #IDE
-		- [VSCodium](https://vscodium.com/) : Version libre et sans télémétrie de [VSCode](https://code.visualstudio.com/)
-			- Le noyau de VSCode est open source. Mais pas la version livrée par #Microsoft
-		- [Neovim](https://github.com/neovim/neovim) : Environnement de développement compatible #Windows#Linux#MACOS
+- # #Développement
+	- ## #[[Méthodologie & Gestion de projet]]
+		- [AppFlowy](https://github.com/AppFlowy-IO/appflowy) : Alternative à Notion. #Windows#Linux#MACOS#Android
+			- Prend en charge le markdown /link
+			- Thème personnalisable
+			- Tableau
+			- Code block /link
+		- [focalboard](https://github.com/mattermost/focalboard) : Alternative à Trello ou encore Notion pour la gestion de projets de développement en méthode agile #Windows#Linux
+	- ## #Programmation
+		- ### #IDE
+			- [VSCodium](https://vscodium.com/) : Version libre de [VSCode](https://code.visualstudio.com/) compatible #Windows#Linux#MACOS
+				- Le noyau de VSCode est open source. Mais pas la version livrée par #Microsoft
+			- [Neovim](https://github.com/neovim/neovim) : Environnement de développement compatible #Windows#Linux#MACOS
