@@ -5,7 +5,6 @@
 	- [Awesome Privacy](https://github.com/pluja/awesome-privacy) : des alternatives respectueuses de la vie privée pour diverses applications
 - # #PC
 	- ## #Multimédia
-	  collapsed:: true
 		- ### YouTube
 		  collapsed:: true
 			- [FreeTube](https://freetubeapp.io/) : Application de bureau pour #Windows#Linux#MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
@@ -21,6 +20,11 @@
 			- [Upscayl](https://github.com/upscayl/upscayl) : Upscaler d'image via **IA** #Linux#Windows#MACOS
 				- Plusieurs modèles disponibles
 				- Peut traiter toutes les images d'un dossier
+		- ### Musique
+		  collapsed:: true
+			- [SpotX](https://github.com/SpotX-Official) : Script pour Spotify. #Linux#Windows
+				- Bloque les pubs
+				- Dévérouille les fonctionnalités premium
 	- ## #[[Firmware et support matériel]]
 	  collapsed:: true
 		- [CoolerControl](https://gitlab.com/coolercontrol/coolercontrol) : Programme #Python / #Rust  de contrôle des éléments de refroidissement du système. Spécifique aux systèmes #Linux
@@ -53,6 +57,7 @@
 		- [NextDNS](https://nextdns.io/) : DNS sécurisé et bloqueur de pubs / traqueurs (supporte DNS-over-TLS et DNS-over-HTTPS)
 		- [Pi-hole](https://pi-hole.net/) : solution open source et auto-hébergée
 - # #Développement
+  collapsed:: true
 	- ## #[[Méthodologie & Gestion de projet]]
 	  collapsed:: true
 		- [AppFlowy](https://github.com/AppFlowy-IO/appflowy) : Alternative à Notion. #Windows#Linux#MACOS#Android
