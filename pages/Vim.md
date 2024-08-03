@@ -1,7 +1,6 @@
 # Introduction
 	- Editeur de texte #OpenSource publié en 1991 qui repose sur un système de modes et de raccourcis permettant une manipulation et une navigation rapide et efficace d'un document
 - # Commandes
-  collapsed:: true
 	- ## Mode normal
 		- ### Navigation
 			- #### Base
@@ -31,6 +30,7 @@
 				  10l
 				  ```
 			- #### Document
+			  collapsed:: true
 				- Déplacement vers le **haut du document** 
 				  ```vim
 				  gg
@@ -56,7 +56,6 @@
 				  10k
 				  ```
 			- #### Ligne
-			  collapsed:: true
 				- Déplacement vers la **fin de la ligne** 
 				  ```vim
 				  $
@@ -234,6 +233,7 @@
 		- ### Ligne
 		- ### Block
 	- ## Mode command-line
+	  collapsed:: true
 		- ### Manipulation de document
 			- **Quitter** le document 
 			  ```vim
