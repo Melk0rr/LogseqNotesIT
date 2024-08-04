@@ -5,6 +5,7 @@
 	- [Awesome Privacy](https://github.com/pluja/awesome-privacy) : des alternatives respectueuses de la vie privée pour diverses applications
 - # #PC
 	- ## #Multimédia
+	  collapsed:: true
 		- ### YouTube
 		  collapsed:: true
 			- [FreeTube](https://freetubeapp.io/) : Application de bureau pour #Windows#Linux#MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
@@ -22,6 +23,7 @@
 				- Peut traiter toutes les images d'un dossier
 		- ### Musique
 		  collapsed:: true
+			- [audacious](https://github.com/audacious-media-player/audacious) : Lecteur de musique léger et complet #LInux#Windows#MACOS
 			- [SpotX](https://github.com/SpotX-Official) : Script pour Spotify. #Linux#Windows
 				- Bloque les pubs
 				- Dévérouille les fonctionnalités premium
