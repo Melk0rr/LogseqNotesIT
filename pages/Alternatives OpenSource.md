@@ -27,6 +27,15 @@
 			- [SpotX](https://github.com/SpotX-Official) : Script pour Spotify. #Linux#Windows
 				- Bloque les pubs
 				- Dévérouille les fonctionnalités premium
+	- ## #Communication
+		- ### #Messagerie
+		- ### #VoIP
+		  collapsed:: true
+			- [WebCord](https://github.com/SpacingBat3/WebCord) : Client Discord purgé de son API, personnalisable et orienté #Privacy#Linux
+		- ### #Mail
+		  collapsed:: true
+			- [Thunderbird](https://www.thunderbird.net/en-US/) : Client mail, gratuit et multi plateformes
+			- [ProtonMail](https://proton.me/mail/) : Solution mail sécurisée (options payantes / gratuites)
 	- ## #[[Firmware et support matériel]]
 	  collapsed:: true
 		- [CoolerControl](https://gitlab.com/coolercontrol/coolercontrol) : Programme #Python / #Rust  de contrôle des éléments de refroidissement du système. Spécifique aux systèmes #Linux
@@ -34,7 +43,6 @@
 		- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Programme #Rust  de monitoring de ressources sous #Linux.
 		- [OpenRGB](https://openrgb.org/) : Logiciel #C++ et multiplateforme #Windows#Linux#MACOS fournissant un moyen de contrôler le RGB de différents composants matériel (ventilateurs, carte graphique, RAM, carte mère, bandes LEDs, etc). OpenRGB est compatible avec de nombreux composants et fournit donc une alternative légère et libre aux multiples bloatwares propriétaires (iCue, Armoury Crate, MSI Mystic Light, etc)
 - # #Android
-  collapsed:: true
 	- ## #[[Operating System]]
 	  collapsed:: true
 		- #GrapheneOS
@@ -48,10 +56,6 @@
 		- ### Lecture de médias
 		  collapsed:: true
 			- ((65a80f38-3004-4b2b-bdb6-ce515f880ee5))
-- # #Mail
-  collapsed:: true
-	- [Thunderbird](https://www.thunderbird.net/en-US/) : Client mail, gratuit et multi plateformes
-	- [ProtonMail](https://proton.me/mail/) : Solution mail sécurisée (options payantes / gratuites)
 - # #Réseau
   collapsed:: true
 	- ## #DNS
