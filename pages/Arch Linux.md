@@ -17,6 +17,7 @@ collapsed:: true
 		  |**Site web**|[archlinux.org](http://archlinux.org)|
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
+  collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
@@ -126,6 +127,7 @@ collapsed:: true
 			  mount /dev/nvme0n1p4 /mnt/home
 			  ```
 	- ## Installation
+	  collapsed:: true
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
 		  collapsed:: true
@@ -179,6 +181,7 @@ collapsed:: true
 			  pacstrap /mnt pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
 			  ```
 		- ### Configuration système
+		  collapsed:: true
 			- Générer le fichier fstab -> indique les **points de montage** 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -364,6 +367,7 @@ collapsed:: true
 				  ```
 			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
 - # Post-installation
+  collapsed:: true
 	- ## #[[Firmware et support matériel]]
 	  collapsed:: true
 		- ### #AMD
@@ -709,6 +713,17 @@ collapsed:: true
 				  ```
 	- ## Résolution de problèmes
 	  collapsed:: true
+		- ### Créer un fichier patch
+		  collapsed:: true
+			- Pour obtenir les différences entre des fichiers / dossiers
+			- ```shell
+			  diff -Naru file_original file_updated > file.patch # Un seul fichier
+			  diff -crB dir_original dir_updated > dir.patch # Dossier
+			  ```
+			- `-N` : Traiter les fichiers absents comme des fichiers vides
+			- `-a` : Traiter tous les fichiers comme des textes
+			- `-r` : Comparer récursivement les sous-répertoires trouvés
+			- `-u` : Afficher N (3 par défaut) lignes dans le context unifié
 		- ### Compilation depuis un chroot propre
 		  collapsed:: true
 			- Utile si une mise à jour est bloquée à cause d'une **cassure de dépendance** ou autre
@@ -772,4 +787,3 @@ collapsed:: true
 				  echo "pinentry-program /usr/bin/pinentry-gtk" > ~/.gnupg/gpg-agent.conf
 				  gpg-connect-agent reloadagent /bye
 				  ```
--
