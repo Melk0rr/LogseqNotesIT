@@ -34,6 +34,7 @@ collapsed:: true
 		  | *long double* | 10 | -1.1e4932 | 1.1e4932 |
 	- ## #Variables
 	  id:: 66740240-b7ba-4a5e-af69-4110f0d7b628
+	  collapsed:: true
 		- #### Utilisation
 			- ```c
 			  int maVariable = 3;	 // Déclaration et initialisation de la variable
@@ -43,6 +44,7 @@ collapsed:: true
 			  ```
 	- ## #Pointeurs
 	  id:: 6673ffb0-886e-4e73-a0fd-1cdabff8510a
+	  collapsed:: true
 		- Un pointeur est une variable qui contient l**'adresse** (et non la valeur) d'une autre variable
 		- #### Utilisation
 			- ```c
@@ -53,12 +55,12 @@ collapsed:: true
 			  printf(*monPointeur);		// Valeur de la variable pointée
 			  printf(&monPointeur);		// Adresse du pointeur
 			  ```
--
 - # Usages
+  collapsed:: true
 	- Systèmes d'exploitation
 	- Systèmes embarqués
 	- Compilateurs
--
 - # Influences
+  collapsed:: true
 	- Langage B
 	- Fortran
