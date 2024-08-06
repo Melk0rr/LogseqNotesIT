@@ -9,6 +9,9 @@
 	- ## #Linux
 	- ## #GrapheneOS
 	- ## #CalyxOS
+- # #Monitoring
+  collapsed:: true
+	- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Application #Rust pour monitorer la charge CPU / RAM / GPU / Disque / Réseau #Linux
 - # #[[Firmware et support matériel]]
   collapsed:: true
 	- [CoolerControl](https://gitlab.com/coolercontrol/coolercontrol) : Programme #Python / #Rust  de contrôle des éléments de refroidissement du système. Spécifique aux systèmes #Linux
@@ -18,10 +21,13 @@
 - # #Communication
   collapsed:: true
 	- ### #Messagerie
-		- [Session](https://github.com/oxen-io/session-desktop) : messagerie chiffrée
+	  collapsed:: true
+		- [Session](https://github.com/oxen-io/session-desktop) : messagerie chiffrée #Linux#Windows#Android
 	- ### #VoIP
+	  collapsed:: true
 		- [WebCord](https://github.com/SpacingBat3/WebCord) : Client Discord purgé de son API, personnalisable et orienté #Privacy#Linux
 	- ### #Mail
+	  collapsed:: true
 		- [Thunderbird](https://www.thunderbird.net/en-US/) : Client mail, gratuit et multi plateformes
 		- [ProtonMail](https://proton.me/mail/) : Solution mail sécurisée (options payantes / gratuites)
 - # #Réseau
@@ -48,21 +54,42 @@
 - # #Multimédia
   collapsed:: true
 	- ### YouTube
+	  collapsed:: true
 		- [FreeTube](https://freetubeapp.io/) : Application de bureau pour #Windows#Linux#MACOS reposant sur l'API Invidious pour donner accès au contenu Youtube
 		- [Invidious](https://invidious.io/) : Front-end Youtube permettant d'obtenir une expérience YouTube simplifiée et privée, sans compte Google, sans pub, ni traqueur.
 		- [Newpipe](https://newpipe.net/) : Application #Android fournissant un accès au contenu Youtube, Peertube ou encore SoundCloud sans publicité et sans nécessité de compte Google
 		  id:: 65cfcd67-e8f5-4258-a08c-036965df1d58
 		- [PipePipe](https://github.com/InfinityLoop1308/PipePipe) : Fork de [Newpipe](((65cfcd67-e8f5-4258-a08c-036965df1d58))) avec quelques changement de #GUI et des options pour bloquer le contenu sponsorisé
 	- ### Lecture de médias
+	  collapsed:: true
 		- [imv](https://git.sr.ht/~exec64/imv) : Lecteur d'images extrêmement léger écrit en #C disponible uniquement sur #Linux
 		- [mpv](https://github.com/mpv-player/mpv) : Lecteur vidéo minimaliste et léger écrit en #C disponible sur #Linux et #Windows
-		- [VLC](https://www.videolan.org/) : Logiciel multi-plateforme #Windows#Linux#MACOS permettant de lire n'importe quel média vidéo et musical
+		- [VLC](https://www.videolan.org/) : Logiciel multi-plateforme #Windows#Linux#MACOS#Android permettant de lire n'importe quel média vidéo et musical
+		- [Aves](https://github.com/deckerst/aves) : Galerie et gestionnaire de métadonnées #Android
+		  collapsed:: true
+			- Tags
+			- Géolocalisation manuelle via OpenStreetMap
+			- Gestion d'albums
 	- ### Traitement d'image
+	  collapsed:: true
 		- [Upscayl](https://github.com/upscayl/upscayl) : Upscaler d'image via **IA** #Linux#Windows#MACOS
 			- Plusieurs modèles disponibles
 			- Peut traiter toutes les images d'un dossier
 	- ### Musique
+	  collapsed:: true
 		- [audacious](https://github.com/audacious-media-player/audacious) : Lecteur de musique léger et complet #LInux#Windows#MACOS
-		- [SpotX](https://github.com/SpotX-Official) : Script pour Spotify. #Linux#Windows
-			- Bloque les pubs
-			- Dévérouille les fonctionnalités premium
+		- [SpotX](https://github.com/SpotX-Official) : Script pour #Spotify. #Linux#Windows
+			- Blocage des pubs
+			- Déverrouillage des fonctionnalités premium
+		- [Spicetify](https://github.com/spicetify) : Outil #Go en ligne de commande pour personnaliser le client #Spotify #Linux#Windows#MACOS
+			- Personnalisation
+			- Optimisation des performances
+			- Blocage des pubs
+			- Déverrouillage des fonctionnalités premium
+		- [xManager](https://github.com/Team-xManager/xManager) : Application #Java pour générer un fichier APK #Spotify déverrouillé pour #Android
+		  collapsed:: true
+			- Blocage des pubs
+			- Déverrouillage des fonctionnalités premium
+	- ### Documents
+	  collapsed:: true
+		- [OSS-DocumentScanner](https://github.com/Akylas/OSS-DocumentScanner) : Application #C++ pour scanner des documents #Android
