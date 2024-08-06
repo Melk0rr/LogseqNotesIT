@@ -40,6 +40,11 @@
 	- ## #DNS
 		- [NextDNS](https://nextdns.io/) : DNS sécurisé et bloqueur de pubs / traqueurs (supporte DNS-over-TLS et DNS-over-HTTPS)
 		- [Pi-hole](https://pi-hole.net/) : solution open source et auto-hébergée
+- # #[[Domotique / Hosting]]
+  collapsed:: true
+	- [Home Assistant](https://github.com/home-assistant) : Solution de domotique #Linux#Windows#MACOS#Android
+	- [Nextcloud](https://github.com/nextcloud) : Solution d'auto-hébergement #Linux#Windows#MACOS#Android
+	- [Syncthing](https://github.com/syncthing) : Programme #Go de synchronisation continue de fichiers #Linux#Windows#MACOS#Android
 - # #Développement
   collapsed:: true
 	- ## #[[Méthodologie & Gestion de projet]]
