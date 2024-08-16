@@ -1,0 +1,2 @@
+- #Formations
+	- [FormationVidéo](https://www.youtube.com/formationvideo8) : chaîne #FR dédiée à des formations IT diverses #Linux#C#C++#Python et autres
