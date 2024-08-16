@@ -1,1 +1,0 @@
-- #[[Operating System]] développé par Apple
