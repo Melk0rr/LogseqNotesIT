@@ -5,6 +5,19 @@
 	- ## L'Opensource, c'est quoi ?
 	- ## Le monde merveilleux de Linux
 		- ### Le moteur de voiture
-		- ## L'opensource et Linux
+		- ### L'opensource et Linux
+	- ## Pourquoi privilégier Linux à Windows ou MacOS ?
+	-
 	- ## Les distributions pour la famille
+		- ### Pour les débutants
+			- #### Ubuntu
+			- #### PoP! OS
+			- #### Linux Mint
+		- ### Pour les nostalgiques de Windows
+			- #### Zorin OS
+		- ### Pour les nostalgiques de MacOS
+			- #### Elementary OS
+		- ### Pour les plus avancés
+			- #### Fedora
+			- #### OpenSUSE Leap
 	- ## Conclusion
