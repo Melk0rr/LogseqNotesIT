@@ -23,5 +23,5 @@
 	- Compilateurs
 -
 - # Influences
-	- #C
+	- #[[Langage C]]
 	- Simula
