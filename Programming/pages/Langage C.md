@@ -1,9 +1,7 @@
 # Description
-collapsed:: true
+title:: Langage C
 	- Langage de #Programmation **impératif**, **compilé** et **bas niveau** inventé au début des années 1970
-	-
 - # Avantages & Inconvénients
-  collapsed:: true
 	- ## Avantages
 		- Rapide
 		- Gestion de la mémoire
@@ -12,10 +10,8 @@ collapsed:: true
 		- Gestion des chaines de caractères
 		- Fuites mémoire
 - # Notions
-  collapsed:: true
 	- ## #Types
 	  id:: 66741c79-5e65-4f51-b3c6-00e62a28c6d0
-	  collapsed:: true
 		- | **Type** | **Mémoire (octets / arch)** | **Valeur(min)** | **Valeur(max)** |
 		  | :---: | :---: | :---: | :---: |
 		  | *char* | - | - | - |
@@ -34,7 +30,6 @@ collapsed:: true
 		  | *long double* | 10 | -1.1e4932 | 1.1e4932 |
 	- ## #Variables
 	  id:: 66740240-b7ba-4a5e-af69-4110f0d7b628
-	  collapsed:: true
 		- #### Utilisation
 			- ```c
 			  int maVariable = 3;	 // Déclaration et initialisation de la variable
@@ -44,7 +39,6 @@ collapsed:: true
 			  ```
 	- ## #Pointeurs
 	  id:: 6673ffb0-886e-4e73-a0fd-1cdabff8510a
-	  collapsed:: true
 		- Un pointeur est une variable qui contient l**'adresse** (et non la valeur) d'une autre variable
 		- #### Utilisation
 			- ```c
@@ -56,11 +50,9 @@ collapsed:: true
 			  printf(&monPointeur);		// Adresse du pointeur
 			  ```
 - # Usages
-  collapsed:: true
 	- Systèmes d'exploitation
 	- Systèmes embarqués
 	- Compilateurs
 - # Influences
-  collapsed:: true
 	- Langage B
 	- Fortran
