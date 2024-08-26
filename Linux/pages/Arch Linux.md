@@ -422,12 +422,48 @@ collapsed:: true
 				- ```shell
 				  sudo systemctl enable --now bluetooth
 				  ```
+	- ## #Réseau
+	  collapsed:: true
+		- ### #DNS
+		  collapsed:: true
+			- #### #DNS over #TLS avec **systemd-resolved** et **NetworkManager**
+			  collapsed:: true
+				- Configurer **systemd-resolved** dans */etc/systemd/resolved.conf*
+				  logseq.order-list-type:: number
+					- ```vim
+					  [Resolve]
+					  DNS=45.90.28.0#<dns-domain>
+					  DNS=2a07:a8c0::#<dns-domain>
+					  DNS=45.90.30.0#<dns-domain>
+					  DNS=2a07:a8c1::#<dns-domain>
+					  DNSSEC=yes
+					  DNSOverTLS=yes
+					  ```
+				- Configurer **NetworkManager** pour qu'il pousse ses infos vers **systemd-resolved**
+				  logseq.order-list-type:: number
+					- ```vim
+					  [main]
+					  dns=systemd-resolved
+					  systemd-resolved=false
+					  ```
+				- Activer **systemd-resolved** et redémarrer **NetworkManager**
+				  logseq.order-list-type:: number
+					- ```shell
+					  sudo systemctl enable --now systemd-resolved
+					  sudo systemctl restart NetworkManager
+					  ```
+				- Vérifier que tout fonctionne
+				  logseq.order-list-type:: number
+					- ```shell
+					  resolvectl status
+					  ```
 	- ## #[[Desktop Environment]]
 	  collapsed:: true
 		- ### #KDE
 		- ### #GNOME
 		- ### #XFCE
 	- ## #[[Window Manager]]
+	  collapsed:: true
 		- ### Général
 		  collapsed:: true
 			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
@@ -612,7 +648,7 @@ collapsed:: true
 			- ```shell
 			  yay -S steam steam-native-runtime steamtinkerlaunch protonup-qt protontricks-git winetricks heroic-games-launcher lutris
 			  ```
-	- ## Personnalisation
+	- ## #Personnalisation
 	  collapsed:: true
 		- ### Interfaces #QT
 		  collapsed:: true
