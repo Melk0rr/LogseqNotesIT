@@ -422,6 +422,15 @@ collapsed:: true
 				- ```shell
 				  sudo systemctl enable --now bluetooth
 				  ```
+	- ## #[[Système de fichiers]]
+	  collapsed:: true
+		- ### Nettoyage
+		  collapsed:: true
+			- #### Activation du trim
+			  collapsed:: true
+				- ```shell
+				  sudo systemctl enable --now fstrim.timer
+				  ```
 	- ## #Réseau
 	  collapsed:: true
 		- ### #DNS
