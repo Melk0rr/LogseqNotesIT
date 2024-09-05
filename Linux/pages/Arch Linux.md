@@ -126,7 +126,6 @@ collapsed:: true
 			  mount /dev/nvme0n1p4 /mnt/home
 			  ```
 	- ## Installation
-	  collapsed:: true
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
 		  collapsed:: true
@@ -145,7 +144,7 @@ collapsed:: true
 			- Installer le système et quelques paquets essentiels 
 			  logseq.order-list-type:: number
 			  ```shell
-			  pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib nano networkmanager firewalld
+			  pacstrap /mnt base base-devel linux linux-headers linux-firmware pacman-contrib
 			  ```
 				- **base** : installation minimale d'Arch linux
 				  logseq.order-list-type:: number
@@ -370,62 +369,52 @@ collapsed:: true
 	  collapsed:: true
 		- ### #AMD
 		  collapsed:: true
+			- ```shell
+			  # Défaut
+			  sudo pacman -S --needed mesa-git lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
+			  
+			  # Mesa TKG
+			  git clone https://github.com/Frogging-Family/mesa-git
+			  cd mesa-tkg
+			  makepkg -si
+			  ```
+			- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
 			- #### #Paquets
-				- Installation par défaut (**mesa** ou **mesa-git**)
-				  ```shell
-				  sudo pacman -S --needed mesa-git lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
-				  ```
-				- Installation [mesa-tkg](https://github.com/Frogging-Family/mesa-git) : version maintenue par **TKG** -> contient des patchs et fixes supplémentaires
-				  ```shell
-				  git clone https://github.com/Frogging-Family/mesa-git
-				  cd mesa-tkg
-				  makepkg -si
-				  ```
-				- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
-			-
+			  collapsed:: true
+				- [mesa](https://www.mesa3d.org/)
+				- [mesa-tkg](https://github.com/Frogging-Family/mesa-git) : version maintenue par **TKG** -> contient des patchs et fixes supplémentaires
 		- ### #Impression
 		  collapsed:: true
-			- #### Général
+			- ```shell
+			  # Général
+			  yay -S ghostscript gsfonts cups cups-filters cups-pdf system-config-printer avahi foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds gutenprint foomatic-db-gutenprint-ppds
+			  
+			  # Activation des daemon
+			  sudo systemctl enable --now avahi-daemon
+			  sudo systemctl enable --now cups
+			  
+			  # Epson
+			  yay -S epson-inkjet-printer-escpr epson-inkjet-printer-escpr2
+			  
+			  # HP
+			  yay -S hplip
+			  ```
+			- ### #Paquets
 			  collapsed:: true
-				- ##### #Paquets
-					- ```shell
-					  yay -S ghostscript gsfonts cups cups-filters cups-pdf system-config-printer avahi foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds gutenprint foomatic-db-gutenprint-ppds
-					  ```
-				- ##### #Daemon
-				  collapsed:: true
-					- ```shell
-					  sudo systemctl enable --now avahi-daemon
-					  sudo systemctl enable --now cups
-					  ```
-			- #### Epson
-			  collapsed:: true
-				- ##### #Paquets
-				  collapsed:: true
-					- ```shell
-					  yay -S epson-inkjet-printer-escpr epson-inkjet-printer-escpr2
-					  ```
-			- #### HP
-			  collapsed:: true
-				- ##### #Paquets
-					- ```shell
-					  yay -S hplip
-					  ```
+				- [CUPS](https://openprinting.github.io/cups/)
+				- [avahi](https://github.com/avahi/avahi)
 		- ### #Bluetooth
 		  collapsed:: true
-			- #### #Paquets
+			- ```shell
+			  yay -S bluez bluez-plugins bluez-utils
+			  sudo systemctl enable --now bluetooth
+			  ```
+			- ### #Paquets
 			  collapsed:: true
-				- ```shell
-				  yay -S bluez bluez-plugins bluez-utils
-				  ```
-			- #### #Daemon
-			  collapsed:: true
-				- ```shell
-				  sudo systemctl enable --now bluetooth
-				  ```
+				- [bluez](https://www.bluez.org/)
 	- ## #[[Système de fichiers]]
 	  collapsed:: true
 		- ### Nettoyage
-		  collapsed:: true
 			- #### Activation du trim
 			  collapsed:: true
 				- ```shell
@@ -433,10 +422,22 @@ collapsed:: true
 				  ```
 	- ## #Réseau
 	  collapsed:: true
+		- ```shell
+		  # NetworkManager
+		  yay -S networkmanager network-manager-applet
+		  
+		  # Firewall
+		  yay -S gufw
+		  # yay -S firewalld
+		  # sudo systemctl enable --now firewalld
+		  ```
+		- ### #Paquets
+		  collapsed:: true
+			- [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager) : #Daemon de gestion #Réseau développé en #C
+			- [ufw](https://launchpad.net/ufw)
 		- ### #DNS
 		  collapsed:: true
 			- #### #DNS over #TLS avec **systemd-resolved** et **NetworkManager**
-			  collapsed:: true
 				- Configurer **systemd-resolved** dans */etc/systemd/resolved.conf*
 				  logseq.order-list-type:: number
 					- ```vim
@@ -473,7 +474,32 @@ collapsed:: true
 		- ### #XFCE
 	- ## #[[Window Manager]]
 	  collapsed:: true
-		- ### Général
+		- ```shell
+		  # Hyprland
+		  yay -S hyprland-git xdg-desktop-portal-hyprland-git
+		  
+		  # Verrouillage de session
+		  yay -S hypridle-git hyprlock-git wlogout
+		  
+		  # Lanceur d'applications
+		  yay -S rofi-lbonn-wayland-git
+		  
+		  # Barre de tâches
+		  yay -S waybar-git
+		  
+		  # Gestionnaire de fonds d'écran
+		  yay -S swww
+		  
+		  # Notifications
+		  yay -S dunst
+		  
+		  # Captures d'écran
+		  yay -S grimblast-git slurp swappy wf-recorder
+		  
+		  # Presse papier
+		  yay -S cliphist
+		  ```
+		- ### Configuration Générale
 		  collapsed:: true
 			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
 			  ```shell
@@ -489,34 +515,20 @@ collapsed:: true
 			  reboot
 			  kbuildsycoca6
 			  ```
-		- ### #Hyprland
-			- [Wiki Hyprland](https://wiki.hyprland.org/)
-			- #### #Paquets de base
+		- ### #Paquets
+		  collapsed:: true
+			- #### WM
 			  collapsed:: true
-				- ```shell
-				  yay -S hyprland-git xdg-desktop-portal-hyprland-git
-				  ```
-				- Recommandé d'utiliser la version **hyprland-git**
-				  collapsed:: true
-					- Les développeurs d'hyprland sont très **réactifs**
-					- Les bugs sont **fix très rapidement**
-					- Permet d'avoir les tous **derniers correctifs**
-			- #### #Paquets de gestion de presse-papier
+				- [Hyprland](https://github.com/hyprwm/Hyprland) : **Dynamic tiling Window Manager** développé en #C++
+					- [wiki](https://wiki.hyprland.org/)
+			- #### Presse-papier
 			  collapsed:: true
-				- ```shell
-				  yay -S cliphist
-				  ```
 				- [cliphist](https://github.com/sentriz/cliphist) : gestionnaire léger développé en #Go et interfaçable avec rofi
-			- #### #Paquets d'affichage de notifications
+			- #### Notifications
 			  collapsed:: true
-				- ```shell
-				  yay -S dunst
-				  ```
 				- [dunst](https://github.com/dunst-project/dunst) : daemon très léger développé en #C
-			- #### #Paquets de capture d'écran
-				- ```shell
-				  yay -S grimblast-git slurp swappy wf-recorder
-				  ```
+			- #### Capture d'écran
+			  collapsed:: true
 				- [grimblast-git](https://github.com/hyprwm/contrib) : script #Shell pour prendre des **screenshots**
 				- [slurp](https://github.com/emersion/slurp) : utilitaire pour **sélectionner des régions** de l'écran développé en #C
 				  id:: 660e7aa6-a5eb-47b9-a13f-ae6502f98cfb
@@ -525,177 +537,163 @@ collapsed:: true
 				  ```shell
 				  wf-recorder -g "$(slurp)"
 				  ```
-			- #### #Paquets de lancement d'applications
+			- #### Lancement d'applications
 			  collapsed:: true
-				- ```shell
-				  yay -S rofi-lbonn-wayland-git
-				  ```
 				- [rofi](https://github.com/lbonn/rofi) : **lanceur d'applications** développé en #C très **personnalisable** et **léger**
-			- #### #Paquets pour verrouillage de session
+			- #### Verrouillage de session
 			  collapsed:: true
-				- ```shell
-				  yay -S hypridle swaylock-effects-git wlogout
-				  ```
 				- [hypridle](https://github.com/hyprwm/hypridle) : daemon d'**inactivité** pour **hyprland** développé en #C++
-				- [swaylock-effects-git](https://github.com/mortie/swaylock-effects) : écran de **verrouillage** de session  **simple** et **personnalisable** développé en #C
 				- [hyprlock](https://github.com/hyprwm/hyprlock) : ==alternative== à [swaylock](swaylock-effects-git) de l'environnement **Hypr** développé en #C++
+				- [swaylock-effects-git](https://github.com/mortie/swaylock-effects) : écran de **verrouillage** de session  **simple** et **personnalisable** développé en #C
 				- [wlogout](https://github.com/ArtsyMacaw/wlogout) : menu de **verrouillage de session** développé en #C
-			- #### #Paquets de gestion de fond d'écran
+			- #### Gestionnaire de fond d'écran
 			  collapsed:: true
-				- ```shell
-				  yay -S swww-git
-				  ```
 				- [swww](https://github.com/LGFae/swww) : daemon pour les **fonds d'écran** développé en #Rust
-			- #### #Paquets de gestion barre de tâches
+			- #### Barre de tâches
 			  collapsed:: true
-				- ```shell
-				  yay -S waybar-git
-				  ```
 				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
 	- ## #[[Gestionnaire de fichiers]]
 	  collapsed:: true
-		- ### Dolphin
-		  collapsed:: true
-			- Gestionnaire de fichiers habituellement empaqueté avec #KDE.
-			- Interface configurable et bon panel de fonctionnalités.
-			- Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources**
-			- #### #Paquets
+		- ```shell
+		  # Dolphin
+		  yay -S dolphin ark kde-cli-tools
+		  
+		  # Thunar
+		  yay -S thunar thunar-archive-plugin
+		  ```
+		- ### #Paquets
+			- [dolphin](https://github.com/KDE/dolphin) : Gestionnaire de fichiers habituellement empaqueté avec #KDE #C++
 			  collapsed:: true
-				- id:: 65cfcd67-02fa-424c-9c87-a8f347546160
-				  collapsed:: true
-				  ```shell
-				  yay -S dolphin ark kde-cli-tools
-				  ```
-					- **ark** : utilitaire de gestion d'archives
-					- **kde-cli-tools** : outils d'interaction système basé sur le framework **KDE**
-		- ### Thunar
-		  collapsed:: true
-			- Gestionnaire de fichiers habituellement empaqueté avec #XFCE et #GNOME.
-			- Facilement **configurable** et **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
-			- #### #Paquets
-				- ```shell
-				  yay -S thunar thunar-archive-plugin
-				  ```
+				- Interface configurable et bon panel de fonctionnalités.
+				- Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources**
+			- [thunar](https://github.com/xfce-mirror/thunar) : Gestionnaire de fichiers habituellement empaqueté avec #XFCE et #GNOME #C
+			  collapsed:: true
+				- Facilement **configurable** et **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
 	- ## #Terminal
 	  collapsed:: true
-		- ### Alacritty
-			- Emulateur de terminal développé en #Rust 
-			  ```shell
-			  yay -S alacritty
-			  ```
-		- ### Kitty
-		  collapsed:: true
-			- Emulateur de terminal développé en #Python et #C 
-			  ```shell
-			  yay -S kitty
-			  ```
+		- ```shell
+		  # Kitty
+		  yay -S kitty
+		  
+		  # Alacritty
+		  yay -S alacritty
+		  ```
+		- ### #Paquets
+			- [kitty](https://github.com/kovidgoyal/kitty) : #C #Python
+			- [alacritty](https://github.com/alacritty/alacritty) : #Rust
 	- ## #[[Display Manger]]
 	  collapsed:: true
-		- ### SDDM
-			- Ecran de connexion personnalisable. Habituellement empaqueté avec #KDE
-			- #### #Paquets
-			  collapsed:: true
-				- collapsed:: true
-				  ```shell
-				  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
-				  ```
-					- [sddm-sugar-candy-git](https://github.com/Kangie/sddm-sugar-candy)
-					- [sddm-theme-corners-git](https://github.com/aczw/sddm-theme-corners)
-			- #### Activation
-			  collapsed:: true
-				- ```shell
-				  sudo systemctl enable --now sddm
-				  ```
-			- #### Accès au répertoire utilisateur
-			  collapsed:: true
-				- ```shell
-				  setfacl -m u:sddm:x /home/username
-				  setfacl -m u:sddm:r /home/username/.face.icon
-				  ```
+		- ```shell
+		  # SDDM
+		  yay -S sddm sddm-sugar-candy-git sddm-theme-corners
+		  sudo systemctl enable --now sddm
+		  
+		  # Accès au répertoire utilisateur
+		  setfacl -m u:sddm:x /home/username
+		  setfacl -m u:sddm:r /home/username/.face.icon
+		  ```
+		- ### #Paquets
+			- [sddm](https://github.com/sddm/sddm) : #C++
 	- ## #Polkit
 	  collapsed:: true
-		- ### #KDE
-		  collapsed:: true
-			- #### #Paquets
-			  collapsed:: true
-				- ```shell
-				  yay -S polkit-kde-agent
-				  ```
-		- ### #GNOME
-		  collapsed:: true
-			- #### #Paquets
-			  collapsed:: true
-				- ```shell
-				  yay -S polkit-gnome
-				  ```
+		- ```shell
+		  # KDE
+		  yay -S polkit-kde-agent
+		  
+		  # GNOME
+		  yay -S polkit-gnome
+		  ```
 	- ## #Multimédia
 	  collapsed:: true
-		- ### Lecture de médias
-			- #### #Paquets
-			  collapsed:: true
-				- ```shell
-				  yay -S mpv-git imv-git audacious-git
-				  ```
-				- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
-				  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
-				- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
-				- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
-				- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
-				  collapsed:: true
-					- VLC peut être **requis** par [dolphin](((65cfcd67-02fa-424c-9c87-a8f347546160))) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
-					- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
-		- ### Manipulation / conversion d'images
+		- ```shell
+		  # Base
+		  yay -S pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
+		  
+		  # Image / Vidéo
+		  yay -S mpv-git imv-git imagemagick ffmpeg
+		  # yay -S vlc-git
+		  
+		  # Musique
+		  yay -S audacious-git
+		  
+		  # Utilitaire
+		  yay -S easyeffects-git # Gestionnaire d'effets audio pour pipewire
+		  ```
+		- ### #Paquets
 		  collapsed:: true
-			- #### #Paquets
-				- ```shell
-				  yay -S imagemagick ffmpeg
-				  ```
+			- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
+id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
+			- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
+			- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
+			- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
+			  collapsed:: true
+				- VLC peut être **requis** par [dolphin](```shell
+				  yay -S dolphin ark kde-cli-tools
+				  ```) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
+				- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
+			- [easyeffects](https://github.com/wwmm/easyeffects)
 	- ## #Jeux
+	  collapsed:: true
+		- ```shell
+		  # Proton
+		  yay -S protonup-qt protontricks-git winetricks
+		  
+		  # Steam
+		  yay -S steam steam-native-runtime steamtinkerlaunch
+		  
+		  # Other game launchers
+		  yay -S heroic-games-launcher lutris
+		  ```
+		- ### #Paquets
+			- [protonup-qt](https://github.com/DavidoTek/ProtonUp-Qt)
+	- ## #Personnalisation
 	  collapsed:: true
 		- ### #Paquets
 		  collapsed:: true
 			- ```shell
-			  yay -S steam steam-native-runtime steamtinkerlaunch protonup-qt protontricks-git winetricks heroic-games-launcher lutris
+			  # QT
+			  yay -S qt5ct qt6ct kvantum
+			  
+			  # GTK
+			  yay -S nwg-look
+			  nwg-look
 			  ```
-	- ## #Personnalisation
-	  collapsed:: true
-		- ### Interfaces #QT
-		  collapsed:: true
-			- #### #Paquets
-			  collapsed:: true
-				- ```shell
-				  yay -S qt5ct qt6ct kvantum
-				  ```
-		- ### Interfaces #GTK
-		  collapsed:: true
-			- #### #Paquets
-			  collapsed:: true
-				- ```shell
-				  yay -S nwg-look
-				  ```
 - # Maintenance
-  collapsed:: true
 	- ## Gestion des paquets
-	  collapsed:: true
 		- ### Mise à jour
 		  collapsed:: true
-			- Installe les mises à jour pour un ou plusieurs paquet ou tous les paquets si aucun n'est spécifié. Met également à jour l'index des paquets 
-			  ```shell
-			  sudo pacman -Syu <paquet>
-			  ```
-			- **Suppression** d'un paquet et ses **dépendances orphelines** sans conserver de fichier *pacsave* sur le système 
-			  ```shell
-			  pacman -Rns <paquet>
-			  ```
-			- **Vérification** de la liste des paquets orphelins sur le système 
-			  ```shell
-			  pacman -Qtdq
-			  ```
-			- **Suppression** les paquets orphelins 
-			  ```shell
-			  pacman -Qtdq | pacman -Rns -
-			  ```
-			- [pacdiff](https://man.archlinux.org/man/pacdiff.8) : affiche les fichiers *pacnew* présents sur le système
+			- #### Installation
+			  collapsed:: true
+				- Installe les mises à jour pour un ou plusieurs paquet ou tous les paquets si aucun n'est spécifié. Met également à jour l'index des paquets 
+				  ```shell
+				  sudo pacman -Syu <paquet>
+				  ```
+			- #### Suppression
+			  collapsed:: true
+				- **Suppression** d'un paquet et ses **dépendances orphelines** sans conserver de fichier *pacsave* sur le système 
+				  ```shell
+				  pacman -Rns <paquet>
+				  ```
+			- #### Orphelins
+			  collapsed:: true
+				- **Vérification** de la liste des paquets orphelins sur le système 
+				  ```shell
+				  pacman -Qtdq
+				  ```
+				- **Suppression** les paquets orphelins 
+				  ```shell
+				  pacman -Qtdq | pacman -Rns -
+				  ```
+				- [pacdiff](https://man.archlinux.org/man/pacdiff.8) : affiche les fichiers *pacnew* présents sur le système
+			- #### Raison d'Installation
+			  collapsed:: true
+				- ```shell
+				  # Explicitement installé
+				  pacman -D --asexplicit <paquet>
+				  
+				  # Comme dépendance
+				  pacman -S --asdeps <paquet>
+				  ```
 		- ### Gestion du cache des paquets
 		  collapsed:: true
 			- [paccache](https://man.archlinux.org/man/paccache.8) : permet de gérer le cache des paquets installés via pacman.
@@ -750,7 +748,6 @@ collapsed:: true
 				  yay -S $(pacman -Qoq /usr/lib/python3.11) --answerclean All
 				  ```
 	- ## Résolution de problèmes
-	  collapsed:: true
 		- ### Créer un fichier patch
 		  collapsed:: true
 			- Pour obtenir les différences entre des fichiers / dossiers
