@@ -366,9 +366,7 @@ collapsed:: true
 			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
 - # Post-installation
 	- ## #[[Firmware et support matériel]]
-	  collapsed:: true
 		- ### #AMD
-		  collapsed:: true
 			- ```shell
 			  # Défaut
 			  sudo pacman -S --needed mesa-git lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
@@ -380,11 +378,13 @@ collapsed:: true
 			  ```
 			- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
 			- #### #Paquets
-			  collapsed:: true
 				- [mesa](https://www.mesa3d.org/)
 				- [mesa-tkg](https://github.com/Frogging-Family/mesa-git) : version maintenue par **TKG** -> contient des patchs et fixes supplémentaires
+		- ### #Moniteur
+			- ```shell
+			  yay -S ddcutil
+			  ```
 		- ### #Impression
-		  collapsed:: true
 			- ```shell
 			  # Général
 			  yay -S ghostscript gsfonts cups cups-filters cups-pdf system-config-printer avahi foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds gutenprint foomatic-db-gutenprint-ppds
@@ -400,28 +400,27 @@ collapsed:: true
 			  yay -S hplip
 			  ```
 			- ### #Paquets
-			  collapsed:: true
 				- [CUPS](https://openprinting.github.io/cups/)
 				- [avahi](https://github.com/avahi/avahi)
 		- ### #Bluetooth
-		  collapsed:: true
 			- ```shell
 			  yay -S bluez bluez-plugins bluez-utils
 			  sudo systemctl enable --now bluetooth
 			  ```
 			- ### #Paquets
-			  collapsed:: true
 				- [bluez](https://www.bluez.org/)
 	- ## #[[Système de fichiers]]
-	  collapsed:: true
 		- ### Nettoyage
+			- ```shell
+			  yay -S baobab
+			  ```
+			- #### #Paquets
+				- [baobab](https://github.com/GNOME/baobab) : Utilitaire d'analyse de disque
 			- #### Activation du trim
-			  collapsed:: true
 				- ```shell
 				  sudo systemctl enable --now fstrim.timer
 				  ```
 	- ## #Réseau
-	  collapsed:: true
 		- ```shell
 		  # NetworkManager
 		  yay -S networkmanager network-manager-applet
@@ -432,11 +431,9 @@ collapsed:: true
 		  # sudo systemctl enable --now firewalld
 		  ```
 		- ### #Paquets
-		  collapsed:: true
 			- [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager) : #Daemon de gestion #Réseau développé en #C
 			- [ufw](https://launchpad.net/ufw)
 		- ### #DNS
-		  collapsed:: true
 			- #### #DNS over #TLS avec **systemd-resolved** et **NetworkManager**
 				- Configurer **systemd-resolved** dans */etc/systemd/resolved.conf*
 				  logseq.order-list-type:: number
@@ -467,13 +464,15 @@ collapsed:: true
 					- ```shell
 					  resolvectl status
 					  ```
+	- ## #Sauvegarde
+		- ```shell
+		  yay -S timeshift
+		  ```
 	- ## #[[Desktop Environment]]
-	  collapsed:: true
 		- ### #KDE
 		- ### #GNOME
 		- ### #XFCE
 	- ## #[[Window Manager]]
-	  collapsed:: true
 		- ```shell
 		  # Hyprland
 		  yay -S hyprland-git xdg-desktop-portal-hyprland-git
@@ -498,9 +497,11 @@ collapsed:: true
 		  
 		  # Presse papier
 		  yay -S cliphist
+		  
+		  # Gestionnaire de tâches
+		  yay -S mission-center
 		  ```
 		- ### Configuration Générale
-		  collapsed:: true
 			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
 			  ```shell
 			  sudo pacman -Syu archlinux-xdg-menu
@@ -516,19 +517,14 @@ collapsed:: true
 			  kbuildsycoca6
 			  ```
 		- ### #Paquets
-		  collapsed:: true
 			- #### WM
-			  collapsed:: true
 				- [Hyprland](https://github.com/hyprwm/Hyprland) : **Dynamic tiling Window Manager** développé en #C++
 					- [wiki](https://wiki.hyprland.org/)
 			- #### Presse-papier
-			  collapsed:: true
 				- [cliphist](https://github.com/sentriz/cliphist) : gestionnaire léger développé en #Go et interfaçable avec rofi
 			- #### Notifications
-			  collapsed:: true
 				- [dunst](https://github.com/dunst-project/dunst) : daemon très léger développé en #C
 			- #### Capture d'écran
-			  collapsed:: true
 				- [grimblast-git](https://github.com/hyprwm/contrib) : script #Shell pour prendre des **screenshots**
 				- [slurp](https://github.com/emersion/slurp) : utilitaire pour **sélectionner des régions** de l'écran développé en #C
 				  id:: 660e7aa6-a5eb-47b9-a13f-ae6502f98cfb
@@ -538,22 +534,19 @@ collapsed:: true
 				  wf-recorder -g "$(slurp)"
 				  ```
 			- #### Lancement d'applications
-			  collapsed:: true
 				- [rofi](https://github.com/lbonn/rofi) : **lanceur d'applications** développé en #C très **personnalisable** et **léger**
 			- #### Verrouillage de session
-			  collapsed:: true
 				- [hypridle](https://github.com/hyprwm/hypridle) : daemon d'**inactivité** pour **hyprland** développé en #C++
 				- [hyprlock](https://github.com/hyprwm/hyprlock) : ==alternative== à [swaylock](swaylock-effects-git) de l'environnement **Hypr** développé en #C++
 				- [swaylock-effects-git](https://github.com/mortie/swaylock-effects) : écran de **verrouillage** de session  **simple** et **personnalisable** développé en #C
 				- [wlogout](https://github.com/ArtsyMacaw/wlogout) : menu de **verrouillage de session** développé en #C
 			- #### Gestionnaire de fond d'écran
-			  collapsed:: true
 				- [swww](https://github.com/LGFae/swww) : daemon pour les **fonds d'écran** développé en #Rust
 			- #### Barre de tâches
-			  collapsed:: true
 				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
+			- #### Gestionnaire de tâches
+				- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Gestionnaire de tâches écrit en #Rust
 	- ## #[[Gestionnaire de fichiers]]
-	  collapsed:: true
 		- ```shell
 		  # Dolphin
 		  yay -S dolphin ark kde-cli-tools
@@ -563,11 +556,9 @@ collapsed:: true
 		  ```
 		- ### #Paquets
 			- [dolphin](https://github.com/KDE/dolphin) : Gestionnaire de fichiers habituellement empaqueté avec #KDE #C++
-			  collapsed:: true
 				- Interface configurable et bon panel de fonctionnalités.
 				- Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources**
 			- [thunar](https://github.com/xfce-mirror/thunar) : Gestionnaire de fichiers habituellement empaqueté avec #XFCE et #GNOME #C
-			  collapsed:: true
 				- Facilement **configurable** et **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
 	- ## #Terminal
 	  collapsed:: true
@@ -610,7 +601,7 @@ collapsed:: true
 		  yay -S pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
 		  
 		  # Image / Vidéo
-		  yay -S mpv-git imv-git imagemagick ffmpeg
+		  yay -S mpv-git imv-git imagemagick ffmpeg upscayl-bin
 		  # yay -S vlc-git
 		  
 		  # Musique
@@ -620,18 +611,25 @@ collapsed:: true
 		  yay -S easyeffects-git # Gestionnaire d'effets audio pour pipewire
 		  ```
 		- ### #Paquets
-		  collapsed:: true
 			- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
 id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 			- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
 			- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
 			- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
-			  collapsed:: true
 				- VLC peut être **requis** par [dolphin](```shell
 				  yay -S dolphin ark kde-cli-tools
 				  ```) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
 				- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
 			- [easyeffects](https://github.com/wwmm/easyeffects)
+	- ## #Communication
+	  collapsed:: true
+		- ```shell
+		  # Client Discord
+		  yay -S webcord
+		  ```
+		- ### #Paquets
+		  collapsed:: true
+			- [Webcord](https://github.com/SpacingBat3/WebCord) : Client Discord plus respectueux de la vie privée
 	- ## #Jeux
 	  collapsed:: true
 		- ```shell
@@ -649,7 +647,6 @@ id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 	- ## #Personnalisation
 	  collapsed:: true
 		- ### #Paquets
-		  collapsed:: true
 			- ```shell
 			  # QT
 			  yay -S qt5ct qt6ct kvantum
