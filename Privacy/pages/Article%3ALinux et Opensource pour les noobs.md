@@ -7,7 +7,6 @@
 		- ### Le moteur de voiture
 		- ### L'opensource et Linux
 	- ## Pourquoi privilégier Linux à Windows ou MacOS ?
-	-
 	- ## Les distributions pour la famille
 		- ### Pour les débutants
 			- #### Ubuntu

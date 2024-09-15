@@ -5,7 +5,6 @@
 	- [android-foss](https://github.com/offa/android-foss) : liste d'alternatives #OpenSource pour différents usages sur #Android
 	- [Awesome Privacy](https://github.com/pluja/awesome-privacy) : des alternatives respectueuses de la vie privée pour diverses applications
 - # #[[Operating System]]
-  collapsed:: true
 	- ## #Linux
 	- ## #GrapheneOS
 	- ## #CalyxOS
@@ -15,7 +14,6 @@
 	  collapsed:: true
 		- [Obtainium Apps](https://apps.obtainium.imranr.dev/)
 - # #Monitoring
-  collapsed:: true
 	- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Application #Rust pour monitorer la charge CPU / RAM / GPU / Disque / Réseau #Linux
 - # #[[Firmware et support matériel]]
   collapsed:: true
@@ -102,4 +100,5 @@
 			- Blocage des pubs
 			- Déverrouillage des fonctionnalités premium
 	- ### Documents
+	  collapsed:: true
 		- [OSS-DocumentScanner](https://github.com/Akylas/OSS-DocumentScanner) : Application #C++ pour scanner des documents #Android

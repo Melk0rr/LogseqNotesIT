@@ -1,9 +1,9 @@
 # Introduction
 	- Editeur de texte #OpenSource publié en 1991 qui repose sur un système de modes et de raccourcis permettant une manipulation et une navigation rapide et efficace d'un document
 - # Commandes
-  collapsed:: true
 	- ## Mode normal
 		- ### Navigation
+		  collapsed:: true
 			- #### Base
 			  collapsed:: true
 				- Déplacement vers la **gauche** 
@@ -238,6 +238,7 @@
 	- ## Mode command-line
 	  collapsed:: true
 		- ### Manipulation de document
+		  collapsed:: true
 			- **Quitter** le document 
 			  ```vim
 			  :q

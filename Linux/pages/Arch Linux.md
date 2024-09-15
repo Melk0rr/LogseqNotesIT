@@ -126,6 +126,7 @@ collapsed:: true
 			  mount /dev/nvme0n1p4 /mnt/home
 			  ```
 	- ## Installation
+	  collapsed:: true
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
 		  collapsed:: true
@@ -353,7 +354,7 @@ collapsed:: true
 				- logseq.order-list-type:: number
 				  ```shell
 				  sudo pacman -S --needed git base-devel
-				  git clone https://aur.archlinux.org/yay-bin.git
+				  git clone https://aur.archlinux.org/yay.git
 				  cd yay-bin
 				  makepkg -si
 				  ```
@@ -365,6 +366,7 @@ collapsed:: true
 				  ```
 			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
 - # Post-installation
+  collapsed:: true
 	- ## #[[Firmware et support matériel]]
 		- ### #AMD
 			- ```shell
@@ -656,6 +658,7 @@ id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 			  nwg-look
 			  ```
 - # Maintenance
+  collapsed:: true
 	- ## Gestion des paquets
 		- ### Mise à jour
 		  collapsed:: true
