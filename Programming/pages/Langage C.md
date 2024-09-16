@@ -12,6 +12,7 @@ title:: Langage C
 - # Notions
 	- ## #Types
 	  id:: 66741c79-5e65-4f51-b3c6-00e62a28c6d0
+	  collapsed:: true
 		- | **Type** | **Mémoire (octets / arch)** | **Valeur(min)** | **Valeur(max)** |
 		  | :---: | :---: | :---: | :---: |
 		  | *char* | - | - | - |

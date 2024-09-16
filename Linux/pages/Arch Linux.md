@@ -17,6 +17,7 @@ collapsed:: true
 		  |**Site web**|[archlinux.org](http://archlinux.org)|
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
+  collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
@@ -366,9 +367,10 @@ collapsed:: true
 				  ```
 			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
 - # Post-installation
-  collapsed:: true
 	- ## #[[Firmware et support matériel]]
+	  collapsed:: true
 		- ### #AMD
+		  collapsed:: true
 			- ```shell
 			  # Défaut
 			  sudo pacman -S --needed mesa-git lib32-mesa vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
@@ -383,10 +385,12 @@ collapsed:: true
 				- [mesa](https://www.mesa3d.org/)
 				- [mesa-tkg](https://github.com/Frogging-Family/mesa-git) : version maintenue par **TKG** -> contient des patchs et fixes supplémentaires
 		- ### #Moniteur
+		  collapsed:: true
 			- ```shell
 			  yay -S ddcutil
 			  ```
 		- ### #Impression
+		  collapsed:: true
 			- ```shell
 			  # Général
 			  yay -S ghostscript gsfonts cups cups-filters cups-pdf system-config-printer avahi foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds gutenprint foomatic-db-gutenprint-ppds
@@ -405,6 +409,7 @@ collapsed:: true
 				- [CUPS](https://openprinting.github.io/cups/)
 				- [avahi](https://github.com/avahi/avahi)
 		- ### #Bluetooth
+		  collapsed:: true
 			- ```shell
 			  yay -S bluez bluez-plugins bluez-utils
 			  sudo systemctl enable --now bluetooth
@@ -412,7 +417,9 @@ collapsed:: true
 			- ### #Paquets
 				- [bluez](https://www.bluez.org/)
 	- ## #[[Système de fichiers]]
+	  collapsed:: true
 		- ### Nettoyage
+		  collapsed:: true
 			- ```shell
 			  yay -S baobab
 			  ```
@@ -423,6 +430,7 @@ collapsed:: true
 				  sudo systemctl enable --now fstrim.timer
 				  ```
 	- ## #Réseau
+	  collapsed:: true
 		- ```shell
 		  # NetworkManager
 		  yay -S networkmanager network-manager-applet
@@ -433,9 +441,11 @@ collapsed:: true
 		  # sudo systemctl enable --now firewalld
 		  ```
 		- ### #Paquets
+		  collapsed:: true
 			- [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager) : #Daemon de gestion #Réseau développé en #C
 			- [ufw](https://launchpad.net/ufw)
 		- ### #DNS
+		  collapsed:: true
 			- #### #DNS over #TLS avec **systemd-resolved** et **NetworkManager**
 				- Configurer **systemd-resolved** dans */etc/systemd/resolved.conf*
 				  logseq.order-list-type:: number
@@ -467,10 +477,12 @@ collapsed:: true
 					  resolvectl status
 					  ```
 	- ## #Sauvegarde
+	  collapsed:: true
 		- ```shell
 		  yay -S timeshift
 		  ```
 	- ## #[[Desktop Environment]]
+	  collapsed:: true
 		- ### #KDE
 		- ### #GNOME
 		- ### #XFCE
@@ -504,6 +516,7 @@ collapsed:: true
 		  yay -S mission-center
 		  ```
 		- ### Configuration Générale
+		  collapsed:: true
 			- Setup pour l'**association de fichiers** via explorateur (dolphin ou autre)
 			  ```shell
 			  sudo pacman -Syu archlinux-xdg-menu
@@ -520,13 +533,17 @@ collapsed:: true
 			  ```
 		- ### #Paquets
 			- #### WM
+			  collapsed:: true
 				- [Hyprland](https://github.com/hyprwm/Hyprland) : **Dynamic tiling Window Manager** développé en #C++
 					- [wiki](https://wiki.hyprland.org/)
 			- #### Presse-papier
+			  collapsed:: true
 				- [cliphist](https://github.com/sentriz/cliphist) : gestionnaire léger développé en #Go et interfaçable avec rofi
 			- #### Notifications
+			  collapsed:: true
 				- [dunst](https://github.com/dunst-project/dunst) : daemon très léger développé en #C
 			- #### Capture d'écran
+			  collapsed:: true
 				- [grimblast-git](https://github.com/hyprwm/contrib) : script #Shell pour prendre des **screenshots**
 				- [slurp](https://github.com/emersion/slurp) : utilitaire pour **sélectionner des régions** de l'écran développé en #C
 				  id:: 660e7aa6-a5eb-47b9-a13f-ae6502f98cfb
@@ -536,32 +553,48 @@ collapsed:: true
 				  wf-recorder -g "$(slurp)"
 				  ```
 			- #### Lancement d'applications
+			  collapsed:: true
 				- [rofi](https://github.com/lbonn/rofi) : **lanceur d'applications** développé en #C très **personnalisable** et **léger**
 			- #### Verrouillage de session
+			  collapsed:: true
 				- [hypridle](https://github.com/hyprwm/hypridle) : daemon d'**inactivité** pour **hyprland** développé en #C++
 				- [hyprlock](https://github.com/hyprwm/hyprlock) : ==alternative== à [swaylock](swaylock-effects-git) de l'environnement **Hypr** développé en #C++
 				- [swaylock-effects-git](https://github.com/mortie/swaylock-effects) : écran de **verrouillage** de session  **simple** et **personnalisable** développé en #C
 				- [wlogout](https://github.com/ArtsyMacaw/wlogout) : menu de **verrouillage de session** développé en #C
 			- #### Gestionnaire de fond d'écran
+			  collapsed:: true
 				- [swww](https://github.com/LGFae/swww) : daemon pour les **fonds d'écran** développé en #Rust
 			- #### Barre de tâches
+			  collapsed:: true
 				- [waybar](https://github.com/Alexays/Waybar) : barre de tâches très personnalisable dévelopée en #C++
 			- #### Gestionnaire de tâches
+			  collapsed:: true
 				- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Gestionnaire de tâches écrit en #Rust
 	- ## #[[Gestionnaire de fichiers]]
 		- ```shell
 		  # Dolphin
 		  yay -S dolphin ark kde-cli-tools
 		  
+		  # Nemo
+		  yay -S nemo nemo-preview nemo-python nemo-fileroller nemo-audio-tab
+		  
 		  # Thunar
 		  yay -S thunar thunar-archive-plugin
 		  ```
 		- ### #Paquets
 			- [dolphin](https://github.com/KDE/dolphin) : Gestionnaire de fichiers habituellement empaqueté avec #KDE #C++
+			  collapsed:: true
 				- Interface configurable et bon panel de fonctionnalités.
 				- Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources**
 			- [thunar](https://github.com/xfce-mirror/thunar) : Gestionnaire de fichiers habituellement empaqueté avec #XFCE et #GNOME #C
+			  collapsed:: true
 				- Facilement **configurable** et **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
+			- [nemo](https://github.com/linuxmint/nemo) : Gestionnaire de fichiers associé à #[[Linux Mint]] et développé en #C
+			  collapsed:: true
+				- ```apl
+				  # Configuration du terminal par défaut
+				  exec = gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
+				  ```
 	- ## #Terminal
 	  collapsed:: true
 		- ```shell
