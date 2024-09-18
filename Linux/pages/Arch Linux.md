@@ -513,7 +513,8 @@ collapsed:: true
 		  yay -S cliphist
 		  
 		  # Gestionnaire de tâches
-		  yay -S mission-center
+		  yay -S mission-center # GTK / windows like
+		  yay -S btop # TUI
 		  ```
 		- ### Configuration Générale
 		  collapsed:: true
@@ -571,6 +572,7 @@ collapsed:: true
 			  collapsed:: true
 				- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Gestionnaire de tâches écrit en #Rust
 	- ## #[[Gestionnaire de fichiers]]
+	  collapsed:: true
 		- ```shell
 		  # Dolphin
 		  yay -S dolphin ark kde-cli-tools
@@ -582,6 +584,7 @@ collapsed:: true
 		  yay -S thunar thunar-archive-plugin
 		  ```
 		- ### #Paquets
+		  collapsed:: true
 			- [dolphin](https://github.com/KDE/dolphin) : Gestionnaire de fichiers habituellement empaqueté avec #KDE #C++
 			  collapsed:: true
 				- Interface configurable et bon panel de fonctionnalités.
@@ -643,7 +646,7 @@ collapsed:: true
 		  yay -S audacious-git
 		  
 		  # Utilitaire
-		  yay -S easyeffects-git # Gestionnaire d'effets audio pour pipewire
+		  yay -S easyeffects-git easytag
 		  ```
 		- ### #Paquets
 			- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
@@ -690,6 +693,11 @@ id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 			  yay -S nwg-look
 			  nwg-look
 			  ```
+	- ## #Divers
+		- ```shell
+		  # Typing tests
+		  yay -S toipe
+		  ```
 - # Maintenance
   collapsed:: true
 	- ## Gestion des paquets
