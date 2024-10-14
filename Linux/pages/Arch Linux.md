@@ -338,10 +338,14 @@ collapsed:: true
 			  ```shell
 			  systemctl enable --now NetworkManager
 			  ```
-			- Installation des mises à jour **microcode** pour le processeur (AMD) 
+			- Installation des mises à jour **microcode**
 			  logseq.order-list-type:: number
 			  ```shell
-			  pacman -S amd-ucode
+			  # AMD
+			  pacman -Syu amd-ucode
+			  
+			  # Intel
+			  pacman -Syu intel-ucode
 			  ```
 			- ==Définir le mot de passe root==
 			  logseq.order-list-type:: number
