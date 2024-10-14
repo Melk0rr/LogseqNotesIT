@@ -590,13 +590,12 @@ collapsed:: true
 		  yay -S dolphin ark kde-cli-tools
 		  
 		  # Nemo
-		  yay -S nemo nemo-preview nemo-python nemo-fileroller nemo-audio-tab
+		  yay -S nemo nemo-preview nemo-python nemo-fileroller nemo-audio-tab nemo-image-converter
 		  
 		  # Thunar
 		  yay -S thunar thunar-archive-plugin
 		  ```
 		- ### #Paquets
-		  collapsed:: true
 			- [dolphin](https://github.com/KDE/dolphin) : Gestionnaire de fichiers habituellement empaqueté avec #KDE #C++
 			  collapsed:: true
 				- Interface configurable et bon panel de fonctionnalités.
@@ -605,8 +604,10 @@ collapsed:: true
 			  collapsed:: true
 				- Facilement **configurable** et **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
 			- [nemo](https://github.com/linuxmint/nemo) : Gestionnaire de fichiers associé à #[[Linux Mint]] et développé en #C
-			  collapsed:: true
 				- ```apl
+				  # A ajouter au début de /usr/bin/nemo-preview pour wayland
+				  export GDK_BACKEND=x11
+				  
 				  # Configuration du terminal par défaut
 				  exec = gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
 				  ```
@@ -655,7 +656,7 @@ collapsed:: true
 		  # yay -S vlc-git
 		  
 		  # Musique
-		  yay -S audacious-git
+		  yay -S audacious-git moc-pulse cava clyrics
 		  
 		  # Utilitaire
 		  yay -S easyeffects-git easytag
@@ -665,7 +666,10 @@ collapsed:: true
 			  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 			- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
 			- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
+			- [MOC](https://moc.daper.net/) : **lecteur en mode console** léger développé en #C
+			- [cava](https://github.com/karlstav/cava) : visualiseur audio développé en #C
 			- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
+			  collapsed:: true
 				- VLC peut être **requis** par [dolphin](```shell
 				  yay -S dolphin ark kde-cli-tools
 				  ```) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
