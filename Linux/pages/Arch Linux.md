@@ -67,7 +67,6 @@ collapsed:: true
 			  timedatectl set-ntp true
 			  ```
 		- ### Partitionnement
-		  collapsed:: true
 			- Afficher les disques et partitions actuelles (*blocs*) -> identifier le disque sur lequel installer le système 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -90,7 +89,6 @@ collapsed:: true
 				- Quitter une fois les changements écrits
 				  logseq.order-list-type:: number
 		- ### Formatage
-		  collapsed:: true
 			- Pour l'exemple : <**disque**><*partition* x> => **nvme0n1***px*
 			- Pour vérifier les changements: 
 			  logseq.order-list-type:: number
@@ -117,8 +115,11 @@ collapsed:: true
 			- Attribuer un label à chaque partition 
 			  logseq.order-list-type:: number
 			  ```shell
+			  # Pour une partition EXT
 			  e2label /dev/XXX "new label" # ext2/3/4
-			  btrfs filesystem label /dev/XXX "new label" # btrfs
+			  
+			   # Pour une partition BTRFS
+			  btrfs filesystem label /dev/XXX "new label"
 			  ```
 		- ### Montage des partitions
 		  collapsed:: true
