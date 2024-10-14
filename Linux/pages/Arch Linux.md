@@ -385,7 +385,6 @@ collapsed:: true
 			  ```
 	- ## Post-reboot
 		- ### #Mirroirs
-		  collapsed:: true
 			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
 			  logseq.order-list-type:: number
 			  ```
@@ -395,6 +394,7 @@ collapsed:: true
 			  ```
 		- ### [Utilisateurs](((668d2260-0977-49ba-a543-1d5610274a5c)))
 		- ### Connexion WiFi
+		  collapsed:: true
 			- Pour se connecter en Wifi sur notre nouvelle installation 
 			  ```shell
 			  # S'assurer que NetworkManager soit bien activé
@@ -413,7 +413,6 @@ collapsed:: true
 			  nmcli d wifi connect <ssid> -ask
 			  ```
 		- ### #[[AUR helper]]
-		  collapsed:: true
 			- #### [Yay](((654cd0e6-59fd-492f-9c7a-3300b72b7da2)))
 				- logseq.order-list-type:: number
 				  ```shell
@@ -430,7 +429,6 @@ collapsed:: true
 				  ```
 			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
 - # Post-installation
-  collapsed:: true
 	- ## #[[Firmware et support matériel]]
 	  collapsed:: true
 		- ### #AMD
@@ -546,9 +544,16 @@ collapsed:: true
 		  yay -S timeshift
 		  ```
 	- ## #[[Desktop Environment]]
-	  collapsed:: true
 		- ### #KDE
 		- ### #GNOME
+		  collapsed:: true
+			- ```shell
+			  # Installation
+			  sudo pacman -Syu wayland gnome gdm gnome-power-manager
+			  
+			  # Activation du DM GNOME
+			  sudo systemctl enable --now gdm.service
+			  ```
 		- ### #XFCE
 	- ## #[[Window Manager]]
 	  collapsed:: true
