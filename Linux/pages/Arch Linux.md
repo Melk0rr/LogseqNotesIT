@@ -33,7 +33,8 @@ collapsed:: true
 			  ```shell
 			  ping archlinux.org
 			  ```
-			- #### Connexion WiFi
+			- #### #[[Connexion WiFi]]
+			  collapsed:: true
 				- ```shell
 				  # Entrer dans le mode interactif de l'utilitaire de controle sans fil
 				  iwctl
@@ -100,6 +101,7 @@ collapsed:: true
 				- Quitter une fois les changements écrits
 				  logseq.order-list-type:: number
 		- ### Formatage
+		  collapsed:: true
 			- Pour l'exemple : <**disque**><*partition* x> => **nvme0n1***px*
 			- Pour vérifier les changements: 
 			  logseq.order-list-type:: number
@@ -385,6 +387,7 @@ collapsed:: true
 			  ```
 	- ## Post-reboot
 		- ### #Mirroirs
+		  collapsed:: true
 			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
 			  logseq.order-list-type:: number
 			  ```
@@ -393,7 +396,7 @@ collapsed:: true
 			  ParallelDownloads = 5
 			  ```
 		- ### [Utilisateurs](((668d2260-0977-49ba-a543-1d5610274a5c)))
-		- ### Connexion WiFi
+		- ### #[[Connexion WiFi]]
 		  collapsed:: true
 			- Pour se connecter en Wifi sur notre nouvelle installation 
 			  ```shell
@@ -413,6 +416,7 @@ collapsed:: true
 			  nmcli d wifi connect <ssid> -ask
 			  ```
 		- ### #[[AUR helper]]
+		  collapsed:: true
 			- #### [Yay](((654cd0e6-59fd-492f-9c7a-3300b72b7da2)))
 				- logseq.order-list-type:: number
 				  ```shell
@@ -544,6 +548,7 @@ collapsed:: true
 		  yay -S timeshift
 		  ```
 	- ## #[[Desktop Environment]]
+	  collapsed:: true
 		- ### #KDE
 		- ### #GNOME
 		  collapsed:: true
