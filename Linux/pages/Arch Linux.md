@@ -20,6 +20,7 @@ collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
+	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -67,6 +68,7 @@ collapsed:: true
 			  timedatectl set-ntp true
 			  ```
 		- ### Partitionnement
+		  collapsed:: true
 			- Afficher les disques et partitions actuelles (*blocs*) -> identifier le disque sur lequel installer le système 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -101,6 +103,7 @@ collapsed:: true
 				- Quitter une fois les changements écrits
 				  logseq.order-list-type:: number
 		- ### Formatage
+		  collapsed:: true
 			- Pour l'exemple : <**disque**><*partition* x> => **nvme0n1***px*
 			- Pour vérifier les changements: 
 			  logseq.order-list-type:: number
@@ -301,7 +304,6 @@ collapsed:: true
 						  bootctl update
 						  ```
 		- ### Derniers ajustements avant reboot
-		  collapsed:: true
 			- Ajouter *default arch.conf* pour définir une option par défaut (possible d'ajuster le **timeout** de démarrage) 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -316,8 +318,21 @@ collapsed:: true
 				  title   Arch Linux
 				  linux   /vmlinuz-linux
 				  initrd  /initramfs-linux.img
-				  options root=/dev/nvme0n1p3 rw
+				  optons root=/dev/nvme0n1p3 rw
 				  ```
+				- Pour des raisons de sécurité, il vaut mieux utiliser l'**UUID** de la partition *root*options
+					- ```shell
+					  # Afficher l'UUID de la partition
+					  blkid /dev/<partition_root>
+					  
+					  # Copier / Coller l'UUID (pas la PARTUUID)
+					  
+					  # Ou rediriger directement
+					  blkid /dev/<partition_root> >> /boot/loader/entries/arch.conf
+					  ```
+					- ```vim
+					  options root="UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" rw
+					  ```
 			- Activer le gestionnaire réseau pour le redémarrage 
 			  logseq.order-list-type:: number
 			  ```shell
