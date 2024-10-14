@@ -28,6 +28,7 @@ collapsed:: true
 			  loadkeys fr
 			  ```
 		- ### Connexion à internet
+		  collapsed:: true
 			- Vérifier la connectivité internet. Mieux vaut une connexion ethernet pour se faciliter la vie 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -55,10 +56,15 @@ collapsed:: true
 			  ls /sys/firmware/efi/efivars
 			  ```
 		- ### Horloge
+		  collapsed:: true
 			- Pour vérifier que la date est bien valide 
 			  logseq.order-list-type:: number
 			  ```shell
+			  # Vérificaiton
 			  timedatectl
+			  
+			  # Activation du NTP
+			  timedatectl set-ntp true
 			  ```
 		- ### Partitionnement
 		  collapsed:: true
