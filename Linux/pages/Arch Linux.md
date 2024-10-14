@@ -17,11 +17,9 @@ collapsed:: true
 		  |**Site web**|[archlinux.org](http://archlinux.org)|
 - # Installation
   id:: 65c8ff54-d1f3-41db-9746-5d11eec23b84
-  collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
-	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -36,6 +34,18 @@ collapsed:: true
 			  ```shell
 			  ping archlinux.org
 			  ```
+			- #### Connexion WiFi
+			  collapsed:: true
+				- ```shell
+				  # Lister les interfaces WiFi
+				  device list
+				  
+				  # Lister les réseaux disponibles
+				  station wlan0 get-networks
+				  
+				  # Connexion à un réseau wifi
+				  station wlan0 connect <network>
+				  ```
 		- ### Check UEFI
 		  collapsed:: true
 			- S'assurer que l'installation est bien en mode **UEFI** (sauf si BIOS souhaité). Si la commande ne retourne rien: l'installation est en mode BIOS
@@ -367,6 +377,7 @@ collapsed:: true
 				  ```
 			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
 - # Post-installation
+  collapsed:: true
 	- ## #[[Firmware et support matériel]]
 	  collapsed:: true
 		- ### #AMD
@@ -487,6 +498,7 @@ collapsed:: true
 		- ### #GNOME
 		- ### #XFCE
 	- ## #[[Window Manager]]
+	  collapsed:: true
 		- ```shell
 		  # Hyprland
 		  yay -S hyprland-git xdg-desktop-portal-hyprland-git
@@ -650,21 +662,21 @@ collapsed:: true
 		  ```
 		- ### #Paquets
 			- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
-id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
+			  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 			- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
 			- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #C++
 			- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #C++
 				- VLC peut être **requis** par [dolphin](```shell
 				  yay -S dolphin ark kde-cli-tools
 				  ```) via **phonon-qt6-vlc** pour la lecture intégrée de certains médias (vidéo / musique)
-				- Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
-			- [easyeffects](https://github.com/wwmm/easyeffects)
-	- ## #Communication
-	  collapsed:: true
-		- ```shell
-		  # Client Discord
-		  yay -S webcord
-		  ```
+				  - Une alternative consiste à installer **phonon-qt6-mpv-git** qui repose sur [mpv](((65e339f6-bfa5-451c-abdf-3581d36c6711))) et permet donc d'éviter d'installer VLC si non souhaité
+				  - [easyeffects](https://github.com/wwmm/easyeffects)
+				  - ## #Communication
+				  collapsed:: true
+				  - ```shell
+				  # Client Discord
+				  yay -S webcord
+				  ```
 		- ### #Paquets
 		  collapsed:: true
 			- [Webcord](https://github.com/SpacingBat3/WebCord) : Client Discord plus respectueux de la vie privée
@@ -694,6 +706,7 @@ id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 			  nwg-look
 			  ```
 	- ## #Divers
+	  collapsed:: true
 		- ```shell
 		  # Typing tests
 		  yay -S toipe
