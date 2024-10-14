@@ -28,7 +28,6 @@ collapsed:: true
 			  loadkeys fr
 			  ```
 		- ### Connexion à internet
-		  collapsed:: true
 			- Vérifier la connectivité internet. Mieux vaut une connexion ethernet pour se faciliter la vie 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -37,6 +36,9 @@ collapsed:: true
 			- #### Connexion WiFi
 			  collapsed:: true
 				- ```shell
+				  # Entrer dans le mode interactif de l'utilitaire de controle sans fil
+				  iwctl
+				  
 				  # Lister les interfaces WiFi
 				  device list
 				  
@@ -53,7 +55,6 @@ collapsed:: true
 			  ls /sys/firmware/efi/efivars
 			  ```
 		- ### Horloge
-		  collapsed:: true
 			- Pour vérifier que la date est bien valide 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -137,7 +138,6 @@ collapsed:: true
 			  mount /dev/nvme0n1p4 /mnt/home
 			  ```
 	- ## Installation
-	  collapsed:: true
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
 		  collapsed:: true
@@ -604,6 +604,7 @@ collapsed:: true
 			  collapsed:: true
 				- Facilement **configurable** et **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
 			- [nemo](https://github.com/linuxmint/nemo) : Gestionnaire de fichiers associé à #[[Linux Mint]] et développé en #C
+			  collapsed:: true
 				- ```apl
 				  # A ajouter au début de /usr/bin/nemo-preview pour wayland
 				  export GDK_BACKEND=x11
