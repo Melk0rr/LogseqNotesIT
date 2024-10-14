@@ -20,7 +20,6 @@ collapsed:: true
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
-	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -29,14 +28,12 @@ collapsed:: true
 			  loadkeys fr
 			  ```
 		- ### Connexion à internet
-		  collapsed:: true
 			- Vérifier la connectivité internet. Mieux vaut une connexion ethernet pour se faciliter la vie 
 			  logseq.order-list-type:: number
 			  ```shell
 			  ping archlinux.org
 			  ```
 			- #### Connexion WiFi
-			  collapsed:: true
 				- ```shell
 				  # Entrer dans le mode interactif de l'utilitaire de controle sans fil
 				  iwctl
@@ -103,7 +100,6 @@ collapsed:: true
 				- Quitter une fois les changements écrits
 				  logseq.order-list-type:: number
 		- ### Formatage
-		  collapsed:: true
 			- Pour l'exemple : <**disque**><*partition* x> => **nvme0n1***px*
 			- Pour vérifier les changements: 
 			  logseq.order-list-type:: number
@@ -160,6 +156,7 @@ collapsed:: true
 			  mount /dev/nvme0n1p4 /mnt/home
 			  ```
 	- ## Installation
+	  collapsed:: true
 		- ### Mirroirs
 		  id:: 65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b
 		  collapsed:: true
@@ -213,6 +210,7 @@ collapsed:: true
 			  pacstrap /mnt pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
 			  ```
 		- ### Configuration système
+		  collapsed:: true
 			- Générer le fichier fstab -> indique les **points de montage** 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -288,6 +286,7 @@ collapsed:: true
 			  mkinitcpio -P
 			  ```
 		- ### Installation chargeur d'amorçage
+		  collapsed:: true
 			- #### systemd-boot
 				- Installer systemd-boot 
 				  logseq.order-list-type:: number
@@ -304,12 +303,13 @@ collapsed:: true
 						  bootctl update
 						  ```
 		- ### Derniers ajustements avant reboot
+		  collapsed:: true
 			- Ajouter *default arch.conf* pour définir une option par défaut (possible d'ajuster le **timeout** de démarrage) 
 			  logseq.order-list-type:: number
 			  ```shell
 			  vim /boot/loader/loader.conf
 			  ```
-			- Ajouter les lignes sivantes 
+			- Ajouter les lignes sivantes (**Attention à la casse**)
 			  logseq.order-list-type:: number
 			  ```shell
 			  vim /boot/loader/entries/arch.conf
@@ -318,7 +318,7 @@ collapsed:: true
 				  title   Arch Linux
 				  linux   /vmlinuz-linux
 				  initrd  /initramfs-linux.img
-				  optons root=/dev/nvme0n1p3 rw
+				  options root=/dev/nvme0n1p3 rw
 				  ```
 				- Pour des raisons de sécurité, il vaut mieux utiliser l'**UUID** de la partition *root*options
 					- ```shell
@@ -384,7 +384,6 @@ collapsed:: true
 			  reboot
 			  ```
 	- ## Post-reboot
-	  collapsed:: true
 		- ### #Mirroirs
 		  collapsed:: true
 			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
@@ -395,6 +394,24 @@ collapsed:: true
 			  ParallelDownloads = 5
 			  ```
 		- ### [Utilisateurs](((668d2260-0977-49ba-a543-1d5610274a5c)))
+		- ### Connexion WiFi
+			- Pour se connecter en Wifi sur notre nouvelle installation 
+			  ```shell
+			  # S'assurer que NetworkManager soit bien activé
+			  sudo systemctl enable --now NetworkManager
+			  
+			  # Lister les interfaces
+			  nmcli d
+			  
+			  # Activer le wifi
+			  nmcli r wifi on
+			  
+			  # Lister les réseaux disponibles
+			  nmcli d wifi list
+			  
+			  # Connexion à un ssid
+			  nmcli d wifi connect <ssid> -ask
+			  ```
 		- ### #[[AUR helper]]
 		  collapsed:: true
 			- #### [Yay](((654cd0e6-59fd-492f-9c7a-3300b72b7da2)))
