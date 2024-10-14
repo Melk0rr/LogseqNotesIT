@@ -72,10 +72,22 @@ collapsed:: true
 			  ```shell
 			  lsblk
 			  ```
+			- Vérifier que la table de partition est bien en GPT 
+			  logseq.order-list-type:: number
+			  ```shell
+			  # Lister les propriétés du disque : le label doit être "gpt"
+			  fdisk -l <disque>
+			  
+			  # Si la partition n'est pas en GPT
+			  fdisk
+			  
+			  # Créer une table GPT avec l'option 'g'
+			  ```
 			- Exécuter l'utilitaire [cfdisk](https://www.geeksforgeeks.org/cfdisk-command-in-linux-with-examples/) pour créer des partitions sur le disque sélectionné (e.g. nvme0n1) 
 			  logseq.order-list-type:: number
 			  collapsed:: true
 			  ```shell
+			  # Lancer CFDISK
 			  cfdisk <disque>
 			  ```
 				- Dans la plupart des cas on veut une table de #Partitions **GPT**
@@ -171,7 +183,7 @@ collapsed:: true
 				  logseq.order-list-type:: number
 				- **linux-firmware** : firmware utiles pour certains composants matériel (clavier, souris, etc.)
 				  logseq.order-list-type:: number
-				- **pacman-conrib** : utilitaire pour le maintien de Arch
+				- **pacman-contrib** : utilitaire pour le maintien de Arch
 				  logseq.order-list-type:: number
 				- **networkmanager** : utilitaire de configuration et gestion réseau
 				  logseq.order-list-type:: number
@@ -198,7 +210,6 @@ collapsed:: true
 			  pacstrap /mnt pipewire pipewire-jack pipewire-pulse pipewire-alsa wireplumber lib32-pipewire alsa-utils alsa-plugins alsa-firmware alsa-ucm-conf sof-firmware
 			  ```
 		- ### Configuration système
-		  collapsed:: true
 			- Générer le fichier fstab -> indique les **points de montage** 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -274,7 +285,6 @@ collapsed:: true
 			  mkinitcpio -P
 			  ```
 		- ### Installation chargeur d'amorçage
-		  collapsed:: true
 			- #### systemd-boot
 				- Installer systemd-boot 
 				  logseq.order-list-type:: number
