@@ -15,7 +15,6 @@ collapsed:: true
 	- ## #[[Active Directory]]
 		- [gpp-decrypt](https://github.com/t0thkr1s/gpp-decrypt) : décrypte les cpasswords et mots de passe en clair dans les GPO
 - # #[[SOC - Blue team]]
-  collapsed:: true
 	- [BlueTeam-Tools](https://github.com/A-poc/BlueTeam-Tools) : Repo github qui ressence divers outils de défense utiles
 	- [grep.app](https://grep.app/) : Recherche de repository GIT
 	- [WaybackMachine](https://archive.org/web/) : Archive Web
@@ -43,7 +42,8 @@ collapsed:: true
 			- [DMARCly](https://dmarcly.com/tools/) : Divers outils de vérification DMARC, DKIM et SPF
 		- [Hunter](https://hunter.io/) : Recherche d'adresses mail liées à un site web
 	- ## #Réseau
-		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/tree/main) : inventaire d'adresses IP malveillantes mis à jour toutes les heures
+		- [malicious ip](https://github.com/romainmarcoux/malicious-ip/) : inventaire d'adresses IP malveillantes de type **scanners et bruteforce** => à bloquer en entrée (WAN -> LAN)
+		- [malicious outgoing ip](https://github.com/ro mainmarcoux/malicious-outgoing-ip/tree/main) : inventaire d'adresses IP malveillantes de type **phishing, malware et C2** => à bloquer en sortie (LAN -> WAN)
 	- ## #[[Sites web]]
 		- [exploit-db](https://www.exploit-db.com) : Recheche de vulnérabilités
 		- [FOFA](https://en.fofa.info) : Propriétés d'un site web
