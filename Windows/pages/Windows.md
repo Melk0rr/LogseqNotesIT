@@ -1,2 +1,0 @@
-- Gamme d'#[[Operating System]] produite par #Microsoft
--

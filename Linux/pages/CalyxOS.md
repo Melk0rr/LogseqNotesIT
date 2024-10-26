@@ -1,4 +1,0 @@
-- [CalyxOS](https://calyxos.org/) : Système d'exploitation également basé sur #Android ([AOSP](https://source.android.com/)) et orienté #Privacy.
-	- Développé par le [Calyx Institute](https://calyxinstitute.org/), organisation à but non lucratif qui sensibilise sur les sujets #Privacy
-	- Intègre [microG](https://microg.org/) comme alternative aux services Google
-	- Supporte quelques modèles supplémentaires par rapport à #GrapheneOS, notamment Fairphone et Motorola

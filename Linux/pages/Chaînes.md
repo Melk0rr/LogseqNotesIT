@@ -1,1 +1,0 @@
-- [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP/videos) : chaîne dédiée à #Linux et à l'#Opensource
