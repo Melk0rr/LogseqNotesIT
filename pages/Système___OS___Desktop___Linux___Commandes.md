@@ -56,7 +56,7 @@ collapsed:: true
   collapsed:: true
 	- [chmod](https://www.geeksforgeeks.org/chmod-command-linux/) -> `change mode` **<option> <mode> <fichier / répertoire>** : Change le mode d'accès au fichier ou répertoire
 	- [chown](https://www.geeksforgeeks.org/chown-command-in-linux-with-examples/) -> `change owner` **<option> <propriétaire / group> <fichier>** : Change le propriétaire du fichier
-- # #[[Gestion des utilisateurs]]
+- # #[[Système/Administration/Utilisateurs]]
   id:: 668d2260-0977-49ba-a543-1d5610274a5c
   collapsed:: true
 	- ## Création
@@ -92,6 +92,6 @@ collapsed:: true
 - # #Système/OS/Processus
   collapsed:: true
 	- [ps](https://www.geeksforgeeks.org/ps-command-in-linux-with-examples/) -> `process status` **<options>** : Liste les processus en cours d'exécution
-- # #Polices
+- # #Système/Polices
   collapsed:: true
 	- [fc-cache](https://www.geeksforgeeks.org/fc-cache-command-in-linux-with-examples/) -> `fontconfig cache` **<options>** : Scan les répertoires dédiés aux polices et génère le cache de police.

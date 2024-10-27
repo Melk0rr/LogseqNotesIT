@@ -699,7 +699,7 @@
 		  ```
 		- ### #Système/Paquets
 			- [sddm](https://github.com/sddm/sddm) : #Programmation/Langage/C++
-	- ## #Polkit
+	- ## #[[Système/Administration/Gestion des droits/Polkit]]
 	  collapsed:: true
 		- ```shell
 		  # KDE
