@@ -9,7 +9,7 @@
 		- Langage jeune
 -
 - ## Usages
-	- #Navigateurs
+	- #Réseau/Web/Navigateurs
 	- Logiciels
 	- Systèmes d'exploitation
 -

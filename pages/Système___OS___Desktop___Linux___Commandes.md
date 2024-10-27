@@ -3,7 +3,7 @@ collapsed:: true
 	- [Documentation en ligne](https://www.geeksforgeeks.org/linux-commands/)
 	  id:: 65217c2c-e35f-404b-91ad-66bac8c07a1d
 	- [man](https://www.geeksforgeeks.org/man-command-in-linux-with-examples/) <commande> (manuel) : Affiche le manuel de la commande spécifiée
-- # #Recherche
+- # #Système/OS/Desktop/Linux/Commandes/Recherche
   collapsed:: true
 	- [find](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/) **<base> <paramètre> <fichier>** : Recherche un fichier par nom, type ou autre
 	- [grep](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) **<option> pattern <fichier>** : Recherche un ensemble de charactères dans un fichier donné
@@ -11,9 +11,9 @@ collapsed:: true
 	- [locate](https://www.geeksforgeeks.org/locate-command-in-linux-with-examples/) **<fichier>** : Localise n'importe quel fichier ou répertoire sur le système. Utilise le fichier mlocate.db mis à jour toutes les 24h, qui indexe tous les fichiers du système
 		- Possible de forcer la mise à jour : **sudo ubdatedb**
 	- [whereis](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files#whereis) **<commande>** : Rechercher  les fichiers exécutables, les sources et les pages de manuel d'une commande
-- # #[[I-O]]
+- # #[[Hardware/Contrôle/IO]]
   collapsed:: true
-	- ## Périphériques audio
+	- ## #Hardware/Contrôle/IO/Audio
 	  collapsed:: true
 		- ### Pipewire / Wireplumber
 		  collapsed:: true
@@ -30,7 +30,7 @@ collapsed:: true
 				  wpctl set-default <ID> # ID: numéro du périphérique
 				  wpctl set-default $(wpctl status | grep "Nom périphérique" | grep "\d+" -Po | head -n 1) # Récupère l'ID via le nom du périphérique
 				  ```
-- # #[[Fichiers et répertoires]]
+- # #[[Système/OS/FS/Fichiers et répertoires]]
   collapsed:: true
 	- ## Navigation
 	  collapsed:: true
@@ -52,7 +52,7 @@ collapsed:: true
 		- [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/) **<option> <entrée>** : Tri le contenu d'un fichier selon l'option utilisée
 		- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/) **<option> <entrée<sortie>>** : Filtre les doublons
 		- [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/) -> `word count` **<option> <fichier>** : Compte le nombre de lignes / mots / caractères / octets d'un fichier
-- # #[[Gestion des droits]]
+- # #[[Système/Administration/Gestion des droits]]
   collapsed:: true
 	- [chmod](https://www.geeksforgeeks.org/chmod-command-linux/) -> `change mode` **<option> <mode> <fichier / répertoire>** : Change le mode d'accès au fichier ou répertoire
 	- [chown](https://www.geeksforgeeks.org/chown-command-in-linux-with-examples/) -> `change owner` **<option> <propriétaire / group> <fichier>** : Change le propriétaire du fichier
@@ -75,7 +75,7 @@ collapsed:: true
 		  ```shell
 		  vim /etc/sudoers
 		  ```
-- # #Archive
+- # #Système/OS/FS/Archive
   collapsed:: true
 	- ## TAR + GZ
 	  collapsed:: true
@@ -83,13 +83,13 @@ collapsed:: true
 	- ## ZIP
 	  collapsed:: true
 		- [zip](https://www.geeksforgeeks.org/zip-command-in-linux-with-examples/) **<options> <fichier-archive> <fichiers>** : Compresse les fichiers mentionnés dans une archive zip
-- # #Stockage
+- # #Système/Partitions
   collapsed:: true
 	- [du](https://www.geeksforgeeks.org/du-command-linux/) -> `disk used` **<option> <fichier>** : Affiche l'espace disque pris par un fichier / répertoire donné
 	- [fdisk](https://www.geeksforgeeks.org/fdisk-command-in-linux-with-examples/) -> `format disk` **<options> <appareil>** : Permet de manipuler des partitions
 	- [mkfs](https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/) -> `make file system` **<options> <partition>** : Crée une partition sur l'appareil spécifié, généralement un disque ou une clef usb. L'opération efface toutes information présente sur le disque
 	- [<u>mount](https://www.geeksforgeeks.org/mount-command-in-linux-with-examples/) **<options> <type> <appareil> <répertoire>** : Permet de monter (mount) le une partition sur le système de fichiers du système, ou de la démonter (umount)
-- # #Processus
+- # #Système/OS/Processus
   collapsed:: true
 	- [ps](https://www.geeksforgeeks.org/ps-command-in-linux-with-examples/) -> `process status` **<options>** : Liste les processus en cours d'exécution
 - # #Polices

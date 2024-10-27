@@ -1,5 +1,5 @@
 # Description
-	- #Article centré sur la navigation #Internet
+	- #Article centré sur la navigation #Réseau/Web
 - # Plan
 	- ## Le navigateur
 		- ### Lequel choisir ?

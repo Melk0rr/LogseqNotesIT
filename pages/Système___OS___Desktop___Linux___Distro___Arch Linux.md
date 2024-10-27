@@ -8,8 +8,8 @@
 		  |**Famille**|Arch Linux|
 		  |**Basé sur**|Indépendant|
 		  |**Base de**|BlackArch, EndeavourOS, Manjaro, CachyOS|
-		  |**Gestionnaire de paquets**|pacman|
-		  |**Format de paquet**|#PKG [:br]TAR.ZST|
+		  |**Gestionnaire de paquets**|#[[Système/OS/Desktop/Linux/Distro/Arch Linux/pacman]]|
+		  |**Format de paquet**|#Système/Paquets/Format/PKG [:br]TAR.ZST|
 		  |**Installateur graphique**|NON|
 		  |**Approche infra**|Traditionnelle|
 		  |**Site web**|[archlinux.org](http://archlinux.org)|
@@ -31,7 +31,7 @@
 			  ```shell
 			  ping archlinux.org
 			  ```
-			- #### #[[Connexion WiFi]]
+			- #### #[[Réseau/Sans-fil/WiFi]]
 			  collapsed:: true
 				- ```shell
 				  # Entrer dans le mode interactif de l'utilitaire de controle sans fil
@@ -88,7 +88,7 @@
 			  # Lancer CFDISK
 			  cfdisk <disque>
 			  ```
-				- Dans la plupart des cas on veut une table de #Partitions **GPT**
+				- Dans la plupart des cas on veut une table de #Système/Partitions **GPT**
 				  logseq.order-list-type:: number
 				- Si cfdisk ne demande pas le type souhaité -> s'assurer que le label **gpt** est présent
 				  logseq.order-list-type:: number
@@ -384,7 +384,7 @@
 			  reboot
 			  ```
 	- ## Post-reboot
-		- ### #Mirroirs
+		- ### #Système/Paquets/Mirroirs
 		  collapsed:: true
 			- ((65c92958-d6c2-4ea2-9cf7-d9d7ad35e33b)) + dé-commenter également les lignes suivantes
 			  logseq.order-list-type:: number
@@ -394,7 +394,7 @@
 			  ParallelDownloads = 5
 			  ```
 		- ### [Utilisateurs](((668d2260-0977-49ba-a543-1d5610274a5c)))
-		- ### #[[Connexion WiFi]]
+		- ### #[[Réseau/Sans-fil/WiFi]]
 		  collapsed:: true
 			- Pour se connecter en Wifi sur notre nouvelle installation 
 			  ```shell
@@ -413,9 +413,9 @@
 			  # Connexion à un ssid
 			  nmcli d wifi connect <ssid> -ask
 			  ```
-		- ### #[[AUR helper]]
+		- ### #[[Système/OS/Desktop/Linux/Distro/Arch Linux/AUR helper]]
 		  collapsed:: true
-			- #### [Yay](((654cd0e6-59fd-492f-9c7a-3300b72b7da2)))
+			- #### [Yay]([yay](https://github.com/Jguer/yay) : Gestionnaire de #Système/Paquets pour AUR sur #[[Système/OS/Desktop/Linux/Arch Linux ]] ( écrit en #Programmation/Langage/Go ))
 				- logseq.order-list-type:: number
 				  ```shell
 				  sudo pacman -S --needed git base-devel
@@ -429,12 +429,12 @@
 				  yay -Y --gendb
 				  yay -Y --devel --save
 				  ```
-			- #### [Paru](((657ac02b-fd09-4dbd-ac7b-862e422ee55a)))
+			- #### [Paru]([paru](https://github.com/Morganamilo/paru) : Gestionnaire de #Système/Paquets pour AUR sur #[[Système/OS/Desktop/Linux/Distro/Arch Linux]] ( écrit en #Programmation/Langage/Rust ))
 - # Post-installation
   collapsed:: true
-	- ## #[[Firmware et support matériel]]
+	- ## #[[Hardware/Contrôle]]
 	  collapsed:: true
-		- ### #AMD
+		- ### #Hardware/Driver/AMD
 		  collapsed:: true
 			- ```shell
 			  # Défaut
@@ -449,12 +449,12 @@
 			- #### #Système/Paquets
 				- [mesa](https://www.mesa3d.org/)
 				- [mesa-tkg](https://github.com/Frogging-Family/mesa-git) : version maintenue par **TKG** -> contient des patchs et fixes supplémentaires
-		- ### #Moniteur
+		- ### #Hardware/Contrôle/Affichage
 		  collapsed:: true
 			- ```shell
 			  yay -S ddcutil
 			  ```
-		- ### #Impression
+		- ### #Hardware/Contrôle/Impression
 		  collapsed:: true
 			- ```shell
 			  # Général
@@ -481,7 +481,7 @@
 			  ```
 			- ### #Système/Paquets
 				- [bluez](https://www.bluez.org/)
-	- ## #[[Système de fichiers]]
+	- ## #[[Système/OS/FS]]
 	  collapsed:: true
 		- ### Nettoyage
 		  collapsed:: true
@@ -507,11 +507,11 @@
 		  ```
 		- ### #Système/Paquets
 		  collapsed:: true
-			- [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager) : #Daemon de gestion #Réseau développé en #C
+			- [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager) : #Système/OS/Processus/Daemon de gestion #Réseau développé en #C
 			- [ufw](https://launchpad.net/ufw)
 		- ### #Réseau/DNS
 		  collapsed:: true
-			- #### #Réseau/DNS over #TLS avec **systemd-resolved** et **NetworkManager**
+			- #### #Réseau/DNS over #Sécurité/Chiffrement/TLS avec **systemd-resolved** et **NetworkManager**
 				- Configurer **systemd-resolved** dans */etc/systemd/resolved.conf*
 				  logseq.order-list-type:: number
 					- ```vim
@@ -541,7 +541,7 @@
 					- ```shell
 					  resolvectl status
 					  ```
-	- ## #Sauvegarde
+	- ## #Système/Sauvegarde
 	  collapsed:: true
 		- ```shell
 		  yay -S timeshift
@@ -619,7 +619,7 @@
 				- [dunst](https://github.com/dunst-project/dunst) : daemon très léger développé en #C
 			- #### Capture d'écran
 			  collapsed:: true
-				- [grimblast-git](https://github.com/hyprwm/contrib) : script #Shell pour prendre des **screenshots**
+				- [grimblast-git](https://github.com/hyprwm/contrib) : script #Système/Terminal/Shell pour prendre des **screenshots**
 				- [slurp](https://github.com/emersion/slurp) : utilitaire pour **sélectionner des régions** de l'écran développé en #C
 				  id:: 660e7aa6-a5eb-47b9-a13f-ae6502f98cfb
 				- [swappy](https://github.com/jtheoof/swappy) : **éditeur de captures** d'écran développé en #C
@@ -645,7 +645,7 @@
 			- #### Gestionnaire de tâches
 			  collapsed:: true
 				- [MissionCenter](https://gitlab.com/mission-center-devs/mission-center) : Gestionnaire de tâches écrit en #Programmation/Langage/Rust
-	- ## #[[Gestionnaire de fichiers]]
+	- ## #[[Système/GUI/FM]]
 	  collapsed:: true
 		- ```shell
 		  # Dolphin
@@ -929,15 +929,15 @@
 			  ```shell
 			  sudo pacman -Syu
 			  ```
-		- ### Erreurs #GPG
+		- ### Erreurs #Sécurité/Chiffrement/GPG
 		  collapsed:: true
 			- Dan le cas d'une [Erreur ioctl](https://wiki.archlinux.org/title/GnuPG#Invalid_IPC_response_and_Inappropriate_ioctl_for_device)
-				- Définir la variable d'environnement suivante pour que si besoin, #GPG puisse utiliser le tty comme entrée
+				- Définir la variable d'environnement suivante pour que si besoin, #Sécurité/Chiffrement/GPG puisse utiliser le tty comme entrée
 				  logseq.order-list-type:: number
 				  ```shell
 				  export GPG_TTY=$(tty)
 				  ```
-				- Editer le fichier ~/.gnupg/gpg-agent.conf pour définir la #GUI à utiliser comme entrée ([pinentry](https://wiki.archlinux.org/title/GnuPG#pinentry))
+				- Editer le fichier ~/.gnupg/gpg-agent.conf pour définir la #Système/GUI à utiliser comme entrée ([pinentry](https://wiki.archlinux.org/title/GnuPG#pinentry))
 				  logseq.order-list-type:: number
 				  ```shell
 				  echo "pinentry-program /usr/bin/pinentry-gtk" > ~/.gnupg/gpg-agent.conf

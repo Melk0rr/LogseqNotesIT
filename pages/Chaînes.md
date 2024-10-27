@@ -1,2 +1,0 @@
-- [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP/videos) : chaîne dédiée à #Système/OS/Desktop/Linux et à l'#Opensource
-- [Eric Murphy](https://www.youtube.com/@EricMurphyxyz) :  chaîne dédiée au respect de la vie privée avec une approche #Système

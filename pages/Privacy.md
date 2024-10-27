@@ -7,10 +7,10 @@
 		- On peut associer la sécurité à l'**absence de danger** ou au concept de **protection**
 		- Possibilité de faire confiance envers les logiciels / systèmes utilisés - que les parties impliquées soient bien celles qu'elles prétendent et que le logiciel soit sécurisé
 		- Lorsque l'on visite un site web, les **certificats** fournis via *HTTPS* prouvent que nous échangeons bien directement avec le site web souhaité + que les données envoyées  ne soient pas consultées ou modifiées par un attaquant sur notre réseau.
-	- ## #Anonymat
+	- ## #Privacy/Anonymat
 		- Désigne le fait de rester **non identifié**
 		- Possibilité d'agir sans être associé à un *identifiant persistant*.
-		- ### #Pseudonymat
+		- ### #Privacy/Pseudonymat
 			- Concept similaire qui donne la faculté à une personne d'avoir un *identifiant persistant* sans que celui-ci ne soit directement relié à son identité.
 	- Ces 3 notions ne sont pas toujours complémentaires
 	- ## Sécurité sans vie privée ni anonymat

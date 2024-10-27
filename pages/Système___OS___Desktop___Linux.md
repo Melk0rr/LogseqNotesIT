@@ -1,9 +1,9 @@
 -
 - # Description
-	- Famille d'#[[Système/OS]] et #Système/Kernel #OpenSource basée sur #Système/OS/Unix créée en 1991 par Linus Torvalds
+	- Famille d'#[[Système/OS]] et #Système/OS/Kernel #OpenSource basée sur #Système/OS/Unix créée en 1991 par Linus Torvalds
 - # #Système/OS/Desktop/Linux/Distro
 - # Installation
-	- ## #Partitions
+	- ## #Système/Partitions
 	  
 	  id:: 65c8ff54-db3b-48de-b9d4-ece65f422173
 		- [efi](https://wiki.archlinux.org/title/EFI_system_partition) : partition dédiée au ****chargeur d'amorçage**** (**boot loader**).

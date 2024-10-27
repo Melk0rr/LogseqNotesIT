@@ -1,7 +1,7 @@
 # Description
 	- Distribution #Système/OS/Desktop/Linux créée en 1994 comprenant 2 branches
-		- [openSUSE Tumbleweed](https://get.opensuse.org/tumbleweed/) : #Rolling release
-		- [openSUSE Leap](https://get.opensuse.org/leap/) : #Stable release
+		- [openSUSE Tumbleweed](https://get.opensuse.org/tumbleweed/) : #Programmation/Dev/Publication/Rolling release
+		- [openSUSE Leap](https://get.opensuse.org/leap/) : #Programmation/Dev/Publication/Standard release
 	- ## Caractéristiques
 	- |**Modèle**|Communautaire avec appui corpo|
 	  |**Mise à jour**|Rolling release(Tumbleweed)[:br]Fixe(Leap)|
@@ -10,8 +10,8 @@
 	  |**Famille**|SUSE|
 	  |**Basé sur**|Indépendant|
 	  |**Base de**|GeckoLinux|
-	  |**Gestionnaire de paquets**|#zypper|
-	  |**Format de paquet**|#Paquets/Format/RPM|
+	  |**Gestionnaire de paquets**|#Système/OS/Desktop/Linux/Distro/openSUSE/zypper|
+	  |**Format de paquet**|#Système/Paquets/Format/RPM|
 	  |**Installateur graphique**|OUI|
 	  |**Approche infra**|Hybride (snapshots)|
 	  |**Site web**|[opensuse.org](https://www.opensuse.org/)|

@@ -1,4 +1,4 @@
-# #[[Gestion des droits]]
+# #[[Système/Administration/Gestion des droits]]
 collapsed:: true
 	- [Get-Acl](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-acl?view=powershell-7.3) **<option> <fichier / répertoire>** : Retourne la description de sécurité pour un fichier ou répertoire
 - # #[[Sécurité/Mots de passe]]

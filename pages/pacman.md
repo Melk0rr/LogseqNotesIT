@@ -1,1 +1,0 @@
-- [Documentation pacman](https://wiki.archlinux.org/title/pacman)

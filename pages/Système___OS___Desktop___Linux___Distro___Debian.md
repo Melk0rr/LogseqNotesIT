@@ -9,8 +9,8 @@
 		  |**Famille**|Debian|
 		  |**Basé sur**|Indépendant|
 		  |**Base de**|#Système/OS/Desktop/Linux/Distro/Debian/Ubuntu, #Système/OS/Desktop/Linux/Distro/Debian/Sec/Kali, #Système/OS/Desktop/Linux/Distro/Debian/Sec/Parrot, #[[Système/OS/Desktop/Linux/Distro/Debian/Linux Mint]], Rasberry Pi OS|
-		  |**Gestionnaire de paquets**|#apt|
-		  |**Format de paquet**|#Paquets/Format/DEB|
+		  |**Gestionnaire de paquets**|#Système/OS/Desktop/Linux/Distro/Debian/apt|
+		  |**Format de paquet**|#Système/Paquets/Format/DEB|
 		  |**Installateur graphique**|OUI|
 		  |**Approche infra**|Traditionnelle|
 		  |**Site web**|[debian.org](https://www.debian.org/)|
@@ -33,7 +33,7 @@
 				  logseq.order-list-type:: number
 					- **deb**: fichiers **binaires** #Système/Paquets/Format/DEB précompilés
 					- **deb-src**: paquets **sources**
-				- **URL** du #Mirroirs
+				- **URL** du #Système/Paquets/Mirroirs
 				  logseq.order-list-type:: number
 				- **Distribution**
 				  logseq.order-list-type:: number
@@ -56,17 +56,17 @@
 					- [non-free](https://www.debian.org/doc/debian-policy/ch-archive#s-non-free): paquets qui ne **respectent pas** la politique DFSG de debian
 - # Post-installation
 	- ## #Sécurité
-		- ### #Pentest/Bruteforce
+		- ### #Sécurité/Offensif/Pentest/Bruteforce
 			- #### #Système/Paquets
 				- ```shell
 				  sudo apt install hydra wfuzz
 				  ```
-		- ### #Forensic
+		- ### #Sécurité/Défensif/Forensic
 			- #### #Système/Paquets
 				- ```shell
 				  sudo apt install autopsy
 				  ```
-		- ### #Scans
+		- ### #Sécurité/Offensif/Scan
 			- #### #Système/Paquets
 				- ```shell
 				  sudo apt install nesuss nmap wireshark

@@ -1,4 +1,4 @@
-# #[[Système/Installation]]
+# #[[Système/Outils/Installation]]
 	- [Balena Etcher](https://rufus.ie/en/) : Programme #Programmation/Langage/Typescript #OpenSource pour la création de médias d'installation USB. Prend le parti de la simplicité d'utilisation : seulement 3 clics nécessaires pour flasher une clef.
 	- [Rufus](https://rufus.ie/en/) : Programme #C #OpenSource de manipulation de média USB. L'outil permet de créer des clefs d'installation, de flasher un BIOS, etc. Contrairement à **Etcher**, fournit un panel d'options plus varié
 	- [Ventoy](https://github.com/ventoy/Ventoy) : Programme #Programmation/Langage/C #OpenSource pour la création de supports USB bootables mutli-OS. Ce qui permet d'avoir une seule clef d'installation pour autant d'OS que l'on souhaite. Supporte #Système/OS/Desktop/Windows #Système/OS/Desktop/Linux #Système/OS/Unix et plus
@@ -13,5 +13,5 @@
 -
 - # #Système/Personnalisation
 	- ## #Système/Terminal
-		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #git, etc.)
-		- [fastfetch](https://github.com/fastfetch-cli/fastfetch) : Outil #OpenSource développé en #C qui récupère des informations système au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés et #[[Système/OS/Desktop/Linux/Gestion de paquets]] associé, espace disque, etc.) et permet de les afficher de manière personnalisée
+		- [oh-my-posh](https://ohmyposh.dev/) : Outil pour personnaliser le prompt et afficher quelques informations utiles (utilisateur, nom de la machine, chemin, heure de commande, status #Programmation/Outils/git, etc.)
+		- [fastfetch](https://github.com/fastfetch-cli/fastfetch) : Outil #OpenSource développé en #C qui récupère des informations système au lancement d'une nouvelle session terminal (logo de l'os, ram utilisée, shell utilisé, packages installés, espace disque, etc.) et permet de les afficher de manière personnalisée

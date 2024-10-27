@@ -1,5 +1,5 @@
 -
 - # Description
 	- Environnement de bureau
-	- Ensemble de programmes qui permettent d'utiliser un ordinateur via une #GUI
+	- Ensemble de programmes qui permettent d'utiliser un ordinateur via une #Système/GUI
 	- Souvent abrégé **DE**
