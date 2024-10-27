@@ -1,5 +1,5 @@
-- [GrapheneOS]([GrapheneOS](https://grapheneos.org/)) : Système d'exploitation basé sur #OS/Android ([AOSP](https://source.android.com/)), orienté #Sécurité et #Privacy
-  title:: OS/Android/ROM/GrapheneOS
+- [GrapheneOS]([GrapheneOS](https://grapheneos.org/)) : Système d'exploitation basé sur #Système/OS/Mobile/Android ([AOSP](https://source.android.com/)), orienté #Sécurité et #Privacy
+  title:: Système/OS/Mobile/Android/ROM/GrapheneOS
 	- Développé par une équipe d'experts en #Sécurité
 	- Léger et minimaliste
 	- Plus sécurisé que les versions Android par défaut

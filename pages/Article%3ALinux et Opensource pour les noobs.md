@@ -1,5 +1,5 @@
 # Description
-	- #Article dédié à l'explication des concepts d' #OpenSource et #[[ OS/Linux aux membres de la famille ou néophytes en général à l'aide d'analogies, exemples et comparaisons
+	- #Article dédié à l'explication des concepts d' #OpenSource et #Système/OS/Desktop/Linux aux membres de la famille ou néophytes en général à l'aide d'analogies, exemples et comparaisons
 - # Plan
 	- ## Introduction
 	- ## L'Opensource, c'est quoi ?

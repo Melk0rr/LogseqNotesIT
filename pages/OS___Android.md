@@ -1,1 +1,0 @@
-- #[[OS]] mobile développé par Google

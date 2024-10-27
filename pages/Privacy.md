@@ -63,7 +63,7 @@
 			- Ce qui vous semble être un comportement normal peut en réalité être perçu différemment par un gouvernement ou une organisation.
 			- Ce qui est valable aujourd'hui peut ne plus l'être demain. Certaines choses pourraient être considérées comme illégales un jour.
 	- ## Pourquoi la sécurité est importante ?
-- ## #[[Bonnes Pratiques]]
+- ## #[[Privacy/Bonnes Pratiques]]
 	- **Politiques de confidentialité** : il est important de lire attentivement les politiques des outils et services utilisés. Si quelque chose n'est pas clair, ou si la politique paraît trop compliquée, il faut s'en **méfier**
 	- **Services gratuits** : se méfier des services gratuits. Même s'il existe des exceptions (donations, crowdfunding, bénévolat, etc) si le *business model* derrière un service n'est pas clair, il faut s'en **méfier**
 - # Modélisation des menaces

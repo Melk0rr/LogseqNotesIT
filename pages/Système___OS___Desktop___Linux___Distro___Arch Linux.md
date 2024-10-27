@@ -1,5 +1,5 @@
 # Description
-	- Distribution #OS/Linux créée en 2002 par Judd Vinet. Elle suit le principe **KISS**: Keep It Simple, Stupid
+	- Distribution #Système/OS/Desktop/Linux créée en 2002 par Judd Vinet. Elle suit le principe **KISS**: Keep It Simple, Stupid
 	- ## Caractéristiques
 		- |**Modèle**|Communautaire|
 		  |**Mise à jour**|Rolling release|
@@ -170,7 +170,7 @@
 			  ```shell
 			  vim /etc/pacman.conf
 			  ```
-		- ### Installation des #Paquets essentiels
+		- ### Installation des #Système/Paquets essentiels
 		  collapsed:: true
 			- Installer le système et quelques paquets essentiels 
 			  logseq.order-list-type:: number
@@ -446,7 +446,7 @@
 			  makepkg -si
 			  ```
 			- ==Ne pas installer== **amdvlk** ou **lib32-amdvlk** : ces paquets s'imposent comme paquets par défaut et peuvent causer beaucoup de problèmes
-			- #### #Paquets
+			- #### #Système/Paquets
 				- [mesa](https://www.mesa3d.org/)
 				- [mesa-tkg](https://github.com/Frogging-Family/mesa-git) : version maintenue par **TKG** -> contient des patchs et fixes supplémentaires
 		- ### #Moniteur
@@ -470,16 +470,16 @@
 			  # HP
 			  yay -S hplip
 			  ```
-			- ### #Paquets
+			- ### #Système/Paquets
 				- [CUPS](https://openprinting.github.io/cups/)
 				- [avahi](https://github.com/avahi/avahi)
-		- ### #Bluetooth
+		- ### #Réseau/Sans-fil/Bluetooth
 		  collapsed:: true
 			- ```shell
 			  yay -S bluez bluez-plugins bluez-utils
 			  sudo systemctl enable --now bluetooth
 			  ```
-			- ### #Paquets
+			- ### #Système/Paquets
 				- [bluez](https://www.bluez.org/)
 	- ## #[[Système de fichiers]]
 	  collapsed:: true
@@ -488,7 +488,7 @@
 			- ```shell
 			  yay -S baobab
 			  ```
-			- #### #Paquets
+			- #### #Système/Paquets
 				- [baobab](https://github.com/GNOME/baobab) : Utilitaire d'analyse de disque
 			- #### Activation du trim
 				- ```shell
@@ -505,13 +505,13 @@
 		  # yay -S firewalld
 		  # sudo systemctl enable --now firewalld
 		  ```
-		- ### #Paquets
+		- ### #Système/Paquets
 		  collapsed:: true
 			- [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager) : #Daemon de gestion #Réseau développé en #C
 			- [ufw](https://launchpad.net/ufw)
-		- ### #DNS
+		- ### #Réseau/DNS
 		  collapsed:: true
-			- #### #DNS over #TLS avec **systemd-resolved** et **NetworkManager**
+			- #### #Réseau/DNS over #TLS avec **systemd-resolved** et **NetworkManager**
 				- Configurer **systemd-resolved** dans */etc/systemd/resolved.conf*
 				  logseq.order-list-type:: number
 					- ```vim
@@ -546,10 +546,10 @@
 		- ```shell
 		  yay -S timeshift
 		  ```
-	- ## #[[OS/Linux/DE]]
+	- ## #[[Système/GUI/DE]]
 	  collapsed:: true
-		- ### #OS/Linux/DE/KDE
-		- ### #OS/Linux/DE/GNOME
+		- ### #Système/GUI/DE/KDE
+		- ### #Système/GUI/DE/GNOME
 		  collapsed:: true
 			- ```shell
 			  # Installation
@@ -558,8 +558,8 @@
 			  # Activation du DM GNOME
 			  sudo systemctl enable --now gdm.service
 			  ```
-		- ### #OS/Linux/DE/XFCE
-	- ## #[[Window Manager]]
+		- ### #Système/GUI/DE/XFCE
+	- ## #[[Système/GUI/WM]]
 	  collapsed:: true
 		- ```shell
 		  # Hyprland
@@ -606,7 +606,7 @@
 			  reboot
 			  kbuildsycoca6
 			  ```
-		- ### #Paquets
+		- ### #Système/Paquets
 			- #### WM
 			  collapsed:: true
 				- [Hyprland](https://github.com/hyprwm/Hyprland) : **Dynamic tiling Window Manager** développé en #Programmation/Langage/C++
@@ -657,15 +657,15 @@
 		  # Thunar
 		  yay -S thunar thunar-archive-plugin
 		  ```
-		- ### #Paquets
-			- [dolphin](https://github.com/KDE/dolphin) : Gestionnaire de fichiers habituellement empaqueté avec #OS/Linux/DE/KDE #Programmation/Langage/C++
+		- ### #Système/Paquets
+			- [dolphin](https://github.com/KDE/dolphin) : Gestionnaire de fichiers habituellement empaqueté avec #Système/GUI/DE/KDE #Programmation/Langage/C++
 			  collapsed:: true
 				- Interface configurable et bon panel de fonctionnalités.
 				- Relativement plus "*lourd*" que d'autres options comme thunar. En particulier sur certaines machines **limitées en ressources**
-			- [thunar](https://github.com/xfce-mirror/thunar) : Gestionnaire de fichiers habituellement empaqueté avec #OS/Linux/DE/XFCE et #OS/Linux/DE/GNOME #C
+			- [thunar](https://github.com/xfce-mirror/thunar) : Gestionnaire de fichiers habituellement empaqueté avec #Système/GUI/DE/XFCE et #Système/GUI/DE/GNOME #C
 			  collapsed:: true
 				- Facilement **configurable** et **léger** mais peut manquer de certaines fonctionnalités des explorateurs plus modernes
-			- [nemo](https://github.com/linuxmint/nemo) : Gestionnaire de fichiers associé à #[[Linux Mint]] et développé en #C
+			- [nemo](https://github.com/linuxmint/nemo) : Gestionnaire de fichiers associé à #[[Système/OS/Desktop/Linux/Distro/Debian/Linux Mint]] et développé en #Programmation/Langage/C
 			  collapsed:: true
 				- ```apl
 				  # A ajouter au début de /usr/bin/nemo-preview pour wayland
@@ -674,7 +674,7 @@
 				  # Configuration du terminal par défaut
 				  exec = gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
 				  ```
-	- ## #Terminal
+	- ## #Système/Terminal
 	  collapsed:: true
 		- ```shell
 		  # Kitty
@@ -683,10 +683,10 @@
 		  # Alacritty
 		  yay -S alacritty
 		  ```
-		- ### #Paquets
+		- ### #Système/Paquets
 			- [kitty](https://github.com/kovidgoyal/kitty) : #C #Programmation/Langage/Python
 			- [alacritty](https://github.com/alacritty/alacritty) : #Programmation/Langage/Rust
-	- ## #[[Display Manger]]
+	- ## #[[Système/GUI/DM]]
 	  collapsed:: true
 		- ```shell
 		  # SDDM
@@ -697,7 +697,7 @@
 		  setfacl -m u:sddm:x /home/username
 		  setfacl -m u:sddm:r /home/username/.face.icon
 		  ```
-		- ### #Paquets
+		- ### #Système/Paquets
 			- [sddm](https://github.com/sddm/sddm) : #Programmation/Langage/C++
 	- ## #Polkit
 	  collapsed:: true
@@ -724,7 +724,7 @@
 		  # Utilitaire
 		  yay -S easyeffects-git easytag
 		  ```
-		- ### #Paquets
+		- ### #Système/Paquets
 			- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
 			  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 			- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
@@ -744,10 +744,10 @@
 				  # Client Discord
 				  yay -S webcord
 				  ```
-		- ### #Paquets
+		- ### #Système/Paquets
 		  collapsed:: true
 			- [Webcord](https://github.com/SpacingBat3/WebCord) : Client Discord plus respectueux de la vie privée
-	- ## #Jeux
+	- ## #Multimédia/Jeux
 	  collapsed:: true
 		- ```shell
 		  # Proton
@@ -759,11 +759,11 @@
 		  # Other game launchers
 		  yay -S heroic-games-launcher lutris
 		  ```
-		- ### #Paquets
+		- ### #Système/Paquets
 			- [protonup-qt](https://github.com/DavidoTek/ProtonUp-Qt)
-	- ## #Personnalisation
+	- ## #Système/Personnalisation
 	  collapsed:: true
-		- ### #Paquets
+		- ### #Système/Paquets
 			- ```shell
 			  # QT
 			  yay -S qt5ct qt6ct kvantum

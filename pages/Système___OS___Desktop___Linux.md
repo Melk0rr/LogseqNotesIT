@@ -1,6 +1,7 @@
-# Description
-	- Famille d'#[[OS]] et #Kernel #OpenSource basée sur #Unix créée en 1991 par Linus Torvalds
-- # #OS/Linux/Distro
+-
+- # Description
+	- Famille d'#[[Système/OS]] et #Système/Kernel #OpenSource basée sur #Système/OS/Unix créée en 1991 par Linus Torvalds
+- # #Système/OS/Desktop/Linux/Distro
 - # Installation
 	- ## #Partitions
 	  
@@ -18,3 +19,5 @@
 				- RAM ****64Go**** : ~~~~hibernation~~~~ => ****8Go**** / **hibernation** => ****72Go****
 		- [root (/)](https://wiki.archlinux.org/title/Partitioning#/) : partition racine qui accueille le système de fichiers
 		- [home (/home)](https://wiki.archlinux.org/title/Partitioning#/) : répertoire contenant les fichiers utilisateurs
+-
+-

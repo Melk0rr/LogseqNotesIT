@@ -37,7 +37,7 @@ title:: Programmation/Langage/C
 			  printf(maVariable);  // Valeur de la variable
 			  printf(&maVariable); // Adresse de la variable
 			  ```
-	- ## #Pointeurs
+	- ## #Programmation/Concept/Pointeurs
 	  id:: 6673ffb0-886e-4e73-a0fd-1cdabff8510a
 		- Un pointeur est une variable qui contient l**'adresse** (et non la valeur) d'une autre variable
 		- #### Utilisation

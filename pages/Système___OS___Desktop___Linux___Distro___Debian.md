@@ -1,16 +1,16 @@
-# Description
-	- Distribution #OS/Linux créée en 1993
+-
+- # Description
+	- Distribution #Système/OS/Desktop/Linux créée en 1993
 	- ## Caractéristiques
-	  collapsed:: true
 		- |**Modèle**|Communautaire|
 		  |**Mise à jour**|Fixe|
 		  |**Public**|Intermédiaire / Expérimenté|
 		  |**Usage**|Personnel[:br]Serveur|
 		  |**Famille**|Debian|
 		  |**Basé sur**|Indépendant|
-		  |**Base de**|#Ubuntu, Kali, Parrot, #Mint, Rasberry Pi OS|
+		  |**Base de**|#Système/OS/Desktop/Linux/Distro/Debian/Ubuntu, #Système/OS/Desktop/Linux/Distro/Debian/Sec/Kali, #Système/OS/Desktop/Linux/Distro/Debian/Sec/Parrot, #[[Système/OS/Desktop/Linux/Distro/Debian/Linux Mint]], Rasberry Pi OS|
 		  |**Gestionnaire de paquets**|#apt|
-		  |**Format de paquet**|#DEB|
+		  |**Format de paquet**|#Paquets/Format/DEB|
 		  |**Installateur graphique**|OUI|
 		  |**Approche infra**|Traditionnelle|
 		  |**Site web**|[debian.org](https://www.debian.org/)|
@@ -31,7 +31,7 @@
 				  ```
 				- **Type d'archive**
 				  logseq.order-list-type:: number
-					- **deb**: fichiers **binaires** #DEB précompilés
+					- **deb**: fichiers **binaires** #Système/Paquets/Format/DEB précompilés
 					- **deb-src**: paquets **sources**
 				- **URL** du #Mirroirs
 				  logseq.order-list-type:: number
@@ -56,23 +56,23 @@
 					- [non-free](https://www.debian.org/doc/debian-policy/ch-archive#s-non-free): paquets qui ne **respectent pas** la politique DFSG de debian
 - # Post-installation
 	- ## #Sécurité
-		- ### #Bruteforce
-			- #### #Paquets
+		- ### #Pentest/Bruteforce
+			- #### #Système/Paquets
 				- ```shell
 				  sudo apt install hydra wfuzz
 				  ```
 		- ### #Forensic
-			- #### #Paquets
+			- #### #Système/Paquets
 				- ```shell
 				  sudo apt install autopsy
 				  ```
 		- ### #Scans
-			- #### #Paquets
+			- #### #Système/Paquets
 				- ```shell
 				  sudo apt install nesuss nmap wireshark
 				  ```
 		- ### Usurpation d'identité
-			- #### #Paquets
+			- #### #Système/Paquets
 				- ```shell
 				  sudo apt install macchanger
 				  ```
@@ -82,3 +82,4 @@
 			  sudo git clone https://github.com/scipag/vulscan /usr/share/nmap/scripts/vulscan # Vulnerability scan script for nmap
 			  ```
 - # Maintenance
+-

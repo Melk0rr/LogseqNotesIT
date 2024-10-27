@@ -11,7 +11,7 @@ collapsed:: true
 	- [locate](https://www.geeksforgeeks.org/locate-command-in-linux-with-examples/) **<fichier>** : Localise n'importe quel fichier ou répertoire sur le système. Utilise le fichier mlocate.db mis à jour toutes les 24h, qui indexe tous les fichiers du système
 		- Possible de forcer la mise à jour : **sudo ubdatedb**
 	- [whereis](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files#whereis) **<commande>** : Rechercher  les fichiers exécutables, les sources et les pages de manuel d'une commande
-- # #[[I/O]]
+- # #[[I-O]]
   collapsed:: true
 	- ## Périphériques audio
 	  collapsed:: true
@@ -95,4 +95,3 @@ collapsed:: true
 - # #Polices
   collapsed:: true
 	- [fc-cache](https://www.geeksforgeeks.org/fc-cache-command-in-linux-with-examples/) -> `fontconfig cache` **<options>** : Scan les répertoires dédiés aux polices et génère le cache de police.
-- # #Vim
