@@ -3,6 +3,7 @@ collapsed:: true
 	- Editeur de texte #OpenSource publié en 1991 qui repose sur un système de modes et de raccourcis permettant une manipulation et une navigation rapide et efficace d'un document
 - # Commandes
 	- ## Mode normal
+	  collapsed:: true
 		- ### Navigation de base
 		  collapsed:: true
 			- Vers la **gauche** : `h`
@@ -127,62 +128,62 @@ collapsed:: true
 				  ```vim
 				  Ctrl+v
 				  ```
-				- ## Mode édition / insertion
-				  collapsed:: true
-				- Mode d'édition de texte
-				- ## Mode visual
-				  collapsed:: true
-				- Mode de **sélection** de texte
-				- Comprend 2 sous-modes : **line** et **block**
-				- ### Ligne
-				- ### Block
-				- ## Mode command-line
-				  collapsed:: true
-				- ### Manipulation de document
-				  collapsed:: true
-				- **Quitter** le document 
-				  ```vim
-				  :q
-				  ```
-				- **Sauvegarder** les changements 
-				  ```vim
-				  :w
-				  ```
-				- **Sauvegarder** et **quitter** le document 
-				  ```vim
-				  :wq
-				  ```
-				- **Forcer** la **fermeture** du document sans sauvegarder 
-				  ```vim
-				  :q!
-				  ```
-				- **Copier tout le document** 
-				  ```vim
-				  :%y
-				  ```
-				- **Supprimer tout le document** 
-				  ```vim
-				  :%d
-				  ```
-				- **Remplacer** toutes les **occurrences d'une chaîne** 
-				  ```vim
-				  :%s/foo/bar/g
-				  ```
-				- ### Recherche
-				  collapsed:: true
-				- **Rechercher** une **chaîne** 
-				  ```vim
-				  /chaîne à rechercher
-				  ```
-				- **Rechercher** une chaîne en **partant de la fin** 
-				  ```vim
-				  ?chaîne à rechercher
-				  ```
-				- **Sélectionner** le **premier élément trouvé** 
-				  ```vim
-				  ENTER
-				  ```
-				- Aller à l'élément trouvé **suivant** 
-				  ```vim
-				  n
-				  ```
+	- ## Mode édition / insertion
+	  collapsed:: true
+		- Mode d'édition de texte
+	- ## Mode visual
+	  collapsed:: true
+		- Mode de **sélection** de texte
+		- Comprend 2 sous-modes : **line** et **block**
+		- ### Ligne
+		- ### Block
+	- ## Mode command-line
+	  collapsed:: true
+		- ### Manipulation de document
+		  collapsed:: true
+		- **Quitter** le document 
+		  ```vim
+		  :q
+		  ```
+		- **Sauvegarder** les changements 
+		  ```vim
+		  :w
+		  ```
+		- **Sauvegarder** et **quitter** le document 
+		  ```vim
+		  :wq
+		  ```
+		- **Forcer** la **fermeture** du document sans sauvegarder 
+		  ```vim
+		  :q!
+		  ```
+		- **Copier tout le document** 
+		  ```vim
+		  :%y
+		  ```
+		- **Supprimer tout le document** 
+		  ```vim
+		  :%d
+		  ```
+		- **Remplacer** toutes les **occurrences d'une chaîne** 
+		  ```vim
+		  :%s/foo/bar/g
+		  ```
+		- ### Recherche
+		  collapsed:: true
+		- **Rechercher** une **chaîne** 
+		  ```vim
+		  /chaîne à rechercher
+		  ```
+		- **Rechercher** une chaîne en **partant de la fin** 
+		  ```vim
+		  ?chaîne à rechercher
+		  ```
+		- **Sélectionner** le **premier élément trouvé** 
+		  ```vim
+		  ENTER
+		  ```
+		- Aller à l'élément trouvé **suivant** 
+		  ```vim
+		  n
+		  ```

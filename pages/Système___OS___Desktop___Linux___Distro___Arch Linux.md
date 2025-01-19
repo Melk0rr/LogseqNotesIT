@@ -18,6 +18,7 @@
 	- [Guide officiel](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais))
 	  id:: 65c93b3e-72e6-4c5a-94e6-6528aba7488e
 	- ## Base
+	  collapsed:: true
 		- ### Disposition clavier
 		  collapsed:: true
 			- Changer la configuration du clavier. Utile surtout pour les claviers non QWERTY 
@@ -26,6 +27,7 @@
 			  loadkeys fr
 			  ```
 		- ### Connexion à internet
+		  collapsed:: true
 			- Vérifier la connectivité internet. Mieux vaut une connexion ethernet pour se faciliter la vie 
 			  logseq.order-list-type:: number
 			  ```shell
@@ -431,7 +433,6 @@
 				  ```
 			- #### [Paru]([paru](https://github.com/Morganamilo/paru) : Gestionnaire de #Système/Paquets pour AUR sur #[[Système/OS/Desktop/Linux/Distro/Arch Linux]] ( écrit en #Programmation/Langage/Rust ))
 - # Post-installation
-  collapsed:: true
 	- ## #[[Hardware/Contrôle]]
 	  collapsed:: true
 		- ### #Hardware/Driver/AMD
@@ -495,7 +496,6 @@
 				  sudo systemctl enable --now fstrim.timer
 				  ```
 	- ## #Réseau
-	  collapsed:: true
 		- ```shell
 		  # NetworkManager
 		  yay -S networkmanager network-manager-applet
@@ -718,18 +718,24 @@
 		  yay -S mpv-git imv-git imagemagick ffmpeg upscayl-bin
 		  # yay -S vlc-git
 		  
-		  # Musique
-		  yay -S audacious-git moc-pulse cava clyrics
+		  # Musique TUI
+		  yay -S cmus cava clyrics
+		  
+		  # Musique GUI
+		  yay -S audacious
 		  
 		  # Utilitaire
 		  yay -S easyeffects-git easytag
+		  
+		  # RSS
+		  yay -S newsflash
 		  ```
 		- ### #Système/Paquets
 			- [mpv](https://github.com/mpv-player/mpv) : lecteur **simple** et **léger** développé en #C
 			  id:: 65e339f6-bfa5-451c-abdf-3581d36c6711
 			- [imv](https://github.com/eXeC64/imv) : **visionneur d'images simple** et **léger** développé en #C
 			- [audacious](https://github.com/audacious-media-player/audacious) : **lecteur** / **bibliothèque musicale** léger développé en #Programmation/Langage/C++
-			- [MOC](https://moc.daper.net/) : **lecteur en mode console** léger développé en #C
+			- [cmus](https://github.com/cmus/cmus) : **lecteur en mode console** léger développé en #C
 			- [cava](https://github.com/karlstav/cava) : visualiseur audio développé en #C
 			- [vlc](https://code.videolan.org/videolan/vlc) : lecteur **complet** mais parfois trop fourni / lourd en fonction de l'usage. Comporte quelques **problèmes d'implémentation Wayland**. Développé en #C et #Programmation/Langage/C++
 			  collapsed:: true
@@ -779,7 +785,6 @@
 		  yay -S toipe
 		  ```
 - # Maintenance
-  collapsed:: true
 	- ## Gestion des paquets
 		- ### Mise à jour
 		  collapsed:: true
@@ -851,7 +856,6 @@
 					  pacman -U /var/cache/pacman/pkg/mon_pkg.tar.zst
 					  ```
 		- ### Gestion des paquets python
-		  collapsed:: true
 			- #### Installation
 				- Sur Arch il est préférable d'installer et de gérer les paquets python **via pacman** 
 				  ```shell

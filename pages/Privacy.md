@@ -10,7 +10,7 @@
 	- ## #Privacy/Anonymat
 		- Désigne le fait de rester **non identifié**
 		- Possibilité d'agir sans être associé à un *identifiant persistant*.
-		- ### #Privacy/Pseudonymat
+		- ### #Privacy/Anonymat/Pseudonymat
 			- Concept similaire qui donne la faculté à une personne d'avoir un *identifiant persistant* sans que celui-ci ne soit directement relié à son identité.
 	- Ces 3 notions ne sont pas toujours complémentaires
 	- ## Sécurité sans vie privée ni anonymat
